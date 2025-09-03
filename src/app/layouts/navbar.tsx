@@ -27,7 +27,9 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 z-50 w-full bg-[#f5f4ea] border-b">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <a href="/">
         <img src="logo.png" alt="Logo" className="w-40" />
+        </a>
 
         <nav className="hidden md:flex items-center gap-8 font-bold text-lg text-black">
           <a href="#">About</a>
