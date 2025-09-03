@@ -13,10 +13,10 @@ function DropdownItem({ title, desc }: DropdownItemProps) {
   return (
     <a
       href="#"
-      className="rounded-xl p-3 hover:bg-gray-50 transition grid gap-1"
+      className="rounded-xl p-3 hover:bg-gray-50 transition grid gap-0"
     >
-      <div className="font-semibold text-gray-900">{title}</div>
-      <div className="text-sm text-gray-600">{desc}</div>
+      <div className="font-bold text-black">{title}</div>
+      <div className="text-sm text-gray-600 font-normal">{desc}</div>
     </a>
   )
 }
@@ -65,11 +65,12 @@ export default function Navbar() {
               )}
               role="menu"
             >
-              <DropdownItem title="3D Visualisation" desc="Concept to approval-ready visuals." />
-              <DropdownItem title="Animation" desc="Planting palette & technical plans." />
-              <DropdownItem title="Interactive Sites" desc="Quick wins for outdoor refresh." />
-              <DropdownItem title="VR & AR" desc="Photo-real renders & animations." />
-              <DropdownItem title="2D Drafting" desc="Photo-real renders & animations." />
+              <DropdownItem title="3D Garden Visualisation" desc="Concept to approval-ready visuals." />
+              <DropdownItem title="Landscape Animation" desc="Planting palette & technical plans." />
+              <DropdownItem title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
+              <DropdownItem title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
+              <DropdownItem title="Site Hub" desc="Photo-real renders & animations." />
+              <DropdownItem title="2D Landscape Drafting & Planning Packs" desc="Photo-real renders & animations." />
             </div>
           </div>
 
