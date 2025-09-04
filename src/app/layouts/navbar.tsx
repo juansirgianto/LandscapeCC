@@ -73,7 +73,7 @@ export default function Navbar() {
         </nav>
 
         {/* CTA Desktop */}
-        <Button className="hidden lg:flex text-base rounded-full bg-[#757741] font-semibold py-5 hover:bg-[#d3d2a5] hover:text-black">
+        <Button className="hidden lg:flex text-base rounded-full bg-[#757741] font-semibold py-5 hover:bg-[#d3d2a5] hover:text-[#757741] cursor-pointer">
           Get in touch
         </Button>
 
@@ -85,7 +85,7 @@ export default function Navbar() {
           aria-expanded={mobileOpen}
           onClick={() => setMobileOpen(v => !v)}
         >
-          {mobileOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+          {mobileOpen ? <X className="w-7 h-7 text-[#757741]" /> : <Menu className="w-7 h-7 text-[#757741]" />}
         </button>
       </div>
 
@@ -128,11 +128,11 @@ export default function Navbar() {
             </div>
           </div>
 
-          <a href="#" className="block py-3">Case Studies</a>
-          <a href="#" className="block py-3">Resources</a>
-          <a href="#" className="block py-3">Contact</a>
+          <a href="#" className="block py-3 border-b">Case Studies</a>
+          <a href="#" className="block py-3 border-b">Resources</a>
+          <a href="#" className="block py-3 border-b">Contact</a>
 
-          <Button className="mt-4 w-full rounded-full bg-[#757741] font-semibold py-5 hover:bg-[#d3d2a5] hover:text-black">
+          <Button className="mt-4 w-full rounded-full bg-[#757741] font-semibold py-5 hover:bg-[#d3d2a5] hover:text-[#757741]">
             Get in touch
           </Button>
         </div>

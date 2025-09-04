@@ -43,11 +43,11 @@ export const AnimatedTestimonials = ({
     return Math.floor(Math.random() * 21) - 10;
   };
   return (
-    <div className="mx-auto px-4 pt-8 pb-13 font-sans antialiased md:px-8 lg:px-70 bg-[#f5f4ea]">
-      <h1 className='text-center mb-8 text-4xl font-semibold'>Testimonials</h1>
-      <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
+    <div className="mx-auto px-4 md:py-8 py-4 lg:pb-13 font-sans antialiased md:px-8 lg:px-70 bg-[#f5f4ea]">
+      <h1 className='text-center mb-8 lg:text-4xl md:text-2xl text-lg font-semibold'>Testimonials</h1>
+      <div className="relative grid grid-cols-1 md:gap-20 gap-5 md:grid-cols-2">
         <div>
-          <div className="relative h-80 w-full">
+          <div className="relative md:h-80 md:w-full h-50 w-50 mx-auto">
             <AnimatePresence>
               {testimonials.map((testimonial, index) => (
                 <motion.div
@@ -86,14 +86,14 @@ export const AnimatedTestimonials = ({
                     width={500}
                     height={500}
                     draggable={false}
-                    className="h-full w-full rounded-3xl object-cover object-center"
+                    className="h-full w-full  rounded-3xl object-cover object-center"
                   />
                 </motion.div>
               ))}
             </AnimatePresence>
           </div>
         </div>
-        <div className="flex flex-col justify-between py-4">
+        <div className="flex flex-col justify-between md:py-4 py-2">
           <motion.div
             key={active}
             initial={{
@@ -113,13 +113,13 @@ export const AnimatedTestimonials = ({
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-2xl font-bold text-black">
+            <h3 className="md:text-2xl text-lg font-bold text-black">
               {testimonials[active].name}
             </h3>
             <p className="text-base text-gray-500 ">
               {testimonials[active].designation}
             </p>
-            <motion.p className="mt-8 text-lg text-black">
+            <motion.p className="md:mt-8 mt-4 md:text-lg text-sm text-black">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
@@ -145,16 +145,16 @@ export const AnimatedTestimonials = ({
               ))}
             </motion.p>
           </motion.div>
-          <div className="flex gap-4 pt-12 md:pt-0">
+          <div className="flex gap-4 lg:pt-12 md:pt-0 pt-4">
             <button
               onClick={handlePrev}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-[#757741]"
+              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-[#757741] cursor-pointer"
             >
               <IconArrowLeft className="h-5 w-5 text-white transition-transform duration-300 group-hover/button:rotate-12 " />
             </button>
             <button
               onClick={handleNext}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-[#757741]"
+              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-[#757741] cursor-pointer"
             >
               <IconArrowRight className="h-5 w-5 text-white transition-transform duration-300 group-hover/button:-rotate-12" />
             </button>
