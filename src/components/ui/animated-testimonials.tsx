@@ -43,7 +43,8 @@ export const AnimatedTestimonials = ({
     return Math.floor(Math.random() * 21) - 10;
   };
   return (
-    <div className="mx-auto  px-4 py-20 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12 bg-[#f5f4ea]">
+    <div className="mx-auto px-4 pt-8 pb-13 font-sans antialiased md:px-8 lg:px-70 bg-[#f5f4ea]">
+      <h1 className='text-center mb-8 text-4xl font-semibold'>Testimonials</h1>
       <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
         <div>
           <div className="relative h-80 w-full">
@@ -115,7 +116,7 @@ export const AnimatedTestimonials = ({
             <h3 className="text-2xl font-bold text-black">
               {testimonials[active].name}
             </h3>
-            <p className="text-sm text-gray-500 ">
+            <p className="text-base text-gray-500 ">
               {testimonials[active].designation}
             </p>
             <motion.p className="mt-8 text-lg text-black">

@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import clsx from "clsx"
-import { ChevronDown } from "lucide-react"
+import { ChevronDown, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 type DropdownItemProps = {
@@ -11,10 +11,7 @@ type DropdownItemProps = {
 
 function DropdownItem({ title, desc }: DropdownItemProps) {
   return (
-    <a
-      href="#"
-      className="rounded-xl p-3 hover:bg-gray-50 transition grid gap-0"
-    >
+    <a href="#" className="rounded-xl p-3 hover:bg-gray-50 transition grid gap-0">
       <div className="font-bold text-black">{title}</div>
       <div className="text-sm text-gray-600 font-normal">{desc}</div>
     </a>
@@ -22,19 +19,20 @@ function DropdownItem({ title, desc }: DropdownItemProps) {
 }
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false)              // dropdown Services (desktop)
+  const [mobileOpen, setMobileOpen] = useState(false)  // panel nav (mobile/tablet)
+  const [mobileServices, setMobileServices] = useState(false) // accordion Services (mobile)
 
   return (
     <div className="fixed top-0 z-50 w-full bg-[#f5f4ea] border-b">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="/">
-        <img src="logo.png" alt="Logo" className="w-40" />
-        </a>
+        <a href="/"><img src="logo.png" alt="Logo" className="w-40" /></a>
 
-        <nav className="hidden md:flex items-center gap-8 font-bold text-lg text-black">
+        {/* NAV DESKTOP */}
+        <nav className="hidden lg:flex items-center gap-8 font-bold text-lg text-black">
           <a href="#">About</a>
 
-          {/* Services w/ dropdown */}
+          {/* Services (desktop dropdown) */}
           <div
             className="relative group"
             onMouseEnter={() => setOpen(true)}
@@ -42,25 +40,18 @@ export default function Navbar() {
           >
             <button
               className="flex items-center gap-1 outline-none"
-              onClick={() => setOpen((v) => !v)} // klik untuk mobile/tablet
+              onClick={() => setOpen(v => !v)}
               aria-haspopup="menu"
               aria-expanded={open}
             >
               <span>Services</span>
-              <ChevronDown
-                className={clsx(
-                  "h-5 w-5 transition-transform duration-200",
-                  open && "rotate-180"
-                )}
-              />
+              <ChevronDown className={clsx("h-5 w-5 transition-transform duration-200", open && "rotate-180")} />
             </button>
 
-            {/* Panel dropdown */}
             <div
               className={clsx(
                 "absolute left-1/2 -translate-x-1/2 mt-0 w-[640px] rounded-2xl bg-[#f5f4ea] p-4 shadow-xl ring-1 ring-black/5 grid grid-cols-2 gap-2 transition origin-top",
                 "opacity-0 scale-95 pointer-events-none",
-                // buka saat state open ATAU saat focus/hover (aksesibilitas + hover desktop)
                 open && "opacity-100 scale-100 pointer-events-auto",
                 "group-focus-within:opacity-100 group-focus-within:scale-100 group-focus-within:pointer-events-auto",
                 "group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto"
@@ -71,8 +62,8 @@ export default function Navbar() {
               <DropdownItem title="Landscape Animation" desc="Planting palette & technical plans." />
               <DropdownItem title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
               <DropdownItem title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
-              <DropdownItem title="Site Hub" desc="Photo-real renders & animations." />
-              <DropdownItem title="2D Landscape Drafting & Planning Packs" desc="Photo-real renders & animations." />
+              <DropdownItem title="Site Hub" desc="Project hub & client handoffs." />
+              <DropdownItem title="2D Landscape Drafting & Planning Packs" desc="Drawings, details, and packs." />
             </div>
           </div>
 
@@ -81,7 +72,70 @@ export default function Navbar() {
           <a href="#">Contact</a>
         </nav>
 
-        <Button className="text-base rounded-full bg-[#757741] font-semibold py-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-black">Get in touch</Button>
+        {/* CTA Desktop */}
+        <Button className="hidden lg:flex text-base rounded-full bg-[#757741] font-semibold py-5 hover:bg-[#d3d2a5] hover:text-black">
+          Get in touch
+        </Button>
+
+        {/* Toggler Mobile/Tablet */}
+        <button
+          className="lg:hidden p-2"
+          aria-label="Toggle menu"
+          aria-controls="mobile-menu"
+          aria-expanded={mobileOpen}
+          onClick={() => setMobileOpen(v => !v)}
+        >
+          {mobileOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+        </button>
+      </div>
+
+      {/* PANEL NAV MOBILE/TABLET */}
+      <div
+        id="mobile-menu"
+        className={clsx(
+          "lg:hidden overflow-hidden transition-all duration-300 origin-top",
+          mobileOpen ? "max-h-[100vh] opacity-100" : "max-h-0 opacity-0"
+        )}
+      >
+        <div className="px-6 pb-6 pt-2 border-t font-semibold text-lg">
+          <a href="#" className="block py-3">About</a>
+
+          {/* Services (mobile accordion) */}
+          <div className="border-y">
+            <button
+              className="w-full flex items-center justify-between py-3"
+              onClick={() => setMobileServices(v => !v)}
+              aria-expanded={mobileServices}
+              aria-controls="mobile-services"
+            >
+              <span>Services</span>
+              <ChevronDown className={clsx("h-5 w-5 transition-transform duration-200", mobileServices && "rotate-180")} />
+            </button>
+
+            <div
+              id="mobile-services"
+              className={clsx(
+                "grid gap-2 pl-2 pr-1 pb-3 transition-all duration-300 overflow-hidden",
+                mobileServices ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
+              )}
+            >
+              <DropdownItem title="3D Garden Visualisation" desc="Concept to approval-ready visuals." />
+              <DropdownItem title="Landscape Animation" desc="Planting palette & technical plans." />
+              <DropdownItem title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
+              <DropdownItem title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
+              <DropdownItem title="Site Hub" desc="Project hub & client handoffs." />
+              <DropdownItem title="2D Landscape Drafting & Planning Packs" desc="Drawings, details, and packs." />
+            </div>
+          </div>
+
+          <a href="#" className="block py-3">Case Studies</a>
+          <a href="#" className="block py-3">Resources</a>
+          <a href="#" className="block py-3">Contact</a>
+
+          <Button className="mt-4 w-full rounded-full bg-[#757741] font-semibold py-5 hover:bg-[#d3d2a5] hover:text-black">
+            Get in touch
+          </Button>
+        </div>
       </div>
     </div>
   )
