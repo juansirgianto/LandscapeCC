@@ -7,11 +7,12 @@ import { Button } from "@/components/ui/button"
 type DropdownItemProps = {
   title: string
   desc: string
+  href?: string
 }
 
-function DropdownItem({ title, desc }: DropdownItemProps) {
+function DropdownItem({ title, desc, href = "#" }: DropdownItemProps) {
   return (
-    <a href="#" className="rounded-xl p-3 hover:bg-gray-50 transition grid gap-0">
+    <a href={href} className="rounded-xl p-3 hover:bg-gray-50 transition grid gap-0">
       <div className="font-bold text-black">{title}</div>
       <div className="text-sm text-gray-600 font-normal">{desc}</div>
     </a>
@@ -26,15 +27,15 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 z-50 w-full bg-[#f5f4ea] border-b">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="/"><img src="logo.png" alt="Logo" className="w-40" /></a>
+        <a href="/"><img src="/logo.png" alt="Logo" className="w-40" /></a>
 
         {/* NAV DESKTOP */}
         <nav className="hidden lg:flex items-center gap-8 font-bold text-lg text-black">
-          <a href="#">About</a>
+          <a href="#" className="hover:mb-2">About</a>
 
           {/* Services (desktop dropdown) */}
           <div
-            className="relative group"
+            className="relative group hover:mb-2"
             onMouseEnter={() => setOpen(true)}
             onMouseLeave={() => setOpen(false)}
           >
@@ -60,8 +61,8 @@ export default function Navbar() {
               )}
               role="menu"
             >
-              <a href="/services" className="col-span-2 mb-1 px-3 text-sm underline hover:opacity-80">Services Overview →</a>
-              <DropdownItem title="3D Garden Visualisation" desc="Concept to approval-ready visuals." />
+              <a href="/services" className="col-span-2 mb-1 px-3 text-base underline hover:opacity-80">Services Overview →</a>
+              <DropdownItem href="/services/3d" title="3D Garden Visualisation" desc="Concept to approval-ready visuals." />
               <DropdownItem title="Landscape Animation" desc="Planting palette & technical plans." />
               <DropdownItem title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
               <DropdownItem title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
@@ -70,9 +71,9 @@ export default function Navbar() {
             </div>
           </div>
 
-          <a href="#">Case Studies</a>
-          <a href="#">Resources</a>
-          <a href="#">Contact</a>
+          <a href="#" className="hover:mb-2">Case Studies</a>
+          <a href="#" className="hover:mb-2">Resources</a>
+          <a href="#" className="hover:mb-2">Contact</a>
         </nav>
 
         {/* CTA Desktop */}
@@ -124,8 +125,8 @@ export default function Navbar() {
                 mobileServices ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
               )}
             >
-              <a href="/services" className="col-span-2 mb-1 px-3 text-sm underline hover:opacity-80">Services Overview →</a>
-              <DropdownItem title="3D Garden Visualisation" desc="Concept to approval-ready visuals." />
+              <a href="/services" className="col-span-2 mb-1 px-3 text-base underline hover:opacity-80">Services Overview →</a>
+              <DropdownItem href="/services/3d" title="3D Garden Visualisation" desc="Concept to approval-ready visuals." />
               <DropdownItem title="Landscape Animation" desc="Planting palette & technical plans." />
               <DropdownItem title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
               <DropdownItem title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
