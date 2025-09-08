@@ -62,8 +62,8 @@ export default function Navbar() {
               role="menu"
             >
               <a href="/services" className="col-span-2 mb-1 px-3 text-base underline hover:opacity-80">Services Overview →</a>
-              <DropdownItem href="/services/3d" title="3D Garden Visualisation" desc="Concept to approval-ready visuals." />
-              <DropdownItem title="Landscape Animation" desc="Planting palette & technical plans." />
+              <DropdownItem href="/services/3d" title="3D Garden Visualisation" desc="3D Garden Visualisation Services | Photorealistic Landscape CGI" />
+              <DropdownItem href="/services/animation" title="Landscape Animation" desc="Landscape Animation Services | Garden & Public Space Flythroughs" />
               <DropdownItem title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
               <DropdownItem title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
               <DropdownItem title="Site Hub" desc="Project hub & client handoffs." />
@@ -126,8 +126,8 @@ export default function Navbar() {
               )}
             >
               <a href="/services" className="col-span-2 mb-1 px-3 text-base underline hover:opacity-80">Services Overview →</a>
-              <DropdownItem href="/services/3d" title="3D Garden Visualisation" desc="Concept to approval-ready visuals." />
-              <DropdownItem title="Landscape Animation" desc="Planting palette & technical plans." />
+              <DropdownItem href="/services/3d" title="3D Garden Visualisation" desc="3D Garden Visualisation Services | Photorealistic Landscape CGI" />
+              <DropdownItem href="/services/animation" title="Landscape Animation" desc="Landscape Animation Services | Garden & Public Space Flythroughs" />
               <DropdownItem title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
               <DropdownItem title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
               <DropdownItem title="Site Hub" desc="Project hub & client handoffs." />
