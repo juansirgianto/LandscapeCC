@@ -6,6 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { AnimatedTestimonials } from '@/components/ui/animated-testimonials'
 import Footer from './layouts/footer'
+import Runninglogo from './layouts/runninglogo'
 
 function page() {
   const testimonials = [
@@ -48,15 +49,7 @@ function page() {
           </Button>
         </div>
       </div>
-      <div className="overflow-hidden border-b-1 lg:py-8 md:py-6 py-4 bg-[#f5f4ea]">
-        <div className="flex gap-30 animate-marquee whitespace-nowrap">
-          <img src="logo.png" alt="" className='h-20' />
-          <img src="logo/fox.png" alt="" className='h-20' />
-          <img src="logo/asg.png" alt="" className='h-20' />
-          <img src="logo/canham.png" alt="" className='h-20' />
-          <img src="logo/avlogo.jpg" alt="" className='h-20' />
-        </div>
-      </div>
+      <Runninglogo/>
       <div className='lg:py-8 lg:px-30 md:py-6 md:px-20 p-4'>      
       <div className='flex justify-between items-center'>
         <div className='md:w-full w-[50%]'>
@@ -192,7 +185,7 @@ If it supports your outdoor design — we can visualise it</h1>
       <div className="absolute inset-0 bg-black/60 z-0" />
       <div className='relative text-center text-white lg:text-4xl md:text-2xl font-semibold md:top-2/3 top-1/2 -translate-y-1/2 '>
         <h1>Not sure where to start?</h1>
-        <h1 className='mb-2'>Send us a sketch — we'll turn it into something ready to <br /> build, submit, or sell.</h1>
+        <h1 className='mb-4'>Send us a sketch — we'll turn it into something ready to <br /> build, submit, or sell.</h1>
         <Button className="lg:text-2xl md:text-lg rounded-full relative items-center bg-[#757741] font-semibold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
           Start a Project 
         <MoveRight strokeWidth={3}/>

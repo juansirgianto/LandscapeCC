@@ -3,7 +3,7 @@
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "motion/react";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type Testimonial = {
   quote: string;
@@ -11,6 +11,14 @@ type Testimonial = {
   designation: string;
   src: string;
 };
+
+function hashToRange(str: string, min = -10, max = 10) {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) | 0;
+  const span = max - min + 1;
+  return min + (Math.abs(h) % span);
+}
+
 export const AnimatedTestimonials = ({
   testimonials,
   autoplay = false,
@@ -32,16 +40,17 @@ export const AnimatedTestimonials = ({
     return index === active;
   };
 
+  const rotations = useMemo(
+    () => testimonials.map((t) => hashToRange(t.src, -10, 10)),
+    [testimonials]
+  );
+
   useEffect(() => {
-    if (autoplay) {
-      const interval = setInterval(handleNext, 5000);
-      return () => clearInterval(interval);
-    }
+    if (!autoplay) return;
+    const id = setInterval(handleNext, 5000);
+    return () => clearInterval(id);
   }, [autoplay]);
 
-  const randomRotateY = () => {
-    return Math.floor(Math.random() * 21) - 10;
-  };
   return (
     <div className="mx-auto px-4 md:py-8 py-4 lg:pb-13 font-sans antialiased md:px-8 lg:px-70 bg-[#f5f4ea]">
       <h1 className='text-center mb-8 lg:text-4xl md:text-2xl text-lg font-semibold'>Testimonials</h1>
@@ -49,47 +58,47 @@ export const AnimatedTestimonials = ({
         <div>
           <div className="relative md:h-80 md:w-full h-50 w-50 mx-auto">
             <AnimatePresence>
-              {testimonials.map((testimonial, index) => (
-                <motion.div
-                  key={testimonial.src}
-                  initial={{
-                    opacity: 0,
-                    scale: 0.9,
-                    z: -100,
-                    rotate: randomRotateY(),
-                  }}
-                  animate={{
-                    opacity: isActive(index) ? 1 : 0.7,
-                    scale: isActive(index) ? 1 : 0.95,
-                    z: isActive(index) ? 0 : -100,
-                    rotate: isActive(index) ? 0 : randomRotateY(),
-                    zIndex: isActive(index)
-                      ? 40
-                      : testimonials.length + 2 - index,
-                    y: isActive(index) ? [0, -80, 0] : 0,
-                  }}
-                  exit={{
-                    opacity: 0,
-                    scale: 0.9,
-                    z: 100,
-                    rotate: randomRotateY(),
-                  }}
-                  transition={{
-                    duration: 0.4,
-                    ease: "easeInOut",
-                  }}
-                  className="absolute inset-0 origin-bottom"
-                >
-                  <img
-                    src={testimonial.src}
-                    alt={testimonial.name}
-                    width={500}
-                    height={500}
-                    draggable={false}
-                    className="h-full w-full  rounded-3xl object-cover object-center"
-                  />
-                </motion.div>
-              ))}
+              {testimonials.map((testimonial, index) => {
+                const rot = rotations[index]; // nilai stabil
+                return (
+                  <motion.div
+                    key={testimonial.src}
+                    initial={{
+                      opacity: 0,
+                      scale: 0.9,
+                      z: -100,
+                      rotate: rot,
+                    }}
+                    animate={{
+                      opacity: isActive(index) ? 1 : 0.7,
+                      scale: isActive(index) ? 1 : 0.95,
+                      z: isActive(index) ? 0 : -100,
+                      rotate: isActive(index) ? 0 : rot, // ❗ pakai nilai stabil
+                      zIndex: isActive(index)
+                        ? 40
+                        : testimonials.length + 2 - index,
+                      y: isActive(index) ? [0, -80, 0] : 0,
+                    }}
+                    exit={{
+                      opacity: 0,
+                      scale: 0.9,
+                      z: 100,
+                      rotate: rot, // ❗ tetap stabil
+                    }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    className="absolute inset-0 origin-bottom"
+                  >
+                    <img
+                      src={testimonial.src}
+                      alt={testimonial.name}
+                      width={500}
+                      height={500}
+                      draggable={false}
+                      className="h-full w-full rounded-3xl object-cover object-center"
+                    />
+                  </motion.div>
+                );
+              })}
             </AnimatePresence>
           </div>
         </div>

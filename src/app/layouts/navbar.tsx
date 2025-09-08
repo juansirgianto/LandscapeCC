@@ -44,7 +44,9 @@ export default function Navbar() {
               aria-haspopup="menu"
               aria-expanded={open}
             >
+              <a href="/services">
               <span>Services</span>
+              </a>
               <ChevronDown className={clsx("h-5 w-5 transition-transform duration-200", open && "rotate-180")} />
             </button>
 
@@ -58,6 +60,7 @@ export default function Navbar() {
               )}
               role="menu"
             >
+              <a href="/services" className="col-span-2 mb-1 px-3 text-sm underline hover:opacity-80">Services Overview →</a>
               <DropdownItem title="3D Garden Visualisation" desc="Concept to approval-ready visuals." />
               <DropdownItem title="Landscape Animation" desc="Planting palette & technical plans." />
               <DropdownItem title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
@@ -108,17 +111,20 @@ export default function Navbar() {
               aria-expanded={mobileServices}
               aria-controls="mobile-services"
             >
+              <a href="/services">
               <span>Services</span>
+              </a>
               <ChevronDown className={clsx("h-5 w-5 transition-transform duration-200", mobileServices && "rotate-180")} />
             </button>
 
             <div
               id="mobile-services"
               className={clsx(
-                "grid gap-2 pl-2 pr-1 pb-3 transition-all duration-300 overflow-hidden",
+                " gap-2 pl-2 pr-1 pb-3 transition-all duration-300 overflow-hidden",
                 mobileServices ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
               )}
             >
+              <a href="/services" className="col-span-2 mb-1 px-3 text-sm underline hover:opacity-80">Services Overview →</a>
               <DropdownItem title="3D Garden Visualisation" desc="Concept to approval-ready visuals." />
               <DropdownItem title="Landscape Animation" desc="Planting palette & technical plans." />
               <DropdownItem title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
