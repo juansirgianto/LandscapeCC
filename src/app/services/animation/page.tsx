@@ -11,7 +11,7 @@ function Animation() {
     <div>
         <Navbar/>
         <div className='mt-[90px] grid md:grid-cols-2'>
-            <div className='bg-[#757741] lg:h-[80vh] md:h-[60vh] lg:p-30 md:p-10 p-4 flex flex-col justify-center md:gap-8 gap-4 text-white'>
+            <div className='bg-[#757741] lg:h-[80vh] md:h-[60vh] lg:p-30 md:p-10 p-10 flex flex-col justify-center md:gap-8 gap-4 text-white'>
                 <h1 className='lg:text-5xl md:text-3xl text-xl font-semibold'>Let your clients walk through the space before it's built</h1>
                 <h1 className='lg:text-xl md:text-base text-sm'>Our landscape animation services transform your designs into immersive, cinematic motion clips — helping clients, councils, and collaborators visualise space as it evolves. Whether you're pitching a private garden, public realm upgrade, or commercial outdoor project, animation provides a persuasive storytelling tool for both emotion and clarity.</h1>
                 <Button className="lg:text-xl md:text-base text-sm rounded-full relative items-center bg-[#d3d2a5] text-[#757741] w-fit font-bold lg:!p-7 md:!p-5 cursor-pointer hover:bg-white hover:text-[#757741]">
@@ -40,46 +40,39 @@ function Animation() {
                 <h1 className='text-center'>Delivered in MP4, web-optimised or presentation formats</h1>
             </div>
         </div>
-        <div className='lg:px-30 md:px-10 px-4 lg:py-15 md:py-10 py-4 grid md:grid-cols-2 lg:gap-8 md:gap-4 items-center'>
-            <div className='lg:pr-30 md:mb-0 mb-4 '>
-                <h1 className='lg:text-3xl md:text-2xl text-xl font-semibold mb-4'>Process Overview</h1>
-                <h1 className='lg:text-lg md:text-sm text-sm text-gray-500 md:mb-4'>Unlike static visuals, animation creates movement, emotion, and clarity — helping all stakeholders feel immersed in the experience of the future space. Especially valuable for large or spatially complex designs where flow and use matter.</h1>
-                <Button className="hidden md:flex lg:text-xl md:text-base text-sm rounded-full relative items-center bg-[#757741] font-semibold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
+        <div className='lg:px-30 md:px-10 px-4 lg:py-15 md:py-10 py-4 lg:my-15 md:my-10 my-4 grid md:grid-cols-2 lg:gap-8 md:gap-4 items-center bg-[#757741]'>
+            <div className='lg:pr-30 md:mb-0 mb-4'>
+                <h1 className='lg:text-3xl md:text-2xl text-xl font-semibold mb-4 text-center md:text-start text-white '>Process Overview</h1>
+                <h1 className='lg:text-lg md:text-sm text-sm text-white md:mb-4'>Unlike static visuals, animation creates movement, emotion, and clarity — helping all stakeholders feel immersed in the experience of the future space. Especially valuable for large or spatially complex designs where flow and use matter.</h1>
+                <Button className="hidden md:flex lg:text-xl md:text-base text-sm rounded-full relative items-center bg-[#d3d2a5] text-[#757741] font-bold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
                 Contact Us
                 </Button>
             </div>
             <div className='flex flex-col gap-2 lg:ml-30'>
                 <div className='flex bg-[#d3d2a5] px-4 py-2 rounded-full items-center gap-5 lg:text-xl md:text-base text-sm'>
-                    <h1 className='bg-[#f5f4ea] md:px-4.5 md:py-2 px-3 py-1 rounded-full text-black'>1</h1>
+                    <h1 className='bg-[#f5f4ea] md:px-4.5 md:py-2 px-3 py-1 rounded-full text-black font-semibold'>1</h1>
                     <h1>Send us your sketch, CAD, or concept</h1>
                 </div>
                 <div className='flex bg-[#d3d2a5] px-4 py-2 rounded-full items-center gap-5 lg:text-xl md:text-base text-sm'>
-                    <h1 className='bg-[#f5f4ea] md:px-4.5 md:py-2 px-3 py-1 rounded-full text-black'>2</h1>
+                    <h1 className='bg-[#f5f4ea] md:px-4.5 md:py-2 px-3 py-1 rounded-full text-black font-semibold'>2</h1>
                     <h1>We develop camera paths and pacing</h1>
                 </div>
                 <div className='flex bg-[#d3d2a5] px-4 py-2 rounded-full items-center gap-5 lg:text-xl md:text-base text-sm'>
-                    <h1 className='bg-[#f5f4ea] md:px-4.5 md:py-2 px-3 py-1 rounded-full text-black'>3</h1>
+                    <h1 className='bg-[#f5f4ea] md:px-4.5 md:py-2 px-3 py-1 rounded-full text-black font-semibold'>3</h1>
                     <h1>Preview shared for review</h1>
                 </div>
                 <div className='flex bg-[#d3d2a5] px-4 py-2 rounded-full items-center gap-5 lg:text-xl md:text-base text-sm'>
-                    <h1 className='bg-[#f5f4ea] md:px-4.5 md:py-2 px-3 py-1 rounded-full text-black'>4</h1>
+                    <h1 className='bg-[#f5f4ea] md:px-4.5 md:py-2 px-3 py-1 rounded-full text-black font-semibold'>4</h1>
                     <h1>Final animation delivered in 1 - 3 formats</h1>
                 </div>
             </div>
         </div>
-        <Accordion type="single" collapsible className='lg:px-30 md:px-10 px-4 lg:pb-15 md:pb-10 pb-4 border-b-1'>
-        <AccordionItem value="item-1">
-            <AccordionTrigger className='lg:text-3xl md:text-2xl text-lg font-semibold'>Why It Works?</AccordionTrigger>
-            <AccordionContent className='lg:text-xl md:text-base'>
-            Unlike static visuals, animation creates movement, emotion, and clarity — helping all stakeholders feel immersed in the experience of the future space. Especially valuable for large or spatially complex designs where flow and use matter.            </AccordionContent>
-        </AccordionItem>
-        </Accordion>
-        <h1 className='text-center lg:text-5xl md:text-3xl text-xl lg:py-15 md:py-10 py-4 font-semibold'>Our Projects</h1>
+        <h1 className='text-center lg:text-5xl md:text-3xl text-xl lg:pb-15 md:pb-10 pb-4 font-semibold'>Our Projects</h1>
         <div className='grid md:grid-cols-2 md:gap-4 gap-2 px-10 lg:pb-15 md:pb-10 pb-4'>
             <a href="">
                 <div>
-                    <img src="/service.png" alt="" className="transition-transform duration-500 ease-in-out hover:scale-98 rounded-[15px]"/>
-                    <div className='flex items-center justify-between px-4'>
+                    <img src="/service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]"/>
+                    <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl pt-1'>Foxtera</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
                     </div>
@@ -87,8 +80,8 @@ function Animation() {
             </a>
             <a href="">
                 <div>
-                    <img src="/hero.png" alt="" className="transition-transform duration-500 ease-in-out hover:scale-98 rounded-[15px]" />
-                    <div className='flex items-center justify-between px-4'>
+                    <img src="/hero.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
+                    <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl pt-1'>Adam Vetere</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
                     </div>
@@ -96,8 +89,8 @@ function Animation() {
             </a>
             <a href="">
                 <div>
-                    <img src="/hero2.png" alt="" className="transition-transform duration-500 ease-in-out hover:scale-98 rounded-[15px]" />
-                    <div className='flex items-center justify-between px-4'>
+                    <img src="/hero2.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
+                    <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl pt-1'>Adam Vetere</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
                     </div>
@@ -105,8 +98,8 @@ function Animation() {
             </a>
             <a href="">
                 <div>
-                    <img src="/service.png" alt="" className="transition-transform duration-500 ease-in-out hover:scale-98 rounded-[15px]" />
-                    <div className='flex items-center justify-between px-4'>
+                    <img src="/service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
+                    <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl pt-1'>Adam Vetere</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
                     </div>

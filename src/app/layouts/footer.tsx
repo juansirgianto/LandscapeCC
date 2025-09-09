@@ -22,7 +22,7 @@ function Footer() {
                 <a href="">
                 <h1 className='text-[#d3d2a5] hover:text-white'>About</h1>
                 </a>
-                <a href="">
+                <a href="/services">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Services</h1>
                 </a>
                 <a href="">
@@ -37,16 +37,16 @@ function Footer() {
             </div>
             <div className='lg:text-lg md:text-base text-sm md:text-start text-center w-1/3'>
                 <h1 className='mb-5 text-white font-semibold '>Services</h1>
-                <a href="">
+                <a href="/services/3d">
                 <h1 className='text-[#d3d2a5] hover:text-white'>3D Visualisation</h1>
                 </a>
-                <a href="">
+                <a href="/services/animation">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Landscape Animation</h1>
                 </a>
-                <a href="">
+                <a href="/services/interactive">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Interactive Websites</h1>
                 </a>
-                <a href="">
+                <a href="/services/vr">
                 <h1 className='text-[#d3d2a5] hover:text-white'>VR & AR</h1>
                 </a>
                 <a href="">

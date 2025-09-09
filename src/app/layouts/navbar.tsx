@@ -63,7 +63,7 @@ export default function Navbar() {
               <DropdownItem href="/services/3d" title="3D Garden Visualisation" desc="3D Garden Visualisation Services | Photorealistic Landscape CGI" />
               <DropdownItem href="/services/animation" title="Landscape Animation" desc="Landscape Animation Services | Garden & Public Space Flythroughs" />
               <DropdownItem href="/services/interactive" title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
-              <DropdownItem title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
+              <DropdownItem href="/services/vr" title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
               <DropdownItem title="Site Hub" desc="Project hub & client handoffs." />
               <DropdownItem title="2D Landscape Drafting & Planning Packs" desc="Drawings, details, and packs." />
             </div>
@@ -125,7 +125,7 @@ export default function Navbar() {
               <DropdownItem href="/services/3d" title="3D Garden Visualisation" desc="3D Garden Visualisation Services | Photorealistic Landscape CGI" />
               <DropdownItem href="/services/animation" title="Landscape Animation" desc="Landscape Animation Services | Garden & Public Space Flythroughs" />
               <DropdownItem href="/services/interactive" title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
-              <DropdownItem title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
+              <DropdownItem href="/services/vr" title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
               <DropdownItem title="Site Hub" desc="Project hub & client handoffs." />
               <DropdownItem title="2D Landscape Drafting & Planning Packs" desc="Drawings, details, and packs." />
             </div>

@@ -43,14 +43,16 @@ function page() {
           Immersive visuals & approval-ready plans <br/> for outdoor spaces
           </h1>
           <p className='lg:text-xl md:text-base text-sm text-gray-300 mb-5 font-normal'>We help landscape architects, garden designers, and design-build firms bring their outdoor visions to life <br/> through cinematic garden visuals, photorealistic CGI, interactive tools, and lightning-fast 2D drafting support.</p>
+          <a href="#explore">
           <Button className="lg:text-2xl md:text-xl text-base rounded-full relative items-center bg-[#757741] font-bold md:!p-7 !p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
             Explore Services 
           <MoveRight strokeWidth={3}/>
           </Button>
+          </a>
         </div>
       </div>
       <Runninglogo/>
-      <div className='lg:py-8 lg:px-30 md:py-6 md:px-20 p-4'>      
+      <div id='explore'  className='lg:py-8 lg:px-30 md:py-6 md:px-20 p-4'>      
       <div className='flex justify-between items-center'>
         <div className='md:w-full w-[50%]'>
           <p className='bg-[#757741] w-fit md:py-2 md:px-4 px-2 py-1 rounded-[15px] text-white font-semibold mb-2'>Our Services</p>
@@ -60,7 +62,7 @@ function page() {
 If it supports your outdoor design — we can visualise it</h1>
       </div>
       <div className='lg:pt-8 md:pt-6 pt-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2'>
-        <a href="">
+        <a href="/services/3d">
           <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-4 transition-all duration-300 ease-in-out'>
             <img src="garden.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>3D Garden Visualisation</p>
@@ -68,7 +70,7 @@ If it supports your outdoor design — we can visualise it</h1>
             </div>
           </div>
         </a>
-        <a href="">
+        <a href="/services/animation">
           <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
             <img src="service.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>Landscape Animation</p>
@@ -76,7 +78,7 @@ If it supports your outdoor design — we can visualise it</h1>
             </div>
           </div>
         </a>
-        <a href="">
+        <a href="/services/interactive">
           <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
             <img src="master1.jpeg" alt="" className='lg:h-[25vh] h-[15vh] object-cover object-top rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>Interactive Project Website</p>
