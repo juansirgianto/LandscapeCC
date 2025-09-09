@@ -43,7 +43,7 @@ function page() {
           Immersive visuals & approval-ready plans <br/> for outdoor spaces
           </h1>
           <p className='lg:text-xl md:text-base text-sm text-gray-300 mb-5 font-normal'>We help landscape architects, garden designers, and design-build firms bring their outdoor visions to life <br/> through cinematic garden visuals, photorealistic CGI, interactive tools, and lightning-fast 2D drafting support.</p>
-          <Button className="lg:text-2xl md:text-xl text-base rounded-full relative items-center bg-[#757741] font-semibold md:!p-7 !p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
+          <Button className="lg:text-2xl md:text-xl text-base rounded-full relative items-center bg-[#757741] font-bold md:!p-7 !p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
             Explore Services 
           <MoveRight strokeWidth={3}/>
           </Button>
@@ -186,7 +186,7 @@ If it supports your outdoor design — we can visualise it</h1>
       <div className='relative text-center text-white lg:text-4xl md:text-2xl font-semibold md:top-2/3 top-1/2 -translate-y-1/2 '>
         <h1>Not sure where to start?</h1>
         <h1 className='mb-4'>Send us a sketch — we'll turn it into something ready to <br /> build, submit, or sell.</h1>
-        <Button className="lg:text-2xl md:text-lg rounded-full relative items-center bg-[#757741] font-semibold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
+        <Button className="lg:text-2xl md:text-lg rounded-full relative items-center bg-[#757741] font-bold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
           Start a Project 
         <MoveRight strokeWidth={3}/>
         </Button>

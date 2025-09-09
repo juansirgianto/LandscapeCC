@@ -45,9 +45,7 @@ export default function Navbar() {
               aria-haspopup="menu"
               aria-expanded={open}
             >
-              <a href="/services">
               <span>Services</span>
-              </a>
               <ChevronDown className={clsx("h-5 w-5 transition-transform duration-200", open && "rotate-180")} />
             </button>
 
@@ -64,7 +62,7 @@ export default function Navbar() {
               <a href="/services" className="col-span-2 mb-1 px-3 text-base underline hover:opacity-80">Services Overview →</a>
               <DropdownItem href="/services/3d" title="3D Garden Visualisation" desc="3D Garden Visualisation Services | Photorealistic Landscape CGI" />
               <DropdownItem href="/services/animation" title="Landscape Animation" desc="Landscape Animation Services | Garden & Public Space Flythroughs" />
-              <DropdownItem title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
+              <DropdownItem href="/services/interactive" title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
               <DropdownItem title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
               <DropdownItem title="Site Hub" desc="Project hub & client handoffs." />
               <DropdownItem title="2D Landscape Drafting & Planning Packs" desc="Drawings, details, and packs." />
@@ -112,9 +110,7 @@ export default function Navbar() {
               aria-expanded={mobileServices}
               aria-controls="mobile-services"
             >
-              <a href="/services">
               <span>Services</span>
-              </a>
               <ChevronDown className={clsx("h-5 w-5 transition-transform duration-200", mobileServices && "rotate-180")} />
             </button>
 
@@ -128,7 +124,7 @@ export default function Navbar() {
               <a href="/services" className="col-span-2 mb-1 px-3 text-base underline hover:opacity-80">Services Overview →</a>
               <DropdownItem href="/services/3d" title="3D Garden Visualisation" desc="3D Garden Visualisation Services | Photorealistic Landscape CGI" />
               <DropdownItem href="/services/animation" title="Landscape Animation" desc="Landscape Animation Services | Garden & Public Space Flythroughs" />
-              <DropdownItem title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
+              <DropdownItem href="/services/interactive" title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
               <DropdownItem title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
               <DropdownItem title="Site Hub" desc="Project hub & client handoffs." />
               <DropdownItem title="2D Landscape Drafting & Planning Packs" desc="Drawings, details, and packs." />

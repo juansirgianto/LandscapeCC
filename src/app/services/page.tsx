@@ -34,14 +34,14 @@ function Services() {
   return (
       <div>
         <Navbar/>
-          <div className='grid md:grid-cols-2 lg:px-30 md:px-20 px-4 mt-[90px] md:pt-8 pt-4 gap-4'>
+          <div className='grid md:grid-cols-2 lg:px-30 md:px-20 px-4 mt-[90px] md:pt-15 pt-4 gap-4'>
             <div className='flex flex-col'>
               <div className='md:pr-8'>
                 <h1 className='lg:text-5xl md:text-3xl text-xl font-semibold lg:mb-8 md:mb-4 mb-2'>Our Visualisation Services for Landscapes & Gardens</h1>
                 <p className='lg:text-lg md:text-sm text-xs md:mb-4 mb-2'>From cinematic renders to planning-ready drafts, our visualisation services are built to support landscape architects, garden designers, and outdoor-focused design professionals. Whether you're preparing for a client pitch, council submission, or design-build delivery — we have a tool for every stage.</p>
               </div>
-              <div className=''>
-                <img src="service.png" alt="" className='rounded-[15px]'/>
+              <div>
+                <img src="service.png" alt="" className='rounded-[15px] md:h-auto h-[20vh] w-full object-cover'/>
               </div>
             </div>
             <img src="hero2.png" alt="" className='md:flex hidden object-cover h-full rounded-[15px]' />
@@ -55,7 +55,7 @@ function Services() {
             <p className='font-semibold lg:text-3xl md:text-xl text-base text-white'>CGI Visualisation for Gardens & Landscapes</p>
             <div>
             <p className='text-white lg:text-lg md:text-sm text-xs mb-2'>Photorealistic garden CGI designed to capture planting texture, lighting, atmosphere, and form. <br /> Ideal for client approvals, tender documents, and marketing visuals.</p>
-            <Button className='bg-[#f5f4ea] text-black hover:bg-white hover:border-black hover:border-1 rounded-full lg:text-base md:text-sm text-xs font-semibold cursor-pointer'>Explore More
+            <Button className='bg-[#d3d2a5] text-[#757741] hover:bg-white  rounded-full lg:text-base md:text-sm text-xs font-bold cursor-pointer'>Explore More
               <MoveRight strokeWidth={3}/>
             </Button>
             </div>
@@ -70,7 +70,7 @@ function Services() {
             <p className='font-semibold lg:text-3xl md:text-xl text-base text-white'>Landscape Animation</p>
             <div>
             <p className='text-white lg:text-lg md:text-sm text-xs mb-2 text-end'>Bring your garden or landscape proposal to life with cinematic flythroughs and mood-driven clips. <br /> Perfect for emotionally engaging private clients or design competitions.</p>
-            <Button className='bg-[#f5f4ea] text-black hover:bg-white hover:border-black hover:border-1 rounded-full lg:text-base md:text-sm text-xs font-semibold cursor-pointer'>Explore More
+            <Button className='bg-[#d3d2a5] text-[#757741] hover:bg-white  rounded-full lg:text-base md:text-sm text-xs font-bold cursor-pointer'>Explore More
               <MoveRight strokeWidth={3}/>
             </Button>
             </div>
@@ -83,7 +83,7 @@ function Services() {
             <p className='font-semibold lg:text-3xl md:text-xl text-base text-white'>Interactive Project Website</p>
             <div>
             <p className='text-white lg:text-lg md:text-sm text-xs mb-2'>Transform large or complex outdoor sites into clickable, immersive walkthroughs. <br /> Let clients, stakeholders, or councils explore your project in-browser.</p>
-            <Button className='bg-[#f5f4ea] text-black hover:bg-white hover:border-black hover:border-1 rounded-full lg:text-base md:text-sm text-xs font-semibold cursor-pointer'>Explore More
+            <Button className='bg-[#d3d2a5] text-[#757741] hover:bg-white  rounded-full lg:text-base md:text-sm text-xs font-bold cursor-pointer'>Explore More
               <MoveRight strokeWidth={3}/>
             </Button>
             </div>
@@ -98,7 +98,7 @@ function Services() {
             <p className='font-semibold lg:text-3xl md:text-xl text-base text-white'>VR & AR for Gardens</p>
             <div>
             <p className='text-white lg:text-lg md:text-sm text-xs mb-2'>Review designs in real-time using VR headsets or tablet-based AR plans. <br /> Ideal for walk-throughs, council presentations, or public engagement events.</p>
-            <Button className='bg-[#f5f4ea] text-black hover:bg-white hover:border-black hover:border-1 rounded-full lg:text-base md:text-sm text-xs font-semibold cursor-pointer'>Explore More
+            <Button className='bg-[#d3d2a5] text-[#757741] hover:bg-white  rounded-full lg:text-base md:text-sm text-xs font-bold cursor-pointer'>Explore More
               <MoveRight strokeWidth={3}/>
             </Button>
             </div>
@@ -111,7 +111,7 @@ function Services() {
             <p className='font-semibold lg:text-3xl md:text-xl text-base text-white'>2D Drafting & Planning Packs</p>
             <div>
             <p className='text-white lg:text-lg md:text-sm text-xs mb-2'>Fast, flexible 2D drawing production based on your concepts. <br /> We build clean, clear layouts suitable for planning approval, contractor coordination, or presentation decks.</p>
-            <Button className='bg-[#f5f4ea] text-black hover:bg-white hover:border-black hover:border-1 rounded-full lg:text-base md:text-sm text-xs font-semibold cursor-pointer'>Explore More
+            <Button className='bg-[#d3d2a5] text-[#757741] hover:bg-white  rounded-full lg:text-base md:text-sm text-xs font-bold cursor-pointer'>Explore More
               <MoveRight strokeWidth={3}/>
             </Button>
             </div>
@@ -126,7 +126,7 @@ function Services() {
         <div className='relative text-center text-white lg:text-4xl md:text-2xl font-semibold md:top-2/3 top-1/2 -translate-y-1/2 '>
           <h1>Not sure what service you need?</h1>
           <h1 className='mb-4'>Send us your sketch, plan, or brief — and we'll recommend the right mix <br /> of visuals to move your project forward.</h1>
-          <Button className="lg:text-2xl md:text-lg rounded-full relative items-center bg-[#757741] font-semibold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
+          <Button className="lg:text-2xl md:text-lg rounded-full relative items-center bg-[#757741] font-bold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
             Start a Project 
           <MoveRight strokeWidth={3}/>
           </Button>

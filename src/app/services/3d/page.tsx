@@ -9,11 +9,11 @@ function Cgi() {
   return (
     <div>
         <Navbar/>
-        <div className='mt-[90px] grid grid-cols-2 lg:px-30 md:px-10 px-4 lg:pt-15 md:pt-10 pt-4 items-center'>
+        <div className='mt-[90px] grid grid-cols-2 lg:p-30 md:p-10 p-4 items-center bg-[#757741] text-white'>
             <div className='lg:pr-20'>
             <h1 className='lg:text-5xl md:text-3xl text-xl font-semibold mb-4'>Bring your landscape design to life through cinematic, photorealistic CGI.</h1>
-            <Button className="lg:text-xl md:text-base rounded-full relative items-center bg-[#757741] font-semibold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
-                Start a Project 
+            <Button className="lg:text-xl md:text-base rounded-full relative items-center bg-[#d3d2a5] text-[#757741] font-bold lg:!p-7 md:!p-5 cursor-pointer hover:bg-white hover:text-[#757741]">
+                Start a Project
             <MoveRight strokeWidth={3}/>
             </Button>
             </div>
@@ -73,26 +73,26 @@ function Cgi() {
         <Runninglogo/>
         <div className='lg:px-30 md:px-10 px-4 grid md:grid-cols-2 lg:py-8 md:py-6 py-4 lg:gap-8 md:gap-4 items-center'>
             <div className='lg:pr-30 md:mb-0 mb-4'>
-                <h1 className='lg:text-3xl md:text-xl text-base font-semibold mb-4'>Process Overview</h1>
-                <h1 className='lg:text-lg md:text-sm text-xs text-gray-500 mb-4'>Photorealistic CGI helps your clients, councils, and collaborators fully understand your design before it's built. From luxury garden projects to civic plazas and commercial streetscapes, our visuals communicate spatial intent, planting, and materiality with clarity — accelerating buy-in and streamlining decision-making across residential, commercial, and public sectors.</h1>
-                <Button className="lg:text-xl md:text-base rounded-full relative items-center bg-[#757741] font-semibold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
+                <h1 className='lg:text-3xl md:text-xl text-lg font-semibold mb-4'>Process Overview</h1>
+                <h1 className='lg:text-lg md:text-sm text-sm text-gray-500 md:mb-4'>Photorealistic CGI helps your clients, councils, and collaborators fully understand your design before it's built. From luxury garden projects to civic plazas and commercial streetscapes, our visuals communicate spatial intent, planting, and materiality with clarity — accelerating buy-in and streamlining decision-making across residential, commercial, and public sectors.</h1>
+                <Button className="hidden md:flex lg:text-xl md:text-base rounded-full relative items-center bg-[#757741] font-semibold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
                 Contact Us
                 </Button>
             </div>
             <div className='flex flex-col gap-2 lg:ml-30'>
-                <div className='flex bg-[#f5f4ea] px-4 py-2 rounded-full items-center gap-5 lg:text-xl md:text-base text-xs'>
+                <div className='flex bg-[#f5f4ea] px-4 py-2 rounded-full items-center gap-5 lg:text-xl md:text-base text-sm'>
                     <h1 className='bg-[#757741] md:px-4.5 md:py-2 px-2.5 py-1 rounded-full text-white'>1</h1>
                     <h1>Send us your sketch, CAD, or concept</h1>
                 </div>
-                <div className='flex bg-[#f5f4ea] px-4 py-2 rounded-full items-center gap-5 lg:text-xl md:text-base text-xs'>
+                <div className='flex bg-[#f5f4ea] px-4 py-2 rounded-full items-center gap-5 lg:text-xl md:text-base text-sm'>
                     <h1 className='bg-[#757741] md:px-4.5 md:py-2 px-2.5 py-1 rounded-full text-white'>2</h1>
                     <h1>We confirm camera angles + model detail</h1>
                 </div>
-                <div className='flex bg-[#f5f4ea] px-4 py-2 rounded-full items-center gap-5 lg:text-xl md:text-base text-xs'>
+                <div className='flex bg-[#f5f4ea] px-4 py-2 rounded-full items-center gap-5 lg:text-xl md:text-base text-sm'>
                     <h1 className='bg-[#757741] md:px-4.5 md:py-2 px-2.5 py-1 rounded-full text-white'>3</h1>
                     <h1>Draft render review + client feedback</h1>
                 </div>
-                <div className='flex bg-[#f5f4ea] px-4 py-2 rounded-full items-center gap-5 lg:text-xl md:text-base text-xs'>
+                <div className='flex bg-[#f5f4ea] px-4 py-2 rounded-full items-center gap-5 lg:text-xl md:text-base text-sm'>
                     <h1 className='bg-[#757741] md:px-4.5 md:py-2 px-2.5 py-1 rounded-full text-white'>4</h1>
                     <h1>Final delivery in high-res format</h1>
                 </div>
@@ -137,7 +137,6 @@ function Cgi() {
                 </div>
             </a>
         </div>
-        <div></div>
         <div style={{ backgroundImage: "url('/room.jpg')" }} className='relative md:h-[80vh] h-[50vh] bg-center bg-cover'>
             <div className="absolute inset-0 bg-black/60 z-0" />
             <div className='relative text-center text-white lg:text-4xl md:text-2xl font-semibold md:top-2/3 top-1/2 -translate-y-1/2 '>
