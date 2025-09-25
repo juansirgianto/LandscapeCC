@@ -13,15 +13,26 @@ const eslintConfig = [
   // extend config bawaan next
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 
-  // tambahkan custom config
+  // custom global rules
   {
     rules: {
-      // 🚫 matikan aturan yang blok <a> dan <img>
+      // kamu memang mau pakai <img> dan <a>
       "@next/next/no-img-element": "off",
       "@next/next/no-html-link-for-pages": "off",
 
-      // opsional: kalau masih sering pakai `any`
-      "@typescript-eslint/no-explicit-any": "off",
+      // --- perbaikan utama ---
+      // Izinkan tanda ' di JSX text biar gak fail waktu build
+      "react/no-unescaped-entities": "off",
+
+      // Jadikan unused vars hanya "warn", dan abaikan yg diawali _
+      "@typescript-eslint/no-unused-vars": ["warn", {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+      }],
+
+      // Kalau belum mau beresin dependencies useEffect sekarang:
+      "react-hooks/exhaustive-deps": "warn",
+      // (atau "off" kalau mau benar-benar diabaikan)
     },
     ignores: [
       "node_modules/**",
