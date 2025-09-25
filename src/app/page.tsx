@@ -15,28 +15,28 @@ function page() {
         "If I could give 6 stars, then I would! Christy, Daniel and everyone involved at CC are fantastic. The service they provide is quick, fast efficient and above all else, the concepts they convey are just stunning....period! I will be collaborating with them in the future, that's for sure.",
       name: "Adam Vetere",
       designation: "Adam Vetere Landscape & Garden Design",
-      src: "av.png",
+      src: "https://designedbypelago.com/wp-content/uploads/2025/09/av.png",
     },
     {
       quote:
         "Christy and his team were brilliant in turning our design into a 3D visual. It proved invaluable to our clients who are in the middle of a vast house and garden renovation project, as it enabled them to visualise the finished garden on a muddy construction site. We will definitely be using concepts conveyed for future projects.",
       name: "Nic Howard",
       designation: "We Love Plants",
-      src: "wlp.png",
+      src: "https://designedbypelago.com/wp-content/uploads/2025/09/wlp.png",
     },
     {
       quote:
         "Superb service - they have a super fast turnaround and great communication throughout. Delighted with the finished renders - thank you!",
       name: "Pollyanna Wilkinson",
       designation: "Studio Pollyanna",
-      src: "poly.png",
+      src: "https://designedbypelago.com/wp-content/uploads/2025/09/poly.png",
     },
   ];
 
   return (
     <div>
       <Navbar/>
-      <div style={{ backgroundImage: "url('hero.png')" }} className='relative bg-cover bg-center h-[100vh]'>
+      <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/09/hero.png')" }} className='relative bg-cover bg-center h-[100vh]'>
         <div className="absolute inset-0 bg-black/60 z-0" />  {/* overlay hitam transparan */}
         <div className='relative text-center text-white lg:text-5xl md:text-3xl text-xl font-semibold top-1/2 -translate-y-1/2 md:px-0 px-2'>
           <h1 className='mb-5'>
@@ -64,7 +64,7 @@ If it supports your outdoor design — we can visualise it</h1>
       <div className='lg:pt-8 md:pt-6 pt-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2'>
         <a href="/services/3d">
           <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-4 transition-all duration-300 ease-in-out'>
-            <img src="garden.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
+            <img src="https://designedbypelago.com/wp-content/uploads/2025/09/garden.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>3D Garden Visualisation</p>
             <div className=''>
             </div>
@@ -72,7 +72,7 @@ If it supports your outdoor design — we can visualise it</h1>
         </a>
         <a href="/services/animation">
           <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
-            <img src="service.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
+            <img src="https://designedbypelago.com/wp-content/uploads/2025/09/service.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>Landscape Animation</p>
             <div className=''>
             </div>
@@ -80,7 +80,7 @@ If it supports your outdoor design — we can visualise it</h1>
         </a>
         <a href="/services/interactive">
           <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
-            <img src="master1.jpeg" alt="" className='lg:h-[25vh] h-[15vh] object-cover object-top rounded-[15px]' />
+            <img src="https://designedbypelago.com/wp-content/uploads/2025/09/master1.jpeg" alt="" className='lg:h-[25vh] h-[15vh] object-cover object-top rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>Interactive Project Website</p>
             <div className=''>
             </div>
@@ -88,7 +88,7 @@ If it supports your outdoor design — we can visualise it</h1>
         </a>
         <a href="">
           <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
-            <img src="aerial.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
+            <img src="https://designedbypelago.com/wp-content/uploads/2025/09/aerial.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>VR & AR for Landscape Projects</p>
             <div className=''>
             </div>
@@ -96,7 +96,7 @@ If it supports your outdoor design — we can visualise it</h1>
         </a>
         <a href="">
           <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
-            <img src="garden.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
+            <img src="https://designedbypelago.com/wp-content/uploads/2025/09/garden.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>Site Hub</p>
             <div className=''>
             </div>
@@ -104,7 +104,7 @@ If it supports your outdoor design — we can visualise it</h1>
         </a>
         <a href="">
           <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
-            <img src="service.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
+            <img src="https://designedbypelago.com/wp-content/uploads/2025/09/service.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>2D Landscape Drafting & Planning</p>
             <div className=''>
             </div>

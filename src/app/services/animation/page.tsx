@@ -19,7 +19,7 @@ function Animation() {
                 <MoveRight strokeWidth={3}/>
                 </Button>
             </div>
-            <img src="/service.png" alt="" className='lg:h-[80vh] md:h-[60vh] object-cover hidden md:flex' />
+            <img src="https://designedbypelago.com/wp-content/uploads/2025/09/service.png" alt="" className='lg:h-[80vh] md:h-[60vh] object-cover hidden md:flex' />
         </div>
         <Runninglogo/>
         <h1 className='text-center lg:text-5xl md:text-3xl text-xl lg:py-15 md:py-10 py-4 font-semibold'>What's Included</h1>
@@ -71,7 +71,7 @@ function Animation() {
         <div className='grid md:grid-cols-2 md:gap-4 gap-2 px-10 lg:pb-15 md:pb-10 pb-4'>
             <a href="">
                 <div>
-                    <img src="/service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]"/>
+                    <img src="https://designedbypelago.com/wp-content/uploads/2025/09/service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]"/>
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl pt-1'>Foxtera</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
@@ -80,7 +80,7 @@ function Animation() {
             </a>
             <a href="">
                 <div>
-                    <img src="/hero.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
+                    <img src="https://designedbypelago.com/wp-content/uploads/2025/09/hero.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl pt-1'>Adam Vetere</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
@@ -89,7 +89,7 @@ function Animation() {
             </a>
             <a href="">
                 <div>
-                    <img src="/hero2.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
+                    <img src="https://designedbypelago.com/wp-content/uploads/2025/09/hero2.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl pt-1'>Adam Vetere</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
@@ -98,7 +98,7 @@ function Animation() {
             </a>
             <a href="">
                 <div>
-                    <img src="/service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
+                    <img src="https://designedbypelago.com/wp-content/uploads/2025/09/service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl pt-1'>Adam Vetere</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>

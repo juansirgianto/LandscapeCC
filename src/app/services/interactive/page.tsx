@@ -68,7 +68,7 @@ function Interactive() {
         <div className='grid md:grid-cols-2 md:gap-4 gap-2 px-10 lg:pb-15 md:pb-10 pb-4'>
             <a href="https://juansirgianto.github.io/Demo01/">
                 <div>
-                    <img src="/service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]"/>
+                    <img src="https://designedbypelago.com/wp-content/uploads/2025/09/service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]"/>
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl pt-1'>Demo01</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
@@ -77,7 +77,7 @@ function Interactive() {
             </a>
             <a href="https://juansirgianto.github.io/Demo02/">
                 <div>
-                    <img src="/hero.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
+                    <img src="https://designedbypelago.com/wp-content/uploads/2025/09/hero.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl pt-1'>Demo02</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
@@ -86,7 +86,7 @@ function Interactive() {
             </a>
             <a href="https://juansirgianto.github.io/Demo03/">
                 <div>
-                    <img src="/hero2.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
+                    <img src="https://designedbypelago.com/wp-content/uploads/2025/09/hero2.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl pt-1'>Demo03</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
@@ -95,7 +95,7 @@ function Interactive() {
             </a>
             <a href="https://juansirgianto.github.io/MAIL/">
                 <div>
-                    <img src="/master1.jpeg" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
+                    <img src="https://designedbypelago.com/wp-content/uploads/2025/09/master1.jpeg" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl pt-1'>MAIL</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>

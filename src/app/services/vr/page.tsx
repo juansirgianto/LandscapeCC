@@ -10,7 +10,7 @@ function Vr() {
     <div>
         <Navbar/>
         <div className='mt-[90px] grid md:grid-cols-2'>
-            <img src="/garden.jpg" alt="" className='lg:h-[80vh] md:h-[60vh] object-cover hidden md:flex' />
+            <img src="https://designedbypelago.com/wp-content/uploads/2025/09/garden.jpg" alt="" className='lg:h-[80vh] md:h-[60vh] object-cover hidden md:flex' />
             <div className='bg-[#757741] lg:h-[80vh] md:h-[60vh] lg:p-30 md:p-10 p-10 flex flex-col justify-center md:gap-8 gap-4 text-white'>
                 <h1 className='lg:text-5xl md:text-3xl text-xl font-semibold'>High-tech overlays and immersive review tools for unbuilt outdoor spaces</h1>
                 <h1 className='lg:text-xl md:text-base text-sm'>Our VR and AR services help you communicate unbuilt designs through immersive, easy-to-access experiences. Whether you need to walk a client through a large estate, help a council review a civic upgrade, or sell a resort vision remotely — these tools bring your landscape to life.</h1>
@@ -82,7 +82,7 @@ function Vr() {
         <div className='grid md:grid-cols-2 md:gap-4 gap-2 px-10 lg:pb-15 md:pb-10 pb-4'>
             <a href="">
                 <div>
-                    <img src="/service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]"/>
+                    <img src="https://designedbypelago.com/wp-content/uploads/2025/09/service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]"/>
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl'>Foxtera</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
@@ -91,7 +91,7 @@ function Vr() {
             </a>
             <a href="">
                 <div>
-                    <img src="/hero.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
+                    <img src="https://designedbypelago.com/wp-content/uploads/2025/09/hero.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl'>Adam Vetere</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
@@ -100,7 +100,7 @@ function Vr() {
             </a>
             <a href="">
                 <div>
-                    <img src="/hero2.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
+                    <img src="https://designedbypelago.com/wp-content/uploads/2025/09/hero2.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl'>Adam Vetere</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
@@ -109,7 +109,7 @@ function Vr() {
             </a>
             <a href="">
                 <div>
-                    <img src="/service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
+                    <img src="https://designedbypelago.com/wp-content/uploads/2025/09/service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl'>Adam Vetere</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>

@@ -27,7 +27,7 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 z-50 w-full bg-[#f5f4ea] border-b">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="/LandscapeCC/"><img src="./logo.png" alt="Logo" className="w-40" /></a>
+        <a href="/LandscapeCC/"><img src="https://designedbypelago.com/wp-content/uploads/2025/09/logo-e1758792173542.png" alt="Logo" className="w-40" /></a>
 
         {/* NAV DESKTOP */}
         <nav className="hidden lg:flex items-center gap-8 font-bold text-lg text-black">
