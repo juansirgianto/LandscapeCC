@@ -59,11 +59,11 @@ export default function Navbar() {
               )}
               role="menu"
             >
-              <a href="/services" className="col-span-2 mb-1 px-3 text-base underline hover:opacity-80">Services Overview →</a>
-              <DropdownItem href="/services/3d" title="3D Garden Visualisation" desc="3D Garden Visualisation Services | Photorealistic Landscape CGI" />
-              <DropdownItem href="/services/animation" title="Landscape Animation" desc="Landscape Animation Services | Garden & Public Space Flythroughs" />
-              <DropdownItem href="/services/interactive" title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
-              <DropdownItem href="/services/vr" title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
+              <a href="/LandscapeCC/services" className="col-span-2 mb-1 px-3 text-base underline hover:opacity-80">Services Overview →</a>
+              <DropdownItem href="/LandscapeCC/services/3d" title="3D Garden Visualisation" desc="3D Garden Visualisation Services | Photorealistic Landscape CGI" />
+              <DropdownItem href="/LandscapeCC/services/animation" title="Landscape Animation" desc="Landscape Animation Services | Garden & Public Space Flythroughs" />
+              <DropdownItem href="/LandscapeCC/services/interactive" title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
+              <DropdownItem href="/LandscapeCC/services/vr" title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
               <DropdownItem title="Site Hub" desc="Project hub & client handoffs." />
               <DropdownItem title="2D Landscape Drafting & Planning Packs" desc="Drawings, details, and packs." />
             </div>
@@ -121,11 +121,11 @@ export default function Navbar() {
                 mobileServices ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
               )}
             >
-              <a href="/services" className="col-span-2 mb-1 px-3 text-base underline hover:opacity-80">Services Overview →</a>
-              <DropdownItem href="/services/3d" title="3D Garden Visualisation" desc="3D Garden Visualisation Services | Photorealistic Landscape CGI" />
-              <DropdownItem href="/services/animation" title="Landscape Animation" desc="Landscape Animation Services | Garden & Public Space Flythroughs" />
-              <DropdownItem href="/services/interactive" title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
-              <DropdownItem href="/services/vr" title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
+              <a href="/LandscapeCC/services" className="col-span-2 mb-1 px-3 text-base underline hover:opacity-80">Services Overview →</a>
+              <DropdownItem href="/LandscapeCC/services/3d" title="3D Garden Visualisation" desc="3D Garden Visualisation Services | Photorealistic Landscape CGI" />
+              <DropdownItem href="/LandscapeCC/services/animation" title="Landscape Animation" desc="Landscape Animation Services | Garden & Public Space Flythroughs" />
+              <DropdownItem href="/LandscapeCC/services/interactive" title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
+              <DropdownItem href="/LandscapeCC/services/vr" title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
               <DropdownItem title="Site Hub" desc="Project hub & client handoffs." />
               <DropdownItem title="2D Landscape Drafting & Planning Packs" desc="Drawings, details, and packs." />
             </div>
