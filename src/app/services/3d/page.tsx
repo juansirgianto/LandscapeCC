@@ -102,7 +102,7 @@ function Cgi() {
         <div className='grid md:grid-cols-2 md:gap-4 gap-2 px-10 lg:pb-15 md:pb-10 pb-4'>
             <a href="">
                 <div>
-                    <img src="/service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]"/>
+                    <img src="./service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]"/>
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl'>Foxtera</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
@@ -111,7 +111,7 @@ function Cgi() {
             </a>
             <a href="">
                 <div>
-                    <img src="/hero.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
+                    <img src="./hero.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl'>Adam Vetere</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
@@ -120,7 +120,7 @@ function Cgi() {
             </a>
             <a href="">
                 <div>
-                    <img src="/hero2.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
+                    <img src="./hero2.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl'>Adam Vetere</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
@@ -129,7 +129,7 @@ function Cgi() {
             </a>
             <a href="">
                 <div>
-                    <img src="/service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
+                    <img src="./service.png" alt="" className="transition-transform duration-500 ease-in-out lg:h-[50vh] md:h-[25vh] object-cover w-full hover:scale-98 rounded-[15px]" />
                     <div className='flex items-center md:justify-between justify-center gap-2 px-4'>
                         <h1 className='lg:text-3xl md:text-xl'>Adam Vetere</h1>
                         <MoveRight strokeWidth={2} className='lg:size-6 size-4'/>
