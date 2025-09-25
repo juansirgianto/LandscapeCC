@@ -13,21 +13,21 @@ function Services() {
         "If I could give 6 stars, then I would! Christy, Daniel and everyone involved at CC are fantastic. The service they provide is quick, fast efficient and above all else, the concepts they convey are just stunning....period! I will be collaborating with them in the future, that's for sure.",
       name: "Adam Vetere",
       designation: "Adam Vetere Landscape & Garden Design",
-      src: "av.png",
+      src: "/av.png",
     },
     {
       quote:
         "Christy and his team were brilliant in turning our design into a 3D visual. It proved invaluable to our clients who are in the middle of a vast house and garden renovation project, as it enabled them to visualise the finished garden on a muddy construction site. We will definitely be using concepts conveyed for future projects.",
       name: "Nic Howard",
       designation: "We Love Plants",
-      src: "wlp.png",
+      src: "/wlp.png",
     },
     {
       quote:
         "Superb service - they have a super fast turnaround and great communication throughout. Delighted with the finished renders - thank you!",
       name: "Pollyanna Wilkinson",
       designation: "Studio Pollyanna",
-      src: "poly.png",
+      src: "/poly.png",
     },
   ];
 
@@ -41,15 +41,15 @@ function Services() {
                 <p className='lg:text-lg md:text-sm text-xs md:mb-4 mb-2'>From cinematic renders to planning-ready drafts, our visualisation services are built to support landscape architects, garden designers, and outdoor-focused design professionals. Whether you're preparing for a client pitch, council submission, or design-build delivery — we have a tool for every stage.</p>
               </div>
               <div>
-                <img src="service.png" alt="" className='rounded-[15px] md:h-auto h-[20vh] w-full object-cover'/>
+                <img src="/service.png" alt="" className='rounded-[15px] md:h-auto h-[20vh] w-full object-cover'/>
               </div>
             </div>
-            <img src="hero2.png" alt="" className='md:flex hidden object-cover h-full rounded-[15px]' />
+            <img src="/hero2.png" alt="" className='md:flex hidden object-cover h-full rounded-[15px]' />
           </div>
           <Runninglogo/>
           <h1 className='text-center lg:text-5xl text-3xl lg:py-8 md:py-6 py-4 font-semibold'>Services Overview</h1>
         <div className='lg:px-30 md:px-20 px-4 flex flex-col gap-3 pb-8'>
-      <a href="/3d">
+      <a href="/LandscapeCC/3d">
         <div className='bg-[#757741] w-full rounded-[15px] flex p-2 hover:ml-2 transition-all duration-300 ease-in-out'>
           <div className='flex flex-col justify-between p-5 w-[60%]'>
             <p className='font-semibold lg:text-3xl md:text-xl text-base text-white'>CGI Visualisation for Gardens & Landscapes</p>
@@ -60,12 +60,12 @@ function Services() {
             </Button>
             </div>
           </div>
-          <img src="garden.jpg" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
+          <img src="/garden.jpg" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
         </div>
       </a>
       <a href="">
         <div className='bg-[#757741] w-full rounded-[15px] flex p-2 hover:ml-2 transition-all duration-300 ease-in-out'>
-          <img src="service.png" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
+          <img src="/service.png" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
           <div className='flex flex-col justify-between p-5 w-[60%] text-end'>
             <p className='font-semibold lg:text-3xl md:text-xl text-base text-white'>Landscape Animation</p>
             <div>
@@ -88,12 +88,12 @@ function Services() {
             </Button>
             </div>
           </div>
-          <img src="aerial.png" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
+          <img src="/aerial.png" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
         </div>
       </a>
       <a href="">
         <div className='bg-[#757741] w-full rounded-[15px] flex p-2 hover:ml-2 transition-all duration-300 ease-in-out'>
-          <img src="garden.jpg" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
+          <img src="/garden.jpg" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
           <div className='flex flex-col justify-between p-5 w-[60%] text-end'>
             <p className='font-semibold lg:text-3xl md:text-xl text-base text-white'>VR & AR for Gardens</p>
             <div>
@@ -116,7 +116,7 @@ function Services() {
             </Button>
             </div>
           </div>
-          <img src="service.png" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
+          <img src="/service.png" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
         </div>
       </a>
       </div>
