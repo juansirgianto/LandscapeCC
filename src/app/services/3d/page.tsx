@@ -22,7 +22,7 @@ function Cgi() {
         <Runninglogo/>
         <h1 className='text-center lg:text-5xl md:text-3xl text-xl lg:py-15 md:py-10 py-4 font-semibold'>What's Included</h1>
         <div className='lg:px-30 md:px-10 px-4 grid md:grid-cols-3 grid-cols-2 md:gap-4 gap-2'>
-            <div style={{ backgroundImage: "url('/hero.png')" }} className='relative bg-cover bg-center md:h-[30vh] h-[20vh] rounded-[15px]'>
+            <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/09/hero.png')" }} className='relative bg-cover bg-center md:h-[30vh] h-[20vh] rounded-[15px]'>
                 <div className="absolute inset-0 bg-black/60 z-0 rounded-[15px]" />  {/* overlay hitam transparan */}
                 <div className='relative text-center text-white lg:text-3xl md:text-xl text-base font-semibold top-1/2 -translate-y-1/2 px-2'>
                     <h1 className='mb-5'>
@@ -30,7 +30,7 @@ function Cgi() {
                     </h1>
                 </div>
             </div>
-            <div style={{ backgroundImage: "url('/hero2.png')" }} className='relative bg-cover bg-center md:h-[30vh] h-[20vh] rounded-[15px]'>
+            <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/09/hero2.png')" }} className='relative bg-cover bg-center md:h-[30vh] h-[20vh] rounded-[15px]'>
                 <div className="absolute inset-0 bg-black/60 z-0 rounded-[15px]" />  {/* overlay hitam transparan */}
                 <div className='relative text-center text-white lg:text-3xl md:text-xl text-base font-semibold top-1/2 -translate-y-1/2 px-2'>
                     <h1 className='mb-5'>
@@ -38,7 +38,7 @@ function Cgi() {
                     </h1>
                 </div>
             </div>
-            <div style={{ backgroundImage: "url('/service.png')" }} className='relative bg-cover bg-center md:h-[30vh] h-[20vh] rounded-[15px]'>
+            <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/09/service.png')" }} className='relative bg-cover bg-center md:h-[30vh] h-[20vh] rounded-[15px]'>
                 <div className="absolute inset-0 bg-black/60 z-0 rounded-[15px]" />  {/* overlay hitam transparan */}
                 <div className='relative text-center text-white lg:text-3xl md:text-xl text-base font-semibold top-1/2 -translate-y-1/2 px-2'>
                     <h1 className='mb-5'>
@@ -46,7 +46,7 @@ function Cgi() {
                     </h1>
                 </div>
             </div>
-            <div style={{ backgroundImage: "url('/hero2.png')" }} className='relative bg-cover bg-center md:h-[30vh] h-[20vh] rounded-[15px]'>
+            <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/09/hero2.png')" }} className='relative bg-cover bg-center md:h-[30vh] h-[20vh] rounded-[15px]'>
                 <div className="absolute inset-0 bg-black/60 z-0 rounded-[15px]" />  {/* overlay hitam transparan */}
                 <div className='relative text-center text-white lg:text-3xl md:text-xl text-base font-semibold top-1/2 -translate-y-1/2 px-2'>
                     <h1 className='mb-5'>
@@ -54,7 +54,7 @@ function Cgi() {
                     </h1>
                 </div>
             </div>
-            <div style={{ backgroundImage: "url('/service.png')" }} className='relative bg-cover bg-center md:h-[30vh] h-[20vh] rounded-[15px]'>
+            <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/09/service.png')" }} className='relative bg-cover bg-center md:h-[30vh] h-[20vh] rounded-[15px]'>
                 <div className="absolute inset-0 bg-black/60 z-0 rounded-[15px]" />  {/* overlay hitam transparan */}
                 <div className='relative text-center text-white lg:text-3xl md:text-xl text-base font-semibold top-1/2 -translate-y-1/2 px-2'>
                     <h1 className='mb-5'>
@@ -62,7 +62,7 @@ function Cgi() {
                     </h1>
                 </div>
             </div>
-            <div style={{ backgroundImage: "url('/hero.png')" }} className='relative bg-cover bg-center md:h-[30vh] h-[20vh] rounded-[15px]'>
+            <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/09/hero.png')" }} className='relative bg-cover bg-center md:h-[30vh] h-[20vh] rounded-[15px]'>
                 <div className="absolute inset-0 bg-black/60 z-0 rounded-[15px]" />  {/* overlay hitam transparan */}
                 <div className='relative text-center text-white lg:text-3xl md:text-xl text-base font-semibold top-1/2 -translate-y-1/2 px-2'>
                     <h1 className='mb-5'>
@@ -137,7 +137,7 @@ function Cgi() {
                 </div>
             </a>
         </div>
-        <div style={{ backgroundImage: "url('/room.jpg')" }} className='relative md:h-[80vh] h-[50vh] bg-center bg-cover'>
+        <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/09/room.jpg')" }} className='relative md:h-[80vh] h-[50vh] bg-center bg-cover'>
             <div className="absolute inset-0 bg-black/60 z-0" />
             <div className='relative text-center text-white lg:text-4xl md:text-2xl font-semibold md:top-2/3 top-1/2 -translate-y-1/2 '>
                 <h1 className='mb-4'>Let's bring your garden design to life.</h1>

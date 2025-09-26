@@ -117,7 +117,7 @@ function Vr() {
                 </div>
             </a>
         </div>
-        <div style={{ backgroundImage: "url('/room.jpg')" }} className='relative md:h-[80vh] h-[50vh] bg-center bg-cover'>
+        <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/09/room.jpg')" }} className='relative md:h-[80vh] h-[50vh] bg-center bg-cover'>
             <div className="absolute inset-0 bg-black/60 z-0" />
             <div className='relative text-center text-white lg:text-4xl md:text-2xl font-semibold md:top-2/3 top-1/2 -translate-y-1/2 '>
             <h1 className='mb-4'>Want to present your landscape in <br /> immersive AR or VR?</h1>
