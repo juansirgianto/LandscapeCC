@@ -10,7 +10,7 @@ function Interactive() {
   return (
     <div>
         <Navbar/>
-        <div className='mt-[90px] text-center lg:p-30 md:p-10 p-10 font-semibold bg-[#757741] text-white'>
+        <div className='mt-[73px] text-center lg:p-30 md:p-10 p-10 font-semibold bg-[#757741] text-white'>
             <h1 className='lg:text-5xl md:text-3xl text-xl mb-4'>Let clients explore your landscape design online <br /> from any device</h1>
             <p className='mb-4 lg:text-lg md:text-base text-sm'>Interactive project websites transform your landscape design <br /> into a digital experience your clients, stakeholders, and councils can explore at their own pace.</p>
             <Button className="lg:text-xl md:text-base text-sm rounded-full relative items-center bg-[#d3d2a5] text-[#757741] w-fit font-bold lg:!p-7 md:!p-5 cursor-pointer hover:bg-white hover:text-[#757741]">

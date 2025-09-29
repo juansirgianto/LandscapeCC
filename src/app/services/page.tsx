@@ -34,7 +34,7 @@ function Services() {
   return (
       <div>
         <Navbar/>
-          <div className='grid md:grid-cols-2 lg:px-30 md:px-20 px-4 mt-[90px] md:pt-15 pt-4 gap-4'>
+          <div className='grid md:grid-cols-2 lg:px-30 md:px-20 px-4 mt-[73px] md:pt-15 pt-4 gap-4'>
             <div className='flex flex-col'>
               <div className='md:pr-8'>
                 <h1 className='lg:text-5xl md:text-3xl text-xl font-semibold lg:mb-8 md:mb-4 mb-2'>Our Visualisation Services for Landscapes & Gardens</h1>

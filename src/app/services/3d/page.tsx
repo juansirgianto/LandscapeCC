@@ -9,7 +9,7 @@ function Cgi() {
   return (
     <div>
         <Navbar/>
-        <div className='mt-[90px] grid grid-cols-2 lg:p-30 md:p-10 p-4 items-center bg-[#757741] text-white'>
+        <div className='mt-[73px] grid grid-cols-2 lg:p-30 md:p-10 p-4 items-center bg-[#757741] text-white'>
             <div className='lg:pr-20'>
             <h1 className='lg:text-5xl md:text-3xl text-xl font-semibold mb-4'>Bring your landscape design to life through cinematic, photorealistic CGI.</h1>
             <Button className="lg:text-xl md:text-base rounded-full relative items-center bg-[#d3d2a5] text-[#757741] font-bold lg:!p-7 md:!p-5 cursor-pointer hover:bg-white hover:text-[#757741]">

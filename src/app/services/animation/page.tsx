@@ -10,7 +10,7 @@ function Animation() {
   return (
     <div>
         <Navbar/>
-        <div className='mt-[90px] grid md:grid-cols-2'>
+        <div className='mt-[73px] grid md:grid-cols-2'>
             <div className='bg-[#757741] lg:h-[80vh] md:h-[60vh] lg:p-30 md:p-10 p-10 flex flex-col justify-center md:gap-8 gap-4 text-white'>
                 <h1 className='lg:text-5xl md:text-3xl text-xl font-semibold'>Let your clients walk through the space before it's built</h1>
                 <h1 className='lg:text-xl md:text-base text-sm'>Our landscape animation services transform your designs into immersive, cinematic motion clips — helping clients, councils, and collaborators visualise space as it evolves. Whether you're pitching a private garden, public realm upgrade, or commercial outdoor project, animation provides a persuasive storytelling tool for both emotion and clarity.</h1>

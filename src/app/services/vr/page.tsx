@@ -9,7 +9,7 @@ function Vr() {
   return (
     <div>
         <Navbar/>
-        <div className='mt-[90px] grid md:grid-cols-2'>
+        <div className='mt-[73px] grid md:grid-cols-2'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/09/garden.jpg" alt="" className='lg:h-[80vh] md:h-[60vh] object-cover hidden md:flex' />
             <div className='bg-[#757741] lg:h-[80vh] md:h-[60vh] lg:p-30 md:p-10 p-10 flex flex-col justify-center md:gap-8 gap-4 text-white'>
                 <h1 className='lg:text-5xl md:text-3xl text-xl font-semibold'>High-tech overlays and immersive review tools for unbuilt outdoor spaces</h1>
