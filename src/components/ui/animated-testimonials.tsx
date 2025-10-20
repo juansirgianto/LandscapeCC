@@ -3,7 +3,7 @@
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "motion/react";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 type Testimonial = {
   quote: string;
@@ -28,17 +28,15 @@ export const AnimatedTestimonials = ({
 }) => {
   const [active, setActive] = useState(0);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setActive((prev) => (prev + 1) % testimonials.length);
-  };
+  }, [testimonials.length]);
 
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
+  }, [testimonials.length]);
 
-  const isActive = (index: number) => {
-    return index === active;
-  };
+  const isActive = (index: number) => index === active;
 
   const rotations = useMemo(
     () => testimonials.map((t) => hashToRange(t.src, -10, 10)),
@@ -49,7 +47,7 @@ export const AnimatedTestimonials = ({
     if (!autoplay) return;
     const id = setInterval(handleNext, 5000);
     return () => clearInterval(id);
-  }, [autoplay]);
+  }, [autoplay, handleNext]);
 
   return (
     <div className="mx-auto px-4 md:py-8 py-4 lg:pb-13 font-sans antialiased md:px-8 lg:px-70 bg-[#f5f4ea]" data-aos="fade-up">
