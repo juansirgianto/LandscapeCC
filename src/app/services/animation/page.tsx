@@ -1,7 +1,6 @@
 import Footer from '@/app/layouts/footer'
 import Navbar from '@/app/layouts/navbar'
 import Runninglogo from '@/app/layouts/runninglogo'
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
 import { MoveRight } from 'lucide-react'
 import React from 'react'
