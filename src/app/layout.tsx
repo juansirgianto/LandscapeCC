@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Crimson_Text } from "next/font/google";
 import "./globals.css";
+import { AOSInit } from "./aos-init";
 
 const crimson = Crimson_Text({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body
         className={`${crimson.className} antialiased`}
       >
+        <AOSInit/>
         {children}
       </body>
     </html>

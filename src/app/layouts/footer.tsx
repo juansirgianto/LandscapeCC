@@ -1,17 +1,21 @@
+import { MapPin } from 'lucide-react'
 import { div } from 'motion/react-client'
 import React from 'react'
 
 function Footer() {
   return (
-    <div className='bg-[#757741]'>
+    <div className='bg-[#757741]' data-aos="fade-up">
     <div className='lg:flex justify-between lg:px-30 lg:py-10 md:px-10 md:py-5 gap-5 py-5 px-3'>
         <div className='text-white flex flex-col gap-5 lg:w-[30%] md:w-[50%]'>
             <div className='flex flex-col gap-2'>
                 <img src="https://designedbypelago.com/wp-content/uploads/2025/09/logo_white.png" alt="" className='md:w-1/2 w-1/3 md:mx-0 mx-auto' />
-                <p className='lg:text-base md:text-sm text-xs md:text-start text-center'>Launch a conversion-driven, visually-rich microsite for landscape architects, garden designers, design-build firms, and outdoor contractors — offering premium CGI, immersive tools, and drafting services under the CC Studio brand.</p>
+                <p className='lg:text-base md:text-sm text-xs md:text-start text-center'>We help landscape architects, garden designers, design-build firms, and outdoor contractors bring unbuilt spaces to life with premium CGI, immersive presentation tools, and planning-ready drafting — all under the CC Studio brand.</p>
             </div>
             <div className='flex flex-col gap-1 lg:text-base md:text-sm text-xs md:text-start text-center'>
-                <p className='text-[#d3d2a5]'>85FG+PPF, Kerobokan Kelod, Kec. Kuta Utara, Kabupaten Badung, Bali</p>
+                <div className='flex text-[#d3d2a5] items-center gap-1'>
+                <MapPin />
+                <p>Bali, Indonesia</p>
+                </div>
                 <p className='text-[#d3d2a5]'>conceptsconveyed@gmail.com</p>
                 <p className='text-[#d3d2a5]'>+62134567890</p>
             </div>
@@ -41,19 +45,19 @@ function Footer() {
                 <h1 className='text-[#d3d2a5] hover:text-white'>3D Visualisation</h1>
                 </a>
                 <a href="/services/animation">
-                <h1 className='text-[#d3d2a5] hover:text-white'>Landscape Animation</h1>
-                </a>
-                <a href="/services/interactive">
-                <h1 className='text-[#d3d2a5] hover:text-white'>Interactive Websites</h1>
+                <h1 className='text-[#d3d2a5] hover:text-white'>3D Design & Terrain Modelling</h1>
                 </a>
                 <a href="/services/vr">
-                <h1 className='text-[#d3d2a5] hover:text-white'>VR & AR</h1>
+                <h1 className='text-[#d3d2a5] hover:text-white'>VR & AR Services</h1>
+                </a>
+                <a href="/services/interactive">
+                <h1 className='text-[#d3d2a5] hover:text-white'>Interactive Masterplans</h1>
                 </a>
                 <a href="">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Site Hub</h1>
                 </a>
                 <a href="">
-                <h1 className='text-[#d3d2a5] hover:text-white'>2D Landscape</h1>
+                <h1 className='text-[#d3d2a5] hover:text-white'>2D Drafting & Planning</h1>
                 </a>
             </div>
             <div className='lg:text-lg md:text-base text-sm md:text-start text-center w-1/3'>

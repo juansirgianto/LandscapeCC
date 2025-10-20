@@ -52,8 +52,8 @@ export const AnimatedTestimonials = ({
   }, [autoplay]);
 
   return (
-    <div className="mx-auto px-4 md:py-8 py-4 lg:pb-13 font-sans antialiased md:px-8 lg:px-70 bg-[#f5f4ea]">
-      <h1 className='text-center mb-8 lg:text-4xl md:text-2xl text-lg font-semibold'>Testimonials</h1>
+    <div className="mx-auto px-4 md:py-8 py-4 lg:pb-13 font-sans antialiased md:px-8 lg:px-70 bg-[#f5f4ea]" data-aos="fade-up">
+      <h1 className='text-center mb-8 lg:text-4xl md:text-2xl text-lg font-semibold'>What Our Clients Say</h1>
       <div className="relative grid grid-cols-1 md:gap-20 gap-5 md:grid-cols-2">
         <div>
           <div className="relative md:h-80 md:w-full h-50 w-50 mx-auto">

@@ -3,6 +3,7 @@ import { useState } from "react"
 import clsx from "clsx"
 import { ChevronDown, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion"
 
 type DropdownItemProps = {
   title: string
@@ -13,8 +14,8 @@ type DropdownItemProps = {
 function DropdownItem({ title, desc, href = "#" }: DropdownItemProps) {
   return (
     <a href={href} className="rounded-xl p-3 hover:bg-gray-50 transition grid gap-0">
-      <div className="font-bold text-black">{title}</div>
-      <div className="text-sm text-gray-600 font-normal">{desc}</div>
+      <div className="font-bold text-black md:text-base text-sm">{title}</div>
+      <div className="md:text-sm text-xs text-gray-600 font-normal">{desc}</div>
     </a>
   )
 }
@@ -26,6 +27,12 @@ export default function Navbar() {
 
   return (
     <div className="fixed top-0 z-50 w-full bg-[#f5f4ea] border-b">
+      {/* Animasi Fade In Left */}
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="/LandscapeCC/"><img src="https://designedbypelago.com/wp-content/uploads/2025/09/logo-e1758792173542.png" alt="Logo" className="w-40" /></a>
 
@@ -60,15 +67,16 @@ export default function Navbar() {
               role="menu"
             >
               <a href="/LandscapeCC/services" className="col-span-2 mb-1 px-3 text-base underline hover:opacity-80">Services Overview →</a>
-              <DropdownItem href="/LandscapeCC/services/3d" title="3D Garden Visualisation" desc="3D Garden Visualisation Services | Photorealistic Landscape CGI" />
-              <DropdownItem href="/LandscapeCC/services/animation" title="Landscape Animation" desc="Landscape Animation Services | Garden & Public Space Flythroughs" />
-              <DropdownItem href="/LandscapeCC/services/interactive" title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
-              <DropdownItem href="/LandscapeCC/services/vr" title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
+              <DropdownItem href="/LandscapeCC/services/3d" title="3D Visualisation" desc="Photorealistic imagery for gardens, estates, public realm and resort landscapes." />
+              <DropdownItem href="/LandscapeCC/services/modelling" title="3D Design & Terrain Modelling" desc="Precision 3D base models and site context modelling." />
+              <DropdownItem href="/LandscapeCC/services/vr" title="VR & AR Services" desc="From 360° panoramas to full Unreal Engine walkable gardens." />
+              <DropdownItem href="/LandscapeCC/services/interactive" title="Interactive Masterplans" desc="Mobile-ready AR overlays for gardens, campuses, and public spaces." />
               <DropdownItem title="Site Hub" desc="Project hub & client handoffs." />
-              <DropdownItem title="2D Landscape Drafting & Planning Packs" desc="Drawings, details, and packs." />
+              <DropdownItem title="2D Landscape Drafting & Planning" desc="Drawings, details, and packs." />
             </div>
           </div>
 
+          <a href="#" className="hover:mb-2">Portofolio</a>
           <a href="#" className="hover:mb-2">Case Studies</a>
           <a href="#" className="hover:mb-2">Resources</a>
           <a href="#" className="hover:mb-2">Contact</a>
@@ -76,7 +84,7 @@ export default function Navbar() {
 
         {/* CTA Desktop */}
         <Button className="hidden lg:flex text-base rounded-full bg-[#757741] font-semibold py-5 hover:bg-[#d3d2a5] hover:text-[#757741] cursor-pointer">
-          Get in touch
+          Contact Us
         </Button>
 
         {/* Toggler Mobile/Tablet */}
@@ -96,7 +104,7 @@ export default function Navbar() {
         id="mobile-menu"
         className={clsx(
           "lg:hidden overflow-hidden transition-all duration-300 origin-top",
-          mobileOpen ? "max-h-[100vh] opacity-100" : "max-h-0 opacity-0"
+          mobileOpen ? "h-[100vh] opacity-100" : "max-h-0 opacity-0"
         )}
       >
         <div className="px-6 pb-6 pt-2 border-t font-semibold text-lg">
@@ -122,24 +130,26 @@ export default function Navbar() {
               )}
             >
               <a href="/LandscapeCC/services" className="col-span-2 mb-1 px-3 text-base underline hover:opacity-80">Services Overview →</a>
-              <DropdownItem href="/LandscapeCC/services/3d" title="3D Garden Visualisation" desc="3D Garden Visualisation Services | Photorealistic Landscape CGI" />
-              <DropdownItem href="/LandscapeCC/services/animation" title="Landscape Animation" desc="Landscape Animation Services | Garden & Public Space Flythroughs" />
-              <DropdownItem href="/LandscapeCC/services/interactive" title="Interactive Project Websites" desc="Quick wins for outdoor refresh." />
-              <DropdownItem href="/LandscapeCC/services/vr" title="VR & AR for Landscape Projects" desc="Photo-real renders & animations." />
+              <DropdownItem href="/LandscapeCC/services/3d" title="3D Visualisation" desc="Photorealistic imagery for gardens, estates, public realm and resort landscapes." />
+              <DropdownItem href="/LandscapeCC/services/modelling" title="3D Design & Terrain Modelling" desc="Precision 3D base models and site context modelling." />
+              <DropdownItem href="/LandscapeCC/services/vr" title="VR & AR Services" desc="From 360° panoramas to full Unreal Engine walkable gardens." />
+              <DropdownItem href="/LandscapeCC/services/interactive" title="Interactive Masterplans" desc="Mobile-ready AR overlays for gardens, campuses, and public spaces." />
               <DropdownItem title="Site Hub" desc="Project hub & client handoffs." />
-              <DropdownItem title="2D Landscape Drafting & Planning Packs" desc="Drawings, details, and packs." />
+              <DropdownItem title="2D Landscape Drafting & Planning" desc="Drawings, details, and packs." />
             </div>
           </div>
 
+          <a href="#" className="block py-3 border-b">Portofolio</a>
           <a href="#" className="block py-3 border-b">Case Studies</a>
           <a href="#" className="block py-3 border-b">Resources</a>
           <a href="#" className="block py-3 border-b">Contact</a>
 
           <Button className="mt-4 w-full rounded-full bg-[#757741] font-semibold py-5 hover:bg-[#d3d2a5] hover:text-[#757741]">
-            Get in touch
+            Contact Us
           </Button>
         </div>
       </div>
+    </motion.div>
     </div>
   )
 }
