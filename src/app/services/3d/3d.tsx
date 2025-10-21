@@ -11,7 +11,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 
 function Cgi() {
   return (
-    <div>
+    <div className='overflow-hidden'>
         <Navbar/>
         {/* Animasi Fade In Left */}
         <motion.div
@@ -141,7 +141,7 @@ function Cgi() {
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-        <div className='lg:px-30 md:px-10 px-4 grid md:grid-cols-2 lg:py-15 md:py-10 py-4 lg:mb-15 md:mb-10 mb-4 lg:gap-8 md:gap-4 items-center bg-[#d3d2a5]' data-aos="fade-up">
+        <div className='lg:px-30 md:px-10 px-4 grid md:grid-cols-2 lg:py-15 md:py-10 py-4 lg:gap-8 md:gap-4 items-center bg-[#d3d2a5]' data-aos="fade-up">
             <div className='lg:pr-30 md:mb-0 mb-4'>
                 <h1 className='lg:text-3xl md:text-xl text-lg font-semibold mb-4 text-center md:text-start'>Process Overview</h1>
                 <h1 className='lg:text-lg md:text-sm text-sm text-black md:mb-4'>Photorealistic CGI helps your clients, councils, and collaborators fully understand your design before it's built. From luxury garden projects to civic plazas and commercial streetscapes, our visuals communicate spatial intent, planting, and materiality with clarity — accelerating buy-in and streamlining decision-making across residential, commercial, and public sectors.</h1>
@@ -168,7 +168,7 @@ function Cgi() {
                 </div>
             </div>
         </div>
-        <h1 className='text-center lg:text-5xl md:text-3xl text-xl lg:pb-15 md:pb-10 pb-4 font-semibold' data-aos="fade-up">Our Projects</h1>
+        {/* <h1 className='text-center lg:text-5xl md:text-3xl text-xl lg:pb-15 md:pb-10 pb-4 font-semibold' data-aos="fade-up">Our Projects</h1>
         <div className='grid md:grid-cols-2 md:gap-4 gap-2 px-10 lg:pb-15 md:pb-10 pb-4'>
             <a href="" data-aos="fade-up">
                 <div>
@@ -206,7 +206,7 @@ function Cgi() {
                     </div>
                 </div>
             </a>
-        </div>
+        </div> */}
         <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/09/room.jpg')" }} className='relative md:h-[80vh] h-[50vh] bg-center bg-cover' data-aos="fade-up">
             <div className="absolute inset-0 bg-black/60 z-0" />
             <div className='relative text-center text-white lg:text-4xl md:text-2xl font-semibold top-1/2 -translate-y-1/2 '>

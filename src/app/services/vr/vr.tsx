@@ -3,65 +3,166 @@
 import Footer from '@/app/layouts/footer'
 import Navbar from '@/app/layouts/navbar'
 import Runninglogo from '@/app/layouts/runninglogo'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
-import { motion } from 'framer-motion'
 import { MoveRight, RectangleGoggles } from 'lucide-react'
 import React from 'react'
 
 function Vr() {
   return (
-    <div>
+    <div className='overflow-hidden'>
         <Navbar/>
-        {/* Animasi Fade In Left */}
-        <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-        >
         <div className='mt-[73px] grid md:grid-cols-2'>
-            <img src="https://designedbypelago.com/wp-content/uploads/2025/09/garden.jpg" alt="" className='lg:h-[80vh] md:h-[60vh] object-cover hidden md:flex' />
-            <div className='bg-[#757741] lg:h-[80vh] md:h-[60vh] lg:p-30 md:p-10 p-10 flex flex-col justify-center md:gap-8 gap-4 text-white'>
-                <h1 className='lg:text-5xl md:text-3xl text-xl font-semibold'>High-tech overlays and immersive review tools for unbuilt outdoor spaces</h1>
-                <h1 className='lg:text-xl md:text-base text-sm'>Our VR and AR services help you communicate unbuilt designs through immersive, easy-to-access experiences. Whether you need to walk a client through a large estate, help a council review a civic upgrade, or sell a resort vision remotely — these tools bring your landscape to life.</h1>
+            <img src="https://designedbypelago.com/wp-content/uploads/2025/09/garden.jpg" alt="" className='lg:h-[80vh] md:h-[60vh] object-cover hidden md:flex' data-aos="fade-right"/>
+            <div className='bg-[#757741] lg:h-[80vh] md:h-[60vh] lg:p-30 md:p-10 p-10 flex flex-col justify-center md:gap-8 gap-4 text-white' data-aos="fade-left">
+                <h1 className='lg:text-5xl md:text-3xl text-xl font-semibold'>Step into your unbuilt landscape with immersive VR & AR visualisation.</h1>
+                <h1 className='lg:text-xl md:text-base text-sm'>Our VR and AR services allow landscape professionals to present, refine, and sell their designs in real time — with immersive tools that go far beyond static visuals. From 360° virtual tours to fully interactive VR environments and mobile AR masterplans, we help you lead with clarity and innovation at every project stage.</h1>
                 <Button className="lg:text-xl md:text-base text-sm rounded-full relative items-center bg-[#d3d2a5] text-[#757741] w-fit font-bold lg:!p-7 md:!p-5 cursor-pointer hover:bg-white hover:text-[#757741]">
                 Start a Project 
                 <MoveRight strokeWidth={3}/>
                 </Button>
             </div>
         </div>
-        </motion.div>
         <Runninglogo/>
-        <h1 className='text-center lg:text-5xl md:text-3xl text-xl lg:py-15 md:py-10 py-4 font-semibold'>What's Included</h1>
-        <div className='lg:px-30 md:px-10 px-4 flex flex-col gap-4'>
-            <div className='bg-[#d3d2a5] md:py-5 py-2 md:px-10 px-5 rounded-[15px] flex justify-between items-center'>
-                <div>
-                <h1 className='lg:text-3xl md:text-xl text-base font-semibold'>Interactive AR Masterplans</h1>
-                <h1 className='lg:text-xl md:text-base text-sm mr-2'>Browser-based overlays of site plans with clickable hotspots, design toggles, and info panels. Works on tablet and mobile — no app required.</h1>
+        <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/09/compressed_909CC_CSC_Rev1_CAM-B-Photo.jpg')" }} className='relative lg:pb-15 md:pb-10 pb-4 bg-cover bg-center lg:px-30 md:px-10 px-4'>
+        <div className="absolute inset-0 bg-black/70 z-0" />
+        <div className='relative'>
+        <h1 className='text-center text-white lg:text-5xl md:text-3xl text-xl lg:pt-15 md:pt-10 pt-4 font-semibold' data-aos="fade-up">VR Options :</h1>
+        <Accordion type="single" collapsible className='lg:py-8 md:py-6 py-4 border-b-1' data-aos="fade-left">
+        <AccordionItem value="item-1">
+            <AccordionTrigger className='lg:text-3xl md:text-2xl text-lg font-semibold cursor-pointer text-white'>What Makes Us Different</AccordionTrigger>
+            <AccordionContent className='lg:text-xl md:text-base text-xs '>
+            <div className=' grid md:grid-cols-2 md:gap-4 gap-2 md:mb-5 mb-2'>
+                <div className='bg-[#d3d2a5] text-[#757741] lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-right">
+                    <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Node-based tours with click-through hotspots</h1>
+                    <div className='bg-[#757741] text-[#d3d2a5] p-3 rounded-full md:flex hidden'>
+                        <RectangleGoggles className='md:size-10'/>
+                    </div>
                 </div>
-                <div className='bg-[#757741] text-[#d3d2a5] p-3 rounded-full'>
+                <div className='bg-[#d3d2a5] text-[#757741] lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-left">
+                    <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Ideal for presenting gardens, resort zones, and exterior spaces</h1>
+                    <div className='bg-[#757741] text-[#d3d2a5] p-3 rounded-full md:flex hidden'>
+                        <RectangleGoggles className='md:size-10'/>
+                    </div>
+                </div>
+                <div className='bg-[#d3d2a5] text-[#757741] lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-right">
+                    <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Can be viewed on desktop, tablet, or headset</h1>
+                    <div className='bg-[#757741] text-[#d3d2a5] p-3 rounded-full md:flex hidden'>
+                        <RectangleGoggles className='md:size-10'/>
+                    </div>
+                </div>
+                <div className='bg-[#d3d2a5] text-[#757741] lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-left">
+                    <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Great for client presentations and pre-sales experiences</h1>
+                    <div className='bg-[#757741] text-[#d3d2a5] p-3 rounded-full md:flex hidden'>
+                        <RectangleGoggles className='md:size-10'/>
+                    </div>
+                </div>
+            </div>
+            </AccordionContent>
+        </AccordionItem>
+        </Accordion>
+        <Accordion type="single" collapsible className='lg:py-8 md:py-6 py-4 border-b-1' data-aos="fade-left">
+        <AccordionItem value="item-1">
+            <AccordionTrigger className='lg:text-3xl md:text-2xl text-lg font-semibold cursor-pointer text-white'>What Makes Us Different</AccordionTrigger>
+            <AccordionContent className='lg:text-xl md:text-base text-xs '>
+            <div className='grid md:grid-cols-2 md:gap-4 gap-2'>
+            <div className='bg-[#757741] text-white lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-right">
+                <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Walkable, explorable 3D environments</h1>
+                <div className='bg-[#d3d2a5] text-[#757741] p-3 rounded-full md:flex hidden'>
                     <RectangleGoggles className='md:size-10'/>
                 </div>
             </div>
-            <div className='bg-[#d3d2a5] md:py-5 py-2 md:px-10 px-5 rounded-[15px] flex justify-between items-center'>
-                <div>
-                <h1 className='lg:text-3xl md:text-xl text-base font-semibold'>Static VR</h1>
-                <h1 className='lg:text-xl md:text-base text-sm mr-2'>360° panorama views of your design — viewable in browser, desktop, or headset. A cost-effective way to communicate atmosphere and scale.</h1>
-                </div>
-                <div className='bg-[#757741] text-[#d3d2a5] p-3 rounded-full'>
+            <div className='bg-[#757741] text-white lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-left">
+                <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Toggle between design options (planting, furniture, layouts)</h1>
+                <div className='bg-[#d3d2a5] text-[#757741] p-3 rounded-full md:flex hidden'>
                     <RectangleGoggles className='md:size-10'/>
                 </div>
             </div>
-            <div className='bg-[#d3d2a5] md:py-5 py-2 md:px-10 px-5 rounded-[15px] flex justify-between items-center'>
-                <div>
-                <h1 className='lg:text-3xl md:text-xl text-base font-semibold'>Interactive Free-Roam VR</h1>
-                <h1 className='lg:text-xl md:text-base text-sm mr-2'>Fully explorable environments built in Unreal Engine, with guided paths, free-roam control, material toggles, planting variations, and more.</h1>
+            <div className='bg-[#757741] text-white lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-right">
+                <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Embedded labels, sound, or interactive zones</h1>
+                <div className='bg-[#d3d2a5] text-[#757741] p-3 rounded-full md:flex hidden'>
+                    <RectangleGoggles className='md:size-10'/>
                 </div>
-                <div className='bg-[#757741] text-[#d3d2a5] p-3 rounded-full'>
+            </div>
+            <div className='bg-[#757741] text-white lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-left">
+                <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Ideal for design development, upselling, and immersive reviews</h1>
+                <div className='bg-[#d3d2a5] text-[#757741] p-3 rounded-full md:flex hidden'>
+                    <RectangleGoggles className='md:size-10'/>
+                </div>
+            </div>
+            <div className='bg-[#757741] text-white lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center md:col-span-2' data-aos="fade-up">
+                <h1 className='lg:text-2xl md:text-lg text-sm md:mx-auto font-semibold'>Deployed for headset, desktop, or live screen walkthroughs</h1>
+                <div className='bg-[#d3d2a5] text-[#757741] p-3 rounded-full md:flex hidden'>
                     <RectangleGoggles className='md:size-10'/>
                 </div>
             </div>
         </div>
-        <div className='lg:px-30 md:px-10 px-4 lg:py-15 md:py-10 py-4 lg:my-15 md:my-10 my-4 grid md:grid-cols-2 lg:gap-8 md:gap-4 items-center bg-[#f5f4ea]'>
+            </AccordionContent>
+        </AccordionItem>
+        </Accordion>
+        {/* <h1 className='lg:px-15 md:px-10 px-4 lg:text-3xl md:text-xl text-base md:mb-5 mb-2 font-semibold text-white' data-aos="fade-down">Static VR (360° Virtual Tours)</h1>
+        <div className='lg:px-15 md:px-10 px-4 grid md:grid-cols-2 md:gap-4 gap-2 md:mb-5 mb-2'>
+            <div className='bg-[#d3d2a5] text-[#757741] lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-right">
+                <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Node-based tours with click-through hotspots</h1>
+                <div className='bg-[#757741] text-[#d3d2a5] p-3 rounded-full md:flex hidden'>
+                    <RectangleGoggles className='md:size-10'/>
+                </div>
+            </div>
+            <div className='bg-[#d3d2a5] text-[#757741] lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-left">
+                <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Ideal for presenting gardens, resort zones, and exterior spaces</h1>
+                <div className='bg-[#757741] text-[#d3d2a5] p-3 rounded-full md:flex hidden'>
+                    <RectangleGoggles className='md:size-10'/>
+                </div>
+            </div>
+            <div className='bg-[#d3d2a5] text-[#757741] lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-right">
+                <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Can be viewed on desktop, tablet, or headset</h1>
+                <div className='bg-[#757741] text-[#d3d2a5] p-3 rounded-full md:flex hidden'>
+                    <RectangleGoggles className='md:size-10'/>
+                </div>
+            </div>
+            <div className='bg-[#d3d2a5] text-[#757741] lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-left">
+                <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Great for client presentations and pre-sales experiences</h1>
+                <div className='bg-[#757741] text-[#d3d2a5] p-3 rounded-full md:flex hidden'>
+                    <RectangleGoggles className='md:size-10'/>
+                </div>
+            </div>
+        </div>
+        <h1 className='lg:px-15 md:px-10 px-4 lg:text-3xl md:text-xl text-base md:mb-5 mb-2 font-semibold text-white' data-aos="fade-down">Interactive / Free-Roam VR (Unreal Engine)</h1>
+        <div className='lg:px-15 md:px-10 px-4 grid md:grid-cols-2 md:gap-4 gap-2'>
+            <div className='bg-[#757741] text-white lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-right">
+                <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Walkable, explorable 3D environments</h1>
+                <div className='bg-[#d3d2a5] text-[#757741] p-3 rounded-full md:flex hidden'>
+                    <RectangleGoggles className='md:size-10'/>
+                </div>
+            </div>
+            <div className='bg-[#757741] text-white lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-left">
+                <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Toggle between design options (planting, furniture, layouts)</h1>
+                <div className='bg-[#d3d2a5] text-[#757741] p-3 rounded-full md:flex hidden'>
+                    <RectangleGoggles className='md:size-10'/>
+                </div>
+            </div>
+            <div className='bg-[#757741] text-white lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-right">
+                <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Embedded labels, sound, or interactive zones</h1>
+                <div className='bg-[#d3d2a5] text-[#757741] p-3 rounded-full md:flex hidden'>
+                    <RectangleGoggles className='md:size-10'/>
+                </div>
+            </div>
+            <div className='bg-[#757741] text-white lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center' data-aos="fade-left">
+                <h1 className='lg:text-2xl md:text-lg text-sm font-semibold'>Ideal for design development, upselling, and immersive reviews</h1>
+                <div className='bg-[#d3d2a5] text-[#757741] p-3 rounded-full md:flex hidden'>
+                    <RectangleGoggles className='md:size-10'/>
+                </div>
+            </div>
+            <div className='bg-[#757741] text-white lg:py-5 md:py-3 py-2 lg:px-10 md:px-6 px-4 rounded-[15px] flex justify-between items-center md:col-span-2' data-aos="fade-up">
+                <h1 className='lg:text-2xl md:text-lg text-sm md:mx-auto font-semibold'>Deployed for headset, desktop, or live screen walkthroughs</h1>
+                <div className='bg-[#d3d2a5] text-[#757741] p-3 rounded-full md:flex hidden'>
+                    <RectangleGoggles className='md:size-10'/>
+                </div>
+            </div>
+        </div> */}
+        </div>
+        </div>
+        <div className='lg:px-30 md:px-10 px-4 lg:py-15 md:py-10 py-4 lg:mb-15 md:mb-10 mb-4 grid md:grid-cols-2 lg:gap-8 md:gap-4 items-center bg-[#f5f4ea]'>
             <div className='lg:pr-30 md:mb-0 mb-4 '>
                 <h1 className='lg:text-3xl md:text-2xl text-xl font-semibold mb-4 text-center md:text-start'>Process Overview</h1>
                 <h1 className='lg:text-lg md:text-sm text-sm text-black md:mb-4'>These tools go beyond visuals — they build understanding. VR lets people walk through space as if it's already built. AR masterplans turn drawings into layered, explorable presentations. Together, they dramatically improve communication, buy-in, and clarity across client, contractor, and council teams.</h1>

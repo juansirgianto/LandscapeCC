@@ -18,9 +18,14 @@ function AboutPage() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
-        <div className='mt-[73px] flex flex-col mx-auto lg:p-30 md:p-15 p-10 gap-2 items-center bg-[#757741] text-white text-center'>
-            <h1 className='lg:text-5xl md:text-3xl text-xl'>We visualise what landscape <br /> professionals imagine</h1>
-            {/* <h1 className='lg:text-2xl md:text-xl text-base'>Landscape by CC Studio is a global landscape visualisation studio dedicated to helping outdoor design professionals bring unbuilt spaces to life. With over 2,600 projects completed worldwide, we specialise in producing photorealistic garden CGI, cinematic animations, immersive experiences, and planning-ready 2D drawings — tailored to the needs of landscape architects, garden designers, urban realm consultants, and design-build firms. Whether you're seeking planning approval, stakeholder engagement, or client buy-in, our visuals combine precision and emotion to make every landscape design story clear, compelling, and impactful.</h1> */}
+        <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/09/compressed_1235CC_CSC_REV3_5-Photo.jpg')" }} className='relative bg-cover bg-[center_60%] h-[50vh] lg:px-30 md:px-10 px-4 mt-[73px]'>
+            <div className="absolute inset-0 bg-black/70 z-0" />
+            <div className='relative text-center text-white lg:text-5xl md:text-3xl text-xl font-semibold top-1/2 -translate-y-1/2 md:px-0 px-2'>
+            <h1 className='mb-5'>
+            We visualise what landscape professionals imagine.
+            </h1>
+            <p className='lg:text-xl md:text-base text-sm text-gray-300 mb-5 font-normal'>Landscape by CC Studio is a global landscape visualisation studio dedicated to helping outdoor design professionals bring unbuilt spaces to life. With over 2,600 projects completed worldwide, we specialise in producing photorealistic garden CGI, cinematic animations, immersive experiences, and planning-ready 2D drawings — tailored to the needs of landscape architects, garden designers, urban realm consultants, and design-build firms. Whether you're seeking planning approval, stakeholder engagement, or client buy-in, our visuals combine precision and emotion to make every landscape design story clear, compelling, and impactful.</p>
+            </div>
         </div>
         </motion.div>
         <Runninglogo/>

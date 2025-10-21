@@ -44,7 +44,7 @@ function HomePage() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
-      <div className='relative bg-cover bg-center h-[100vh]'>
+      <div className='relative bg-cover bg-center h-[100vh] mt-[73px]'>
         <video
     autoPlay
     loop
@@ -55,7 +55,7 @@ function HomePage() {
     <source src="https://videos.files.wordpress.com/wp05UZIW/video-for-website-new-rev-5-1.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-        <div className="absolute inset-0 bg-black/60 z-0" />  {/* overlay hitam transparan */}
+        <div className="absolute inset-0 bg-black/70 z-0" />  {/* overlay hitam transparan */}
         <div className='relative text-center text-white lg:text-5xl md:text-3xl text-xl font-semibold top-1/2 -translate-y-1/2 md:px-0 px-2'>
           <h1 className='mb-5'>
           Immersive visuals & approval-ready plans <br/> for outdoor spaces
@@ -136,41 +136,9 @@ If it supports your outdoor design — we can visualise it</h1>
       </div>
       </div>
       <div>
-
       </div>
-      {/* <Accordion type="single" collapsible className='lg:py-8 lg:px-30 md:py-6 md:px-10 p-4 border-b-1' data-aos="fade-up">
-      <AccordionItem value="item-1">
-        <AccordionTrigger className='lg:text-3xl md:text-2xl text-lg font-semibold cursor-pointer'>What We Offer</AccordionTrigger>
-        <AccordionContent className='lg:text-xl md:text-base text-xs'>
-          Photorealistic garden CGI. Flythrough animations. Interactive site tours. Planning-ready 2D layouts. If it supports your outdoor design — we can visualise it
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
-      <Accordion type="single" collapsible className='lg:py-8 lg:px-30 md:py-6 md:px-10 p-4 border-b-1' data-aos="fade-up">
-      <AccordionItem value="item-1">
-        <AccordionTrigger className='lg:text-3xl md:text-2xl text-lg font-semibold cursor-pointer'>What We Do</AccordionTrigger>
-        <AccordionContent className='lg:text-xl md:text-base text-xs flex flex-col gap-3'>
-          We work with landscape architects, garden designers, and design-build teams to visualise outdoor spaces at every stage — 
-          from planting concepts to high-end garden layouts. Whether you're developing a private estate, pool area, or public park,
-           we provide cinematic garden visuals, 3D renderings, and immersive walkthroughs that help your clients say yes faster.
-            Our team can produce everything from planting plan overlays to council submission visuals — all tailored to your project's
-             goals and presentation style.
-          <div className='flex relative items-center gap-3'>
-            <p className='bg-[#757741] lg:px-3.5 lg:py-1 md:px-3 md:py-0.5 px-3 py-1.5 font-semibold rounded-full text-white'>1</p>
-            <p className='text-black'>Photorealistic CGI for planting, lighting, and circulation</p>
-          </div>
-          <div className='flex relative items-center gap-3'>
-            <p className='bg-[#757741] lg:px-3.5 lg:py-1 md:px-3 md:py-0.5 px-3 py-1.5 font-semibold rounded-full text-white'>2</p>
-            <p className='text-black'>Council-ready plans, planting layouts, and 2D drawings</p>
-          </div>
-          <div className='flex relative items-center gap-3'>
-            <p className='bg-[#757741] lg:px-3.5 lg:py-1 md:px-3 md:py-0.5 px-3 py-1.5 font-semibold rounded-full text-white'>3</p>
-            <p className='text-black'>VR and AR experiences to walk clients through your design</p>
-          </div>
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion> */}
-    <Accordion type="single" collapsible className='lg:py-8 lg:px-30 md:py-6 md:px-10 p-4 border-b-1' data-aos="fade-left">
+    <div className='lg:px-30 md:px-10 px-4'>
+    <Accordion type="single" collapsible className='lg:py-8 md:py-6 py-4 border-b-1' data-aos="fade-left">
       <AccordionItem value="item-1">
         <AccordionTrigger className='lg:text-3xl md:text-2xl text-lg font-semibold cursor-pointer'>What Makes Us Different</AccordionTrigger>
         <AccordionContent className='lg:text-xl md:text-base text-xs'>
@@ -183,7 +151,7 @@ If it supports your outdoor design — we can visualise it</h1>
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-    <Accordion type="single" collapsible className='lg:py-8 lg:px-30 md:py-6 md:px-10 p-4 border-b-1' data-aos="fade-left">
+    <Accordion type="single" collapsible className='lg:py-8 md:py-6 py-4 border-b-1' data-aos="fade-left">
       <AccordionItem value="item-1">
         <AccordionTrigger className='lg:text-3xl md:text-2xl text-lg font-semibold cursor-pointer'>Who We Work With</AccordionTrigger>
         <AccordionContent className='lg:text-xl md:text-base text-xs'>
@@ -249,6 +217,7 @@ If it supports your outdoor design — we can visualise it</h1>
         </AccordionContent>
       </AccordionItem>
     </Accordion>
+    </div>
     <AnimatedTestimonials testimonials={testimonials}/>
     <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/10/1577CC_PWGD_POOL_REV-01-Photo.jpg')" }} className='relative md:h-[80vh] h-[50vh] bg-center bg-cover' data-aos="fade-up">
       <div className="absolute inset-0 bg-black/70 z-0" />

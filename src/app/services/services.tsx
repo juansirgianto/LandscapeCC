@@ -43,8 +43,8 @@ function ServicesPage() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
-        <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/10/Service-Page-img.jpg')" }} className='relative bg-cover bg-center h-[100vh] lg:px-30 md:px-10 px-4'>
-          <div className="absolute inset-0 bg-black/60 z-0" />
+        <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/10/Service-Page-img.jpg')" }} className='relative bg-cover bg-center h-[100vh] lg:px-30 md:px-10 px-4 mt-[73px]'>
+          <div className="absolute inset-0 bg-black/70 z-0" />
           <div className='relative text-center text-white lg:text-5xl md:text-3xl text-xl font-semibold top-1/2 -translate-y-1/2 md:px-0 px-2'>
             <h1 className='mb-5'>
             Visualisation tools built for the landscape design process, from sketch to sign-off.
