@@ -128,7 +128,7 @@ function AboutPage() {
         </div>
         <div className='lg:px-30 lg:py-15 md:p-10 p-4'>
             <h1 className='lg:text-5xl md:text-3xl text-xl font-semibold mb-2 text-center lg:pb-15 md:pb-10 pb-4' data-aos="fade-up">Meet The Studio</h1>
-            <div className='grid md:grid-cols-2 gap-2 mb-2'>
+            <div className='grid md:grid-cols-2 gap-5 mb-5'>
                 <div className='flex flex-col gap-2' data-aos="fade-right">
                     <img src="https://designedbypelago.com/wp-content/uploads/2025/09/I7A6601.jpg" alt="" className='object-cover object-[center_40%] rounded-[15px] lg:h-[60vh] md:h-[40vh] h-[30vh]' />
                     <div className='flex flex-col'>
