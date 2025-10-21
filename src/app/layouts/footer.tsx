@@ -23,10 +23,10 @@ function Footer() {
         <div className='flex justify-between gap-3 lg:w-[60%] lg:mt-0 md:mt-5 mt-3'>        
             <div className='lg:text-lg md:text-base text-sm md:text-start text-center w-1/3'>
                 <h1 className='mb-5 text-white font-semibold'>Pages</h1>
-                <a href="">
+                <a href="/LandscapeCC/about/">
                 <h1 className='text-[#d3d2a5] hover:text-white'>About</h1>
                 </a>
-                <a href="/services">
+                <a href="/LandscapeCC/services">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Services</h1>
                 </a>
                 <a href="">
@@ -44,16 +44,16 @@ function Footer() {
             </div>
             <div className='lg:text-lg md:text-base text-sm md:text-start text-center w-1/3'>
                 <h1 className='mb-5 text-white font-semibold '>Services</h1>
-                <a href="/services/3d">
+                <a href="/Landscape/services/3d">
                 <h1 className='text-[#d3d2a5] hover:text-white'>3D Visualisation</h1>
                 </a>
-                <a href="/services/animation">
+                <a href="/Landscape/services/animation">
                 <h1 className='text-[#d3d2a5] hover:text-white'>3D Design & Terrain Modelling</h1>
                 </a>
-                <a href="/services/vr">
+                <a href="/Landscape/services/vr">
                 <h1 className='text-[#d3d2a5] hover:text-white'>VR & AR Services</h1>
                 </a>
-                <a href="/services/interactive">
+                <a href="/Landscape/services/interactive">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Interactive Masterplans</h1>
                 </a>
                 <a href="">

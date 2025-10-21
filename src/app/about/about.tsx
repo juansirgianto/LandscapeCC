@@ -141,7 +141,7 @@ function AboutPage() {
                     <h1 className='lg:text-xl md:text-base text-xs'>has a foundation in Product Design Engineering and oversees the studio's immersive and technical output — from cinematic CGI to advanced AR/VR development and interactive platform builds.</h1>
                 </div>
             </div>
-            <img src="https://designedbypelago.com/wp-content/uploads/2025/09/compressed__I7A8187-final-copy.jpg" alt="" className='object-cover object-center rounded-[15px] w-[80vw] lg:h-[60vh] md:h-[40vh] h-[30vh] mx-auto' data-aos="fade-up"/>
+            <img src="https://designedbypelago.com/wp-content/uploads/2025/09/compressed__I7A8187-final-copy.jpg" alt="" className='object-cover object-center rounded-[15px] md:w-[80vw] lg:h-[60vh] md:h-[40vh] h-[30vh] mx-auto' data-aos="fade-up"/>
         </div>
         <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/10/1577CC_PWGD_POOL_REV-01-Photo.jpg')" }} className='relative md:h-[80vh] h-[50vh] bg-center bg-cover' data-aos="fade-up">
             <div className="absolute inset-0 bg-black/70 z-0" />
