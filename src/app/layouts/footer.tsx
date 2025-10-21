@@ -23,7 +23,7 @@ function Footer() {
         <div className='flex justify-between gap-3 lg:w-[60%] lg:mt-0 md:mt-5 mt-3'>        
             <div className='lg:text-lg md:text-base text-sm md:text-start text-center w-1/3'>
                 <h1 className='mb-5 text-white font-semibold'>Pages</h1>
-                <a href="/LandscapeCC/about/">
+                <a href="/LandscapeCC/about">
                 <h1 className='text-[#d3d2a5] hover:text-white'>About</h1>
                 </a>
                 <a href="/LandscapeCC/services">

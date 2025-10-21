@@ -38,7 +38,7 @@ export default function Navbar() {
 
         {/* NAV DESKTOP */}
         <nav className="hidden lg:flex items-center gap-8 font-bold text-lg text-black">
-          <a href="/LandscapeCC/about/" className="hover:mb-2">About</a>
+          <a href="/LandscapeCC/about" className="hover:mb-2">About</a>
 
           {/* Services (desktop dropdown) */}
           <div
@@ -108,7 +108,7 @@ export default function Navbar() {
         )}
       >
         <div className="px-6 pb-6 pt-2 border-t font-semibold text-lg">
-          <a href="/LandscapeCC/about/" className="block py-3">About</a>
+          <a href="/LandscapeCC/about" className="block py-3">About</a>
 
           {/* Services (mobile accordion) */}
           <div className="border-y">
