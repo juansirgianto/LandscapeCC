@@ -4,38 +4,13 @@ import { Button } from '@/components/ui/button'
 import { MoveRight } from 'lucide-react'
 import React from 'react'
 import Navbar from '../layouts/navbar'
-import Runninglogo from '../layouts/runninglogo'
 import Footer from '../layouts/footer'
-import { AnimatedTestimonials } from '@/components/ui/animated-testimonials'
 import { motion } from 'framer-motion'
 
 function ServicesPage() {
-  const testimonials = [
-    {
-      quote:
-        "If I could give 6 stars, then I would! Christy, Daniel and everyone involved at CC are fantastic. The service they provide is quick, fast efficient and above all else, the concepts they convey are just stunning....period! I will be collaborating with them in the future, that's for sure.",
-      name: "Adam Vetere",
-      designation: "Adam Vetere Landscape & Garden Design",
-      src: "https://designedbypelago.com/wp-content/uploads/2025/09/av.png",
-    },
-    {
-      quote:
-        "Christy and his team were brilliant in turning our design into a 3D visual. It proved invaluable to our clients who are in the middle of a vast house and garden renovation project, as it enabled them to visualise the finished garden on a muddy construction site. We will definitely be using concepts conveyed for future projects.",
-      name: "Nic Howard",
-      designation: "We Love Plants",
-      src: "https://designedbypelago.com/wp-content/uploads/2025/09/wlp.png",
-    },
-    {
-      quote:
-        "Superb service - they have a super fast turnaround and great communication throughout. Delighted with the finished renders - thank you!",
-      name: "Pollyanna Wilkinson",
-      designation: "Studio Pollyanna",
-      src: "https://designedbypelago.com/wp-content/uploads/2025/09/poly.png",
-    },
-  ];
 
   return (
-      <div>
+      <div className='overflow-hidden'>
         <Navbar/>
         {/* Animasi Fade In Left */}
         <motion.div
@@ -43,7 +18,7 @@ function ServicesPage() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
-        <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/10/Service-Page-img.jpg')" }} className='relative bg-cover bg-center h-[100vh] lg:px-30 md:px-10 px-4 mt-[73px]'>
+        <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/10/Service-Page-img.jpg')" }} className='relative bg-cover bg-center h-[100vh] lg:px-50 md:px-10 px-4'>
           <div className="absolute inset-0 bg-black/70 z-0" />
           <div className='relative text-center text-white lg:text-5xl md:text-3xl text-xl font-semibold top-1/2 -translate-y-1/2 md:px-0 px-2'>
             <h1 className='mb-5'>
@@ -51,7 +26,7 @@ function ServicesPage() {
             </h1>
             <p className='lg:text-xl md:text-base text-sm text-gray-300 mb-5 font-normal'>Whether you're presenting to private clients, securing stakeholder approval, or preparing for construction, our services help you communicate clearly and confidently. From photorealistic 3D renders and 2D planning packs to VR walkthroughs and interactive masterplans, we support landscape architects, garden designers, urban realm consultants, and design-build firms across every project type.</p>
             <a href="#explore">
-            <Button className="lg:text-2xl md:text-xl text-base rounded-full relative items-center bg-[#757741] font-bold md:!p-7 !p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
+            <Button className="lg:text-2xl md:text-xl text-base rounded-full relative items-center bg-gradient-to-t from-[#757741] to-[#d3d2a5] hover:bg-gradient-to-b font-bold md:!p-7 !p-5 cursor-pointer">
               Explore Services 
             <MoveRight strokeWidth={3}/>
             </Button>
@@ -59,10 +34,10 @@ function ServicesPage() {
           </div>
         </div>
           </motion.div>
-          <h1 data-aos="fade-up" className='text-center lg:text-4xl md:text-2xl text-lg lg:py-8 md:py-6 py-4 font-semibold'>Explore Our Core Services :</h1>
-        <div className='lg:px-30 md:px-10 px-4 flex flex-col gap-3 lg:pb-8 md:pb-6 pb-4'>
-      <a href="/LandscapeCC/3d" data-aos="fade-up">
-        <div className='bg-[#757741] w-full rounded-[15px] flex p-2 hover:ml-2 transition-all duration-300 ease-in-out'>
+          <h1 data-aos="fade-down" className='text-center lg:text-4xl md:text-2xl text-lg lg:py-8 md:py-6 py-4 font-semibold'>Explore Our Core Services :</h1>
+        <div className='lg:px-15 md:px-10 px-4 flex flex-col gap-3 lg:pb-8 md:pb-6 pb-4'>
+      <a href="/LandscapeCC/3d" data-aos="fade-right">
+        <div className='bg-gradient-to-r from-[#757741] to-[#d3d2a5] w-full rounded-[15px] flex p-2 hover:ml-2 transition-all duration-300 ease-in-out'>
           <div className='flex flex-col justify-between p-5 w-[60%]'>
             <p className='font-semibold lg:text-3xl md:text-xl text-base text-white'>3D Visualisation</p>
             <div>
@@ -76,8 +51,8 @@ function ServicesPage() {
           <img src="https://designedbypelago.com/wp-content/uploads/2025/09/garden.jpg" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
         </div>
       </a>
-      <a href="/LandscapeCC/modelling" data-aos="fade-up">
-        <div className='bg-[#757741] w-full rounded-[15px] flex p-2 hover:ml-2 transition-all duration-300 ease-in-out'>
+      <a href="/LandscapeCC/modelling" data-aos="fade-left">
+        <div className='bg-gradient-to-l from-[#757741] to-[#d3d2a5] w-full rounded-[15px] flex p-2 hover:ml-2 transition-all duration-300 ease-in-out'>
           <img src="https://designedbypelago.com/wp-content/uploads/2025/09/service.png" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
           <div className='flex flex-col justify-between p-5 w-[60%] text-end'>
             <p className='font-semibold lg:text-3xl md:text-xl text-base text-white'>3D Design & Terrain Modelling</p>
@@ -91,8 +66,8 @@ function ServicesPage() {
           </div>
         </div>
       </a>
-      <a href="/LandscapeCC/vr" data-aos="fade-up">
-        <div className='bg-[#757741] w-full rounded-[15px] flex p-2 hover:ml-2 transition-all duration-300 ease-in-out'>
+      <a href="/LandscapeCC/vr" data-aos="fade-right">
+        <div className='bg-gradient-to-r from-[#757741] to-[#d3d2a5] w-full rounded-[15px] flex p-2 hover:ml-2 transition-all duration-300 ease-in-out'>
           <div className='flex flex-col justify-between p-5 w-[60%]'>
             <p className='font-semibold lg:text-3xl md:text-xl text-base text-white'>VR & AR Services</p>
             <div>
@@ -106,8 +81,8 @@ function ServicesPage() {
           <img src="https://designedbypelago.com/wp-content/uploads/2025/09/garden.jpg" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
         </div>
       </a>
-      <a href="/LandscapeCC/interactive" data-aos="fade-up">
-        <div className='bg-[#757741] w-full rounded-[15px] flex p-2 hover:ml-2 transition-all duration-300 ease-in-out'>
+      <a href="/LandscapeCC/interactive" data-aos="fade-left">
+        <div className='bg-gradient-to-l from-[#757741] to-[#d3d2a5] w-full rounded-[15px] flex p-2 hover:ml-2 transition-all duration-300 ease-in-out'>
           <img src="https://designedbypelago.com/wp-content/uploads/2025/09/aerial.png" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
           <div className='flex flex-col justify-between p-5 w-[60%] text-end'>
             <p className='font-semibold lg:text-3xl md:text-xl text-base text-white'>Interactive Masterplans</p>
@@ -121,8 +96,8 @@ function ServicesPage() {
           </div>
         </div>
       </a>
-      <a href="" data-aos="fade-up">
-        <div className='bg-[#757741] w-full rounded-[15px] flex p-2 hover:ml-2 transition-all duration-300 ease-in-out'>
+      <a href="" data-aos="fade-right">
+        <div className='bg-gradient-to-r from-[#757741] to-[#d3d2a5] w-full rounded-[15px] flex p-2 hover:ml-2 transition-all duration-300 ease-in-out'>
           <div className='flex flex-col justify-between p-5 w-[60%]'>
             <p className='font-semibold lg:text-3xl md:text-xl text-base text-white'>Site Hub</p>
             <div>
@@ -138,8 +113,8 @@ function ServicesPage() {
           <img src="https://designedbypelago.com/wp-content/uploads/2025/09/service.png" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
         </div>
       </a>
-      <a href="" data-aos="fade-up">
-        <div className='bg-[#757741] w-full rounded-[15px] flex p-2 hover:ml-2 transition-all duration-300 ease-in-out'>
+      <a href="" data-aos="fade-left">
+        <div className='bg-gradient-to-l from-[#757741] to-[#d3d2a5] w-full rounded-[15px] flex p-2 hover:ml-2 transition-all duration-300 ease-in-out'>
           <img src="https://designedbypelago.com/wp-content/uploads/2025/09/garden.jpg" alt="" className='rounded-[15px] w-[40%] md:h-[30vh] h-[25vh] object-cover' />
           <div className='flex flex-col justify-between p-5 w-[60%] text-end'>
             <p className='font-semibold lg:text-3xl md:text-xl text-base text-white'>2D Drafting & Planning Packs</p>
@@ -162,7 +137,7 @@ function ServicesPage() {
           <h1 className='font-bold'>Not sure what service suits your project?</h1>
           <h1 className='mb-4 font-medium'>We'll guide you to the best solution <br /> based on your stage, audience, and scope.</h1>
           <a href="">
-          <Button className="lg:text-2xl md:text-lg rounded-full relative items-center bg-[#757741] font-bold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
+          <Button className="lg:text-2xl md:text-lg rounded-full relative items-center bg-gradient-to-t from-[#757741] to-[#d3d2a5] hover:bg-gradient-to-b font-bold lg:!p-7 md:!p-5 cursor-pointer">
             Let's Talk
           <MoveRight strokeWidth={3}/>
           </Button>

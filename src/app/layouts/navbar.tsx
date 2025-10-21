@@ -83,7 +83,7 @@ export default function Navbar() {
         </nav>
 
         {/* CTA Desktop */}
-        <Button className="hidden lg:flex text-base rounded-full bg-[#757741] font-semibold py-5 hover:bg-[#d3d2a5] hover:text-[#757741] cursor-pointer">
+        <Button className="hidden lg:flex text-base rounded-full font-semibold py-5 bg-gradient-to-t from-[#757741] to-[#d3d2a5] hover:bg-gradient-to-b cursor-pointer">
           Contact Us
         </Button>
 

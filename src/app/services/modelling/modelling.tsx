@@ -5,51 +5,43 @@ import Navbar from '@/app/layouts/navbar'
 import Runninglogo from '@/app/layouts/runninglogo'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
-import { motion } from 'framer-motion'
 import { MoveRight } from 'lucide-react'
 import React from 'react'
 
 function Modelling() {
   return (
-    <div>
+    <div className='overflow-hidden'>
         <Navbar/>
-        {/* Animasi Fade In Left */}
-        <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-        >
         <div className='mt-[73px] grid md:grid-cols-2'>
-            <div className='bg-[#757741] lg:h-[80vh] md:h-[60vh] lg:p-30 md:p-10 p-10 flex flex-col justify-center md:gap-8 gap-4 text-white'>
+            <div className='bg-[#757741] lg:h-[80vh] md:h-[60vh] lg:p-30 md:p-10 p-10 flex flex-col justify-center md:gap-8 gap-4 text-white' data-aos="fade-right">
                 <h1 className='lg:text-5xl md:text-3xl text-xl font-semibold'>Precision-built 3D base models to support visualisation, design development, and interactivity.</h1>
                 <h1 className='lg:text-xl md:text-base text-sm'>Our 3D terrain and design modelling service gives landscape professionals a clean, highly accurate digital foundation to work from — whether for internal concept development or as the technical base for photorealistic CGI, animation, or interactive platforms.</h1>
-                <Button className="lg:text-xl md:text-base text-sm rounded-full relative items-center bg-[#d3d2a5] text-[#757741] w-fit font-bold lg:!p-7 md:!p-5 cursor-pointer hover:bg-white hover:text-[#757741]">
+                <Button className="lg:text-xl md:text-base text-sm rounded-full relative items-center bg-gradient-to-t from-[#f5f4ea] to-[#d3d2a5] hover:bg-gradient-to-b text-[#757741] w-fit font-bold lg:!p-7 md:!p-5 cursor-pointer">
                 Start a Project 
                 <MoveRight strokeWidth={3}/>
                 </Button>
             </div>
-            <img src="https://designedbypelago.com/wp-content/uploads/2025/09/service.png" alt="" className='lg:h-[80vh] md:h-[60vh] object-cover hidden md:flex' />
+            <img src="https://designedbypelago.com/wp-content/uploads/2025/09/service.png" alt="" className='lg:h-[80vh] md:h-[60vh] object-cover hidden md:flex' data-aos="fade-left"/>
         </div>
-        </motion.div>
         <Runninglogo/>
-        <h1 className='text-center lg:text-5xl md:text-3xl text-xl lg:py-15 md:py-10 py-4 font-semibold' data-aos="fade-up">What's Included</h1>
-        <div className='flex flex-col md:grid md:grid-cols-2 lg:px-30 md:px-10 px-4 gap-4 lg:text-2xl text-sm'>
-            <div className='bg-[#d3d2a5] rounded-full flex p-5' data-aos="fade-up">
+        <h1 className='text-center lg:text-5xl md:text-3xl text-xl lg:py-15 md:py-10 py-4 font-semibold' data-aos="fade-down">What's Included</h1>
+        <div className='flex flex-col md:grid md:grid-cols-2 lg:px-30 md:px-10 px-4 gap-4 lg:text-2xl text-sm text-white'>
+            <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] rounded-full flex p-5' data-aos="fade-right">
                 <h1 className='text-center m-auto'>Precision-built 3D models of existing or proposed sites</h1>
             </div>
-            <div className='bg-[#d3d2a5] rounded-full flex p-5' data-aos="fade-up">
+            <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] rounded-full flex p-5' data-aos="fade-left">
                 <h1 className='text-center m-auto'>Topography, hardscape, architecture, and planting placeholders</h1>
             </div>
-            <div className='bg-[#d3d2a5] rounded-full flex p-5' data-aos="fade-up">
+            <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] rounded-full flex p-5' data-aos="fade-right">
                 <h1 className='text-center m-auto'>Model formats compatible with 3ds Max, SketchUp, Rhino, Unreal Engine, and more</h1>
             </div>
-            <div className='bg-[#d3d2a5] rounded-full flex p-5' data-aos="fade-up">
+            <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] rounded-full flex p-5' data-aos="fade-left">
                 <h1 className='text-center m-auto'>Geometry and levels tailored to site plans, drone scans, or LIDAR</h1>
             </div>
-            <div className='bg-[#d3d2a5] rounded-full flex p-5' data-aos="fade-up">
+            <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] rounded-full flex p-5' data-aos="fade-right">
                 <h1 className='text-center m-auto'>Optional integration with photorealistic rendering, animation, or VR/AR</h1>
             </div>
-            <div className='bg-[#d3d2a5] rounded-full flex p-5' data-aos="fade-up">
+            <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] rounded-full flex p-5' data-aos="fade-left">
                 <h1 className='text-center m-auto'>Editable by your in-house team or ours</h1>
             </div>
         </div>
@@ -107,7 +99,7 @@ function Modelling() {
             <div className='lg:pr-30 md:mb-0 mb-4'>
                 <h1 className='lg:text-3xl md:text-2xl text-xl font-semibold mb-4 text-center md:text-start text-white '>Process Overview</h1>
                 <h1 className='lg:text-lg md:text-sm text-sm text-white md:mb-4'>Unlike static visuals, animation creates movement, emotion, and clarity — helping all stakeholders feel immersed in the experience of the future space. Especially valuable for large or spatially complex designs where flow and use matter.</h1>
-                <Button className="hidden md:flex lg:text-xl md:text-base text-sm rounded-full relative items-center bg-[#d3d2a5] text-[#757741] font-bold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
+                <Button className="hidden md:flex lg:text-xl md:text-base text-sm rounded-full relative items-center bg-gradient-to-t from-[#f5f4ea] to-[#d3d2a5] hover:bg-gradient-to-b text-[#757741] font-bold lg:!p-7 md:!p-5 cursor-pointer">
                 Contact Us
                 </Button>
             </div>
@@ -173,7 +165,7 @@ function Modelling() {
             <div className="absolute inset-0 bg-black/60 z-0" />
             <div className='relative text-center text-white lg:text-4xl md:text-2xl font-semibold top-1/2 -translate-y-1/2 '>
             <h1 className='mb-4'>Need a 3D model that forms <br /> the foundation of your next design?</h1>
-            <Button className="lg:text-2xl md:text-lg rounded-full relative items-center bg-[#757741] font-bold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
+            <Button className="lg:text-2xl md:text-lg rounded-full relative items-center bg-gradient-to-t from-[#757741] to-[#d3d2a5] hover:bg-gradient-to-b  font-bold lg:!p-7 md:!p-5 cursor-pointer">
                 Start a Project 
             <MoveRight strokeWidth={3}/>
             </Button>

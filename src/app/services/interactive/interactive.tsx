@@ -11,7 +11,7 @@ import React from 'react'
 
 function Interactive() {
   return (
-    <div>
+    <div className='overflow-hidden'>
         <Navbar/>
         {/* Animasi Fade In Left */}
         <motion.div

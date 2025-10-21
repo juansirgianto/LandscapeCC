@@ -44,7 +44,7 @@ function HomePage() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
-      <div className='relative bg-cover bg-center h-[100vh] mt-[73px]'>
+      <div className='relative bg-cover bg-center h-[100vh]'>
         <video
     autoPlay
     loop
@@ -62,7 +62,7 @@ function HomePage() {
           </h1>
           <p className='lg:text-xl md:text-base text-sm text-gray-300 mb-5 font-normal'>We help landscape architects, garden designers, and design-build firms bring their outdoor visions to life <br/> through cinematic garden visuals, photorealistic CGI, interactive tools, and lightning-fast 2D drafting support.</p>
           <a href="#explore">
-          <Button className="lg:text-2xl md:text-xl text-base rounded-full relative items-center bg-[#757741] font-bold md:!p-7 !p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
+          <Button className="lg:text-2xl md:text-xl text-base rounded-full relative items-center bg-gradient-to-t from-[#757741] to-[#d3d2a5] hover:bg-gradient-to-b font-semibold lg:!p-7 md:!p-5 cursor-pointer">
             Explore Services 
           <MoveRight strokeWidth={3}/>
           </Button>
@@ -86,7 +86,7 @@ If it supports your outdoor design — we can visualise it</h1>
       </div>
       <div className='lg:pt-15 md:pt-10 pt-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2'>
         <a href="/services/3d" data-aos="fade-right">
-          <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-4 transition-all duration-300 ease-in-out'>
+          <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-4 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/10/3D-visualisation-web-thumnail.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>3D Visualisation</p>
             <div className=''>
@@ -94,7 +94,7 @@ If it supports your outdoor design — we can visualise it</h1>
           </div>
         </a>
         <a href="/services/modelling" data-aos="fade-up">
-          <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
+          <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/09/service.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>3D Design & Terrain Modelling</p>
             <div className=''>
@@ -102,7 +102,7 @@ If it supports your outdoor design — we can visualise it</h1>
           </div>
         </a>
         <a href="" data-aos="fade-left">
-          <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
+          <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/09/aerial.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>VR & AR Services</p>
             <div className=''>
@@ -110,7 +110,7 @@ If it supports your outdoor design — we can visualise it</h1>
           </div>
         </a>
         <a href="/services/interactive" data-aos="fade-right">
-          <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
+          <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/09/master1.jpeg" alt="" className='lg:h-[25vh] h-[15vh] object-cover object-top rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>Interactive Masterplans</p>
             <div className=''>
@@ -118,7 +118,7 @@ If it supports your outdoor design — we can visualise it</h1>
           </div>
         </a>
         <a href="" data-aos="fade-up">
-          <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
+          <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/09/garden.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>Site Hub</p>
             <div className=''>
@@ -126,7 +126,7 @@ If it supports your outdoor design — we can visualise it</h1>
           </div>
         </a>
         <a href="" data-aos="fade-left">
-          <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
+          <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/10/2D-drafting-web-thumbnail.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>2D Drafting & Planning</p>
             <div className=''>
@@ -157,56 +157,56 @@ If it supports your outdoor design — we can visualise it</h1>
         <AccordionContent className='lg:text-xl md:text-base text-xs'>
             <h1 className='mb-3 lg:text-xl md:text-lg text-base'>We provide tailored visualisation services for professionals and clients across the landscape and outdoor design sector — from early concept through to council approval, stakeholder engagement, and marketing.</h1>
             <div className='grid md:grid-cols-2 gap-3'>
-                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
+                <div className='flex flex-col gap-2 bg-gradient-to-r from-[#757741] to-[#d3d2a5] rounded-[15px] px-4 py-2 text-white' data-aos="fade-right">
                     <div className='flex relative items-center gap-3'>
                         <Palette className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
                         <p className='lg:text-xl md:text-lg text-base font-semibold'>Landscape Architects</p>
                     </div>
                 <p className='lg:text-lg md:text-base text-sm'>High-end CGI, AR masterplans, and VR tools for public realm, commercial, and private site design presentation.</p>
                 </div>
-                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
+                <div className='flex flex-col gap-2 bg-gradient-to-r from-[#757741] to-[#d3d2a5] rounded-[15px] px-4 py-2 text-white' data-aos="fade-left">
                     <div className='flex relative items-center gap-3'>
                         <Trees className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
                         <p className='lg:text-xl md:text-lg text-base font-semibold'>Garden Designers</p>
                     </div>
                 <p className='lg:text-lg md:text-base text-sm'>Photorealistic 3D imagery and cinematic animations to communicate planting intent, mood, and spatial design.</p>
                 </div>
-                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
+                <div className='flex flex-col gap-2 bg-gradient-to-r from-[#757741] to-[#d3d2a5] rounded-[15px] px-4 py-2 text-white' data-aos="fade-right">
                     <div className='flex relative items-center gap-3'>
                         <Brush className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
                         <p className='lg:text-xl md:text-lg text-base font-semibold'>Design & Build Landscape Firms</p>
                     </div>
                 <p className='lg:text-lg md:text-base text-sm'>Streamlined 2D drafting and fast-turnaround visual assets to support client sign-off and smooth delivery</p>
                 </div>
-                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
+                <div className='flex flex-col gap-2 bg-gradient-to-r from-[#757741] to-[#d3d2a5] rounded-[15px] px-4 py-2 text-white' data-aos="fade-left">
                     <div className='flex relative items-center gap-3'>
                         <WavesLadder className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
                         <p className='lg:text-xl md:text-lg text-base font-semibold'>Pool & Outdoor Living Contractors</p>
                     </div>
                 <p className='lg:text-lg md:text-base text-sm'>Photoreal exterior rendering and animation support for Pool Studio exports and outdoor entertainment areas.</p>
                 </div>
-                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
+                <div className='flex flex-col gap-2 bg-gradient-to-r from-[#757741] to-[#d3d2a5] rounded-[15px] px-4 py-2 text-white' data-aos="fade-right">
                     <div className='flex relative items-center gap-3'>
                         <House className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
                         <p className='lg:text-xl md:text-lg text-base font-semibold'>Estate & Resort Designers</p>
                     </div>
                 <p className='lg:text-lg md:text-base text-sm'>Full-site immersive visualisation, site hubs, and VR walkthroughs for luxury resorts, estates, and hospitality projects.</p>
                 </div>
-                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
+                <div className='flex flex-col gap-2 bg-gradient-to-r from-[#757741] to-[#d3d2a5] rounded-[15px] px-4 py-2 text-white' data-aos="fade-left">
                     <div className='flex relative items-center gap-3'>
                         <HousePlus className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
                         <p className='lg:text-xl md:text-lg text-base font-semibold'>Property Developers</p>
                     </div>
                 <p className='lg:text-lg md:text-base text-sm'>Interactive tools, animation, and CGI to support planning, sales, and investment marketing for outdoor-focused developments.</p>
                 </div>
-                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
+                <div className='flex flex-col gap-2 bg-gradient-to-r from-[#757741] to-[#d3d2a5] rounded-[15px] px-4 py-2 text-white' data-aos="fade-right">
                     <div className='flex relative items-center gap-3'>
                         <NotebookPen className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
                         <p className='lg:text-xl md:text-lg text-base font-semibold'>Planning Consultants</p>
                     </div>
                 <p className='lg:text-lg md:text-base text-sm'>Approval-ready visuals, planting overlays, and site-specific drawings to support LVA, council submission, and stakeholder engagement.</p>
                 </div>
-                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
+                <div className='flex flex-col gap-2 bg-gradient-to-r from-[#757741] to-[#d3d2a5] rounded-[15px] px-4 py-2 text-white' data-aos="fade-left">
                     <div className='flex relative items-center gap-3'>
                         <MapPinHouse className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
                         <p className='lg:text-xl md:text-lg text-base font-semibold'>Private Estate Owners</p>
@@ -225,7 +225,7 @@ If it supports your outdoor design — we can visualise it</h1>
         <h1 className='font-bold'>Not sure where to start?</h1>
         <h1 className='mb-4'>Send us a sketch — we'll turn it into something ready to <br /> build, submit, or sell.</h1>
         <a href="">
-        <Button className="lg:text-2xl md:text-lg rounded-full relative items-center bg-[#757741] font-bold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
+        <Button className="lg:text-2xl md:text-lg rounded-full relative items-center bg-gradient-to-t from-[#757741] to-[#d3d2a5] hover:bg-gradient-to-b font-bold lg:!p-7 md:!p-5 cursor-pointer">
           Start a Project 
         <MoveRight strokeWidth={3}/>
         </Button>
