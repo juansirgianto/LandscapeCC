@@ -1,4 +1,5 @@
 import { MapPin } from 'lucide-react'
+import { div } from 'motion/react-client'
 import React from 'react'
 
 function Footer() {
@@ -11,8 +12,8 @@ function Footer() {
                 <p className='lg:text-base md:text-sm text-xs md:text-start text-center'>We help landscape architects, garden designers, design-build firms, and outdoor contractors bring unbuilt spaces to life with premium CGI, immersive presentation tools, and planning-ready drafting — all under the CC Studio brand.</p>
             </div>
             <div className='flex flex-col gap-1 lg:text-base md:text-sm text-xs md:text-start text-center'>
-                <div className='flex text-[#d3d2a5] items-center gap-1 md:mx-0 mx-auto'>
-                <MapPin className='w-5 h-5' />
+                <div className='flex text-[#d3d2a5] items-center gap-1 mx-auto md:mx-0'>
+                <MapPin className='w-4 h-4'/>
                 <p>Bali, Indonesia</p>
                 </div>
                 <p className='text-[#d3d2a5]'>conceptsconveyed@gmail.com</p>
@@ -27,6 +28,9 @@ function Footer() {
                 </a>
                 <a href="/services">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Services</h1>
+                </a>
+                <a href="">
+                <h1 className='text-[#d3d2a5] hover:text-white'>Portofolio</h1>
                 </a>
                 <a href="">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Case Studies</h1>

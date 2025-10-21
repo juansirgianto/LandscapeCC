@@ -36,7 +36,7 @@ function HomePage() {
   ];
 
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Navbar/>
       {/* Animasi Fade In Left */}
         <motion.div
@@ -85,7 +85,7 @@ function HomePage() {
 If it supports your outdoor design — we can visualise it</h1>
       </div>
       <div className='lg:pt-15 md:pt-10 pt-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2'>
-        <a href="/services/3d" data-aos="fade-up">
+        <a href="/services/3d" data-aos="fade-right">
           <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-4 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/10/3D-visualisation-web-thumnail.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>3D Visualisation</p>
@@ -101,7 +101,7 @@ If it supports your outdoor design — we can visualise it</h1>
             </div>
           </div>
         </a>
-        <a href="" data-aos="fade-up">
+        <a href="" data-aos="fade-left">
           <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/09/aerial.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>VR & AR Services</p>
@@ -109,7 +109,7 @@ If it supports your outdoor design — we can visualise it</h1>
             </div>
           </div>
         </a>
-        <a href="/services/interactive" data-aos="fade-up">
+        <a href="/services/interactive" data-aos="fade-right">
           <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/09/master1.jpeg" alt="" className='lg:h-[25vh] h-[15vh] object-cover object-top rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>Interactive Masterplans</p>
@@ -125,7 +125,7 @@ If it supports your outdoor design — we can visualise it</h1>
             </div>
           </div>
         </a>
-        <a href="" data-aos="fade-up">
+        <a href="" data-aos="fade-left">
           <div className='bg-[#757741] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/10/2D-drafting-web-thumbnail.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>2D Drafting & Planning</p>
@@ -170,7 +170,7 @@ If it supports your outdoor design — we can visualise it</h1>
         </AccordionContent>
       </AccordionItem>
     </Accordion> */}
-    <Accordion type="single" collapsible className='lg:py-8 lg:px-30 md:py-6 md:px-10 p-4 border-b-1' data-aos="fade-up">
+    <Accordion type="single" collapsible className='lg:py-8 lg:px-30 md:py-6 md:px-10 p-4 border-b-1' data-aos="fade-left">
       <AccordionItem value="item-1">
         <AccordionTrigger className='lg:text-3xl md:text-2xl text-lg font-semibold cursor-pointer'>What Makes Us Different</AccordionTrigger>
         <AccordionContent className='lg:text-xl md:text-base text-xs'>
@@ -183,67 +183,67 @@ If it supports your outdoor design — we can visualise it</h1>
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-    <Accordion type="single" collapsible className='lg:py-8 lg:px-30 md:py-6 md:px-10 p-4 border-b-1' data-aos="fade-up">
+    <Accordion type="single" collapsible className='lg:py-8 lg:px-30 md:py-6 md:px-10 p-4 border-b-1' data-aos="fade-left">
       <AccordionItem value="item-1">
         <AccordionTrigger className='lg:text-3xl md:text-2xl text-lg font-semibold cursor-pointer'>Who We Work With</AccordionTrigger>
         <AccordionContent className='lg:text-xl md:text-base text-xs'>
             <h1 className='mb-3 lg:text-xl md:text-lg text-base'>We provide tailored visualisation services for professionals and clients across the landscape and outdoor design sector — from early concept through to council approval, stakeholder engagement, and marketing.</h1>
             <div className='grid md:grid-cols-2 gap-3'>
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
                     <div className='flex relative items-center gap-3'>
-                        <Palette className='text-white lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-[#757741] rounded-full p-1'/>
-                        <p className='text-black lg:text-xl md:text-lg text-base font-semibold'>Landscape Architects</p>
+                        <Palette className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
+                        <p className='lg:text-xl md:text-lg text-base font-semibold'>Landscape Architects</p>
                     </div>
-                <p className='text-black lg:text-lg md:text-base text-sm'>High-end CGI, AR masterplans, and VR tools for public realm, commercial, and private site design presentation.</p>
+                <p className='lg:text-lg md:text-base text-sm'>High-end CGI, AR masterplans, and VR tools for public realm, commercial, and private site design presentation.</p>
                 </div>
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
                     <div className='flex relative items-center gap-3'>
-                        <Trees className='text-white lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-[#757741] rounded-full p-1'/>
-                        <p className='text-black lg:text-xl md:text-lg text-base font-semibold'>Garden Designers</p>
+                        <Trees className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
+                        <p className='lg:text-xl md:text-lg text-base font-semibold'>Garden Designers</p>
                     </div>
-                <p className='text-black lg:text-lg md:text-base text-sm'>Photorealistic 3D imagery and cinematic animations to communicate planting intent, mood, and spatial design.</p>
+                <p className='lg:text-lg md:text-base text-sm'>Photorealistic 3D imagery and cinematic animations to communicate planting intent, mood, and spatial design.</p>
                 </div>
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
                     <div className='flex relative items-center gap-3'>
-                        <Brush className='text-white lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-[#757741] rounded-full p-1'/>
-                        <p className='text-black lg:text-xl md:text-lg text-base font-semibold'>Design & Build Landscape Firms</p>
+                        <Brush className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
+                        <p className='lg:text-xl md:text-lg text-base font-semibold'>Design & Build Landscape Firms</p>
                     </div>
-                <p className='text-black lg:text-lg md:text-base text-sm'>Streamlined 2D drafting and fast-turnaround visual assets to support client sign-off and smooth delivery</p>
+                <p className='lg:text-lg md:text-base text-sm'>Streamlined 2D drafting and fast-turnaround visual assets to support client sign-off and smooth delivery</p>
                 </div>
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
                     <div className='flex relative items-center gap-3'>
-                        <WavesLadder className='text-white lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-[#757741] rounded-full p-1'/>
-                        <p className='text-black lg:text-xl md:text-lg text-base font-semibold'>Pool & Outdoor Living Contractors</p>
+                        <WavesLadder className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
+                        <p className='lg:text-xl md:text-lg text-base font-semibold'>Pool & Outdoor Living Contractors</p>
                     </div>
-                <p className='text-black lg:text-lg md:text-base text-sm'>Photoreal exterior rendering and animation support for Pool Studio exports and outdoor entertainment areas.</p>
+                <p className='lg:text-lg md:text-base text-sm'>Photoreal exterior rendering and animation support for Pool Studio exports and outdoor entertainment areas.</p>
                 </div>
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
                     <div className='flex relative items-center gap-3'>
-                        <House className='text-white lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-[#757741] rounded-full p-1'/>
-                        <p className='text-black lg:text-xl md:text-lg text-base font-semibold'>Estate & Resort Designers</p>
+                        <House className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
+                        <p className='lg:text-xl md:text-lg text-base font-semibold'>Estate & Resort Designers</p>
                     </div>
-                <p className='text-black lg:text-lg md:text-base text-sm'>Full-site immersive visualisation, site hubs, and VR walkthroughs for luxury resorts, estates, and hospitality projects.</p>
+                <p className='lg:text-lg md:text-base text-sm'>Full-site immersive visualisation, site hubs, and VR walkthroughs for luxury resorts, estates, and hospitality projects.</p>
                 </div>
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
                     <div className='flex relative items-center gap-3'>
-                        <HousePlus className='text-white lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-[#757741] rounded-full p-1'/>
-                        <p className='text-black lg:text-xl md:text-lg text-base font-semibold'>Property Developers</p>
+                        <HousePlus className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
+                        <p className='lg:text-xl md:text-lg text-base font-semibold'>Property Developers</p>
                     </div>
-                <p className='text-black lg:text-lg md:text-base text-sm'>Interactive tools, animation, and CGI to support planning, sales, and investment marketing for outdoor-focused developments.</p>
+                <p className='lg:text-lg md:text-base text-sm'>Interactive tools, animation, and CGI to support planning, sales, and investment marketing for outdoor-focused developments.</p>
                 </div>
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
                     <div className='flex relative items-center gap-3'>
-                        <NotebookPen className='text-white lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-[#757741] rounded-full p-1'/>
-                        <p className='text-black lg:text-xl md:text-lg text-base font-semibold'>Planning Consultants</p>
+                        <NotebookPen className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
+                        <p className='lg:text-xl md:text-lg text-base font-semibold'>Planning Consultants</p>
                     </div>
-                <p className='text-black lg:text-lg md:text-base text-sm'>Approval-ready visuals, planting overlays, and site-specific drawings to support LVA, council submission, and stakeholder engagement.</p>
+                <p className='lg:text-lg md:text-base text-sm'>Approval-ready visuals, planting overlays, and site-specific drawings to support LVA, council submission, and stakeholder engagement.</p>
                 </div>
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 bg-[#757741] rounded-[15px] px-4 py-2 text-white'>
                     <div className='flex relative items-center gap-3'>
-                        <MapPinHouse className='text-white lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-[#757741] rounded-full p-1'/>
-                        <p className='text-black lg:text-xl md:text-lg text-base font-semibold'>Private Estate Owners</p>
+                        <MapPinHouse className='text-[#757741] lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6 bg-white rounded-full p-1'/>
+                        <p className='lg:text-xl md:text-lg text-base font-semibold'>Private Estate Owners</p>
                     </div>
-                <p className='text-black lg:text-lg md:text-base text-sm'>Discreet visualisation services for large private gardens, heritage sites, and transformation projects with sensitive briefs.</p>
+                <p className='lg:text-lg md:text-base text-sm'>Discreet visualisation services for large private gardens, heritage sites, and transformation projects with sensitive briefs.</p>
                 </div>
             </div>
         </AccordionContent>
@@ -253,7 +253,7 @@ If it supports your outdoor design — we can visualise it</h1>
     <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/10/1577CC_PWGD_POOL_REV-01-Photo.jpg')" }} className='relative md:h-[80vh] h-[50vh] bg-center bg-cover' data-aos="fade-up">
       <div className="absolute inset-0 bg-black/70 z-0" />
       <div className='relative text-center text-white lg:text-4xl md:text-2xl font-semibold top-1/2 -translate-y-1/2 '>
-        <h1>Not sure where to start?</h1>
+        <h1 className='font-bold'>Not sure where to start?</h1>
         <h1 className='mb-4'>Send us a sketch — we'll turn it into something ready to <br /> build, submit, or sell.</h1>
         <a href="">
         <Button className="lg:text-2xl md:text-lg rounded-full relative items-center bg-[#757741] font-bold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">

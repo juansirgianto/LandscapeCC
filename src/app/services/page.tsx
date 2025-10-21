@@ -1,7 +1,7 @@
 import ServicesPage from "./services"
 
 export const metadata = {
-  title: 'Services Overview',
+  title: 'LandscapeCC - Services Overview',
 }
 
 export default function page() {

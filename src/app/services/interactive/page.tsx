@@ -1,7 +1,7 @@
 import Interactive from "./interactive"
 
 export const metadata = {
-  title: 'Interactive Masterplans',
+  title: 'LandscapeCC - Interactive Masterplans',
 }
 
 export default function page() {

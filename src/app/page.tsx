@@ -1,7 +1,7 @@
 import HomePage from "./home"
 
 export const metadata = {
-  title: 'Home Page',
+  title: 'LandscapeCC - Home Page',
 }
 
 export default function page() {

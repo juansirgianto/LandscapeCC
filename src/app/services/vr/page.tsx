@@ -1,7 +1,7 @@
 import Vr from "./vr"
 
 export const metadata = {
-  title: 'VR & AR Services',
+  title: 'LandscapeCC - VR & AR Services',
 }
 
 export default function page() {
