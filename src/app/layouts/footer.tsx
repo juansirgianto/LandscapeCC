@@ -56,10 +56,10 @@ function Footer() {
                 <a href="/Landscape/services/interactive">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Interactive Masterplans</h1>
                 </a>
-                <a href="">
+                <a href="/Landscape/services/sitehub">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Site Hub</h1>
                 </a>
-                <a href="">
+                <a href="/Landscape/services/2d">
                 <h1 className='text-[#d3d2a5] hover:text-white'>2D Drafting & Planning</h1>
                 </a>
             </div>

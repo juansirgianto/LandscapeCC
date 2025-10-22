@@ -82,7 +82,7 @@ function HomePage() {
           <p className='lg:text-5xl md:text-3xl text-xl font-semibold'>What We Offer</p>
         </div>
         <h1 className='w-full text-center md:text-start lg:text-xl md:text-base text-sm'>Photorealistic garden CGI. Flythrough animations. Interactive site tours. Planning-ready 2D layouts.
-If it supports your outdoor design — we can visualise it</h1>
+If it supports your outdoor design - we can visualise it</h1>
       </div>
       <div className='lg:pt-15 md:pt-10 pt-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2'>
         <a href="/services/3d" data-aos="fade-right">
@@ -143,10 +143,10 @@ If it supports your outdoor design — we can visualise it</h1>
         <AccordionTrigger className='lg:text-3xl md:text-2xl text-lg font-semibold cursor-pointer'>What Makes Us Different</AccordionTrigger>
         <AccordionContent className='lg:text-xl md:text-base text-xs'>
           <div className='flex flex-col gap-3'>
-          <p>We don't just render what you've drawn — we help you communicate the vision.</p>
+          <p>We don't just render what you've drawn - we help you communicate the vision.</p>
           <p>Whether you're presenting to private clients, planning authorities, or contractors on-site, our visuals are crafted to <span className='font-bold'>win approvals, sell ideas, and guide successful builds.</span></p>
-          <p>With deep experience in <span className='font-bold'>landscape-specific workflows</span> — from 2D plans to photoreal CGI and immersive tools — we understand the <span className='font-bold'>technical, emotional, and narrative needs</span> of outdoor projects.</p>
-          <p>And because we build with precision, each 3D model becomes a launchpad for multiple outputs: <span className='font-bold'>stills, animations, planning packs, or interactive tools</span> — all from a single, unified source.</p>
+          <p>With deep experience in <span className='font-bold'>landscape-specific workflows</span> - from 2D plans to photoreal CGI and immersive tools - we understand the <span className='font-bold'>technical, emotional, and narrative needs</span> of outdoor projects.</p>
+          <p>And because we build with precision, each 3D model becomes a launchpad for multiple outputs: <span className='font-bold'>stills, animations, planning packs, or interactive tools</span> - all from a single, unified source.</p>
           </div>
         </AccordionContent>
       </AccordionItem>
@@ -155,7 +155,7 @@ If it supports your outdoor design — we can visualise it</h1>
       <AccordionItem value="item-1">
         <AccordionTrigger className='lg:text-3xl md:text-2xl text-lg font-semibold cursor-pointer'>Who We Work With</AccordionTrigger>
         <AccordionContent className='lg:text-xl md:text-base text-xs'>
-            <h1 className='mb-3 lg:text-xl md:text-lg text-base'>We provide tailored visualisation services for professionals and clients across the landscape and outdoor design sector — from early concept through to council approval, stakeholder engagement, and marketing.</h1>
+            <h1 className='mb-3 lg:text-xl md:text-lg text-base'>We provide tailored visualisation services for professionals and clients across the landscape and outdoor design sector - from early concept through to council approval, stakeholder engagement, and marketing.</h1>
             <div className='grid md:grid-cols-2 gap-3'>
                 <div className='flex flex-col gap-2 bg-gradient-to-r from-[#757741] to-[#d3d2a5] rounded-[15px] px-4 py-2 text-white' data-aos="fade-right">
                     <div className='flex relative items-center gap-3'>
@@ -223,7 +223,7 @@ If it supports your outdoor design — we can visualise it</h1>
       <div className="absolute inset-0 bg-black/70 z-0" />
       <div className='relative text-center text-white lg:text-4xl md:text-2xl font-semibold top-1/2 -translate-y-1/2 '>
         <h1 className='font-bold'>Not sure where to start?</h1>
-        <h1 className='mb-4'>Send us a sketch — we'll turn it into something ready to <br /> build, submit, or sell.</h1>
+        <h1 className='mb-4'>Send us a sketch - we'll turn it into something ready to <br /> build, submit, or sell.</h1>
         <a href="">
         <Button className="lg:text-2xl md:text-lg rounded-full relative items-center bg-gradient-to-t from-[#757741] to-[#d3d2a5] hover:bg-gradient-to-b font-bold lg:!p-7 md:!p-5 cursor-pointer">
           Start a Project 

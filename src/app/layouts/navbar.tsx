@@ -71,8 +71,8 @@ export default function Navbar() {
               <DropdownItem href="/LandscapeCC/services/modelling" title="3D Design & Terrain Modelling" desc="Precision 3D base models and site context modelling." />
               <DropdownItem href="/LandscapeCC/services/vr" title="VR & AR Services" desc="From 360° panoramas to full Unreal Engine walkable gardens." />
               <DropdownItem href="/LandscapeCC/services/interactive" title="Interactive Masterplans" desc="Mobile-ready AR overlays for gardens, campuses, and public spaces." />
-              <DropdownItem title="Site Hub" desc="Project hub & client handoffs." />
-              <DropdownItem title="2D Landscape Drafting & Planning" desc="Drawings, details, and packs." />
+              <DropdownItem href="/LandscapeCC/services/sitehub" title="Site Hub" desc="Your entire landscape design, centralised in one interactive online platform" />
+              <DropdownItem href="/LandscapeCC/services/2d" title="2D Landscape Drafting & Planning" desc="Fast, clear layout plans, planting plans, lighting overlays, and more" />
             </div>
           </div>
 
@@ -134,8 +134,8 @@ export default function Navbar() {
               <DropdownItem href="/LandscapeCC/services/modelling" title="3D Design & Terrain Modelling" desc="Precision 3D base models and site context modelling." />
               <DropdownItem href="/LandscapeCC/services/vr" title="VR & AR Services" desc="From 360° panoramas to full Unreal Engine walkable gardens." />
               <DropdownItem href="/LandscapeCC/services/interactive" title="Interactive Masterplans" desc="Mobile-ready AR overlays for gardens, campuses, and public spaces." />
-              <DropdownItem title="Site Hub" desc="Project hub & client handoffs." />
-              <DropdownItem title="2D Landscape Drafting & Planning" desc="Drawings, details, and packs." />
+              <DropdownItem href="/LandscapeCC/services/sitehub" title="Site Hub" desc="Your entire landscape design, centralised in one interactive online platform" />
+              <DropdownItem href="/LandscapeCC/services/2d" title="2D Landscape Drafting & Planning" desc="Fast, clear layout plans, planting plans, lighting overlays, and more" />
             </div>
           </div>
 
@@ -144,7 +144,7 @@ export default function Navbar() {
           <a href="#" className="block py-3 border-b">Resources</a>
           <a href="#" className="block py-3 border-b">Contact</a>
 
-          <Button className="mt-4 w-full rounded-full bg-[#757741] font-semibold py-5 hover:bg-[#d3d2a5] hover:text-[#757741]">
+          <Button className="mt-4 w-full rounded-full bg-gradient-to-tr from-[#757741] to-[#d3d2a5] hover:bg-gradient-to-b font-semibold py-5">
             Contact Us
           </Button>
         </div>

@@ -3,7 +3,7 @@ import React from 'react'
 
 function Runninglogo() {
   return (
-    <div className="overflow-hidden border-b-1 lg:py-8 md:py-6 py-4">
+    <div className="overflow-hidden lg:py-8 md:py-6 py-4">
       <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}

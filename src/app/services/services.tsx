@@ -88,7 +88,7 @@ function ServicesPage() {
             <p className='font-semibold lg:text-3xl md:text-xl text-base text-white'>Interactive Masterplans</p>
             <div>
             <p className='text-white lg:text-xl md:text-sm text-xs mb-2'>Mobile-ready AR overlays for gardens, campuses, and public spaces. <br />
-            Let your clients explore plans on-site or in meetings — no app required.</p>
+            Let your clients explore plans on-site or in meetings - no app required.</p>
             <Button className='bg-[#d3d2a5] text-[#757741] hover:bg-white  rounded-full lg:text-base md:text-sm text-xs font-bold cursor-pointer'>See Interactive Masterplans
               <MoveRight strokeWidth={3}/>
             </Button>

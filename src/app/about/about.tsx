@@ -23,14 +23,14 @@ function AboutPage() {
             <h1 className='mb-5'>
             We visualise what landscape professionals imagine.
             </h1>
-            <p className='lg:text-xl md:text-base text-sm text-gray-300 mb-5 font-normal'>Landscape by CC Studio is a global landscape visualisation studio dedicated to helping outdoor design professionals bring unbuilt spaces to life. With over 2,600 projects completed worldwide, we specialise in producing photorealistic garden CGI, cinematic animations, immersive experiences, and planning-ready 2D drawings — tailored to the needs of landscape architects, garden designers, urban realm consultants, and design-build firms. Whether you're seeking planning approval, stakeholder engagement, or client buy-in, our visuals combine precision and emotion to make every landscape design story clear, compelling, and impactful.</p>
+            <p className='lg:text-xl md:text-base text-sm text-gray-300 mb-5 font-normal'>Landscape by CC Studio is a global landscape visualisation studio dedicated to helping outdoor design professionals bring unbuilt spaces to life. With over 2,600 projects completed worldwide, we specialise in producing photorealistic garden CGI, cinematic animations, immersive experiences, and planning-ready 2D drawings - tailored to the needs of landscape architects, garden designers, urban realm consultants, and design-build firms. Whether you're seeking planning approval, stakeholder engagement, or client buy-in, our visuals combine precision and emotion to make every landscape design story clear, compelling, and impactful.</p>
             </div>
         </div>
         </motion.div>
         <Runninglogo/>
         <div className='mx-auto text-center lg:px-50 md:px-10 px-4' data-aos="fade-left">
             <h1 className='lg:text-5xl md:text-3xl text-xl font-semibold lg:py-8 md:py-6 py-4'>Our Philosophy :</h1>
-            <h1 className='lg:text-2xl md:text-lg text-sm lg:pb-8 md:pb-6 pb-4'>Landscape design is about atmosphere, ecology, and emotion. Our role is to translate that into visuals that resonate—across approvals, marketing, or municipal debate. Whether you're briefing a planting pack or pitching an urban square, we streamline your process so you can focus on the design.</h1>
+            <h1 className='lg:text-2xl md:text-lg text-sm lg:pb-8 md:pb-6 pb-4'>Landscape design is about atmosphere, ecology, and emotion. Our role is to translate that into visuals that resonate-across approvals, marketing, or municipal debate. Whether you're briefing a planting pack or pitching an urban square, we streamline your process so you can focus on the design.</h1>
             <a href="#explore">
             <Button className="lg:text-2xl md:text-xl text-xs rounded-full relative items-center bg-gradient-to-t from-[#757741] to-[#d3d2a5] hover:bg-gradient-to-b md:!p-7 !p-5 cursor-pointer">
                 Ready to visualise your landscape with impact?
@@ -38,9 +38,11 @@ function AboutPage() {
             </Button>
             </a>
         </div>
-        <div className='lg:px-30 lg:py-15 md:p-10 p-4 lg:mt-15 md:mt-10 mt-4 lg:gap-8 md:gap-4 items-center bg-[#d3d2a5]' data-aos="fade-up">
-            <h1 className='lg:text-3xl md:text-xl text-lg font-semibold mb-4 text-center md:text-start' data-aos="fade-down">What Sets Us Apart :</h1>
-            <div className='grid md:grid-cols-2 justify-between gap-2'>
+        <div className='flex lg:mt-15 md:mt-10 mt-4'>
+        <img src="https://designedbypelago.com/wp-content/uploads/2025/10/Service-Page-img.jpg" alt="" className='w-[50%] object-cover hidden md:flex' />
+        <div className='lg:px-30 lg:py-15 md:p-10 p-4 lg:gap-8 md:gap-4 items-center bg-[#d3d2a5] flex flex-col' data-aos="fade-up">
+            <h1 className='lg:text-3xl md:text-xl my-auto text-lg font-semibold text-center md:text-start' data-aos="fade-down">What Sets Us Apart :</h1>
+            <div className='grid justify-between m-auto gap-2'>
                 <div className='flex bg-[#f5f4ea] px-4 py-2 rounded-full items-center gap-5 lg:text-xl md:text-base text-sm' data-aos="fade-right">
                     <h1 className='bg-[#757741] md:px-4.5 md:py-2 px-2.5 py-1 rounded-full text-white font-semibold'>1</h1>
                     <h1><span className='font-bold'>Depth of Experience</span> - 2,600+ landscape, urban, and garden projects delivered globally.</h1>
@@ -59,11 +61,12 @@ function AboutPage() {
                 </div>
             </div>
         </div>
+        </div>
         <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/10/Service-Page-img.jpg')" }} className='relative bg-cover bg-center lg:px-30 lg:py-15 md:p-10 p-4 lg:gap-8 md:gap-4 items-center bg-[#d3d2a5]' data-aos="fade-up">
         <div className="absolute inset-0 bg-black/70 z-0" />
         <div className='relative text-white'>
             <h1 className='lg:text-3xl md:text-xl text-lg font-semibold mb-4 text-center md:text-start'  data-aos="fade-down">We Serve Landscape Professionals In :</h1>
-        <h1 className='mb-3 lg:text-xl md:text-lg text-base'  data-aos="fade-down">We provide tailored visualisation services for professionals and clients across the landscape and outdoor design sector — from early concept through to council approval, stakeholder engagement, and marketing.</h1>
+        <h1 className='mb-3 lg:text-xl md:text-lg text-base'  data-aos="fade-down">We provide tailored visualisation services for professionals and clients across the landscape and outdoor design sector - from early concept through to council approval, stakeholder engagement, and marketing.</h1>
         <div className='grid md:grid-cols-2 gap-3'>
             <div className='flex flex-col gap-2 bg-gradient-to-tr from-[#757741] to-[#d3d2a5] rounded-[15px] px-4 py-2 text-white'  data-aos="fade-right">
                 <div className='flex relative items-center gap-3'>
@@ -135,7 +138,7 @@ function AboutPage() {
                         <h1 className='lg:text-3xl md:text-xl text-base font-bold'>Christy Russel</h1>
                         <h1 className='lg:text-xl md:text-base text-xs'>Co-Founder</h1>
                     </div>
-                    <h1 className='lg:text-xl md:text-base text-xs'>has led over 300 landscape design projects globally — from luxury estates and resort gardens to civic parks and public realm upgrades. With a background in Geography and Landscape Architecture, Christy brings deep expertise in spatial storytelling, planting intent, and landscape-led presentation.</h1>
+                    <h1 className='lg:text-xl md:text-base text-xs'>has led over 300 landscape design projects globally - from luxury estates and resort gardens to civic parks and public realm upgrades. With a background in Geography and Landscape Architecture, Christy brings deep expertise in spatial storytelling, planting intent, and landscape-led presentation.</h1>
                 </div>
                 <div className='flex flex-col gap-2' data-aos="fade-left">
                     <img src="https://designedbypelago.com/wp-content/uploads/2025/09/I7A7942.jpg" alt="" className='object-cover object-[center_30%] rounded-[15px] lg:h-[60vh] md:h-[40vh] h-[30vh]' />
@@ -143,7 +146,7 @@ function AboutPage() {
                         <h1 className='lg:text-3xl md:text-xl text-base font-bold'>Eshan Soumaroo</h1>
                         <h1 className='lg:text-xl md:text-base text-xs'>Co-Founder and Technical Director</h1>
                     </div>
-                    <h1 className='lg:text-xl md:text-base text-xs'>has a foundation in Product Design Engineering and oversees the studio's immersive and technical output — from cinematic CGI to advanced AR/VR development and interactive platform builds.</h1>
+                    <h1 className='lg:text-xl md:text-base text-xs'>has a foundation in Product Design Engineering and oversees the studio's immersive and technical output - from cinematic CGI to advanced AR/VR development and interactive platform builds.</h1>
                 </div>
             </div>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/09/compressed__I7A8187-final-copy.jpg" alt="" className='object-cover object-center rounded-[15px] md:w-[80vw] lg:h-[60vh] md:h-[40vh] h-[30vh] mx-auto' data-aos="fade-up"/>
