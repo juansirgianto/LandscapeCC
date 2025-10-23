@@ -17,7 +17,10 @@ function HomePage() {
         "If I could give 6 stars, then I would! Christy, Daniel and everyone involved at CC are fantastic. The service they provide is quick, fast efficient and above all else, the concepts they convey are just stunning....period! I will be collaborating with them in the future, that's for sure.",
       name: "Adam Vetere",
       designation: "Adam Vetere Landscape & Garden Design",
-      src: "https://designedbypelago.com/wp-content/uploads/2025/09/av.png",
+      videoSrc: "https://videos.files.wordpress.com/Wlw3VlrE/20251023_instagram-stories-reels-1.mp4",
+      poster: "https://designedbypelago.com/wp-content/uploads/2025/10/compressed_1125CC_REV3_1.jpg",
+      orientation: "landscape",
+      mediaType: "video" as const,
     },
     {
       quote:
@@ -25,6 +28,8 @@ function HomePage() {
       name: "Nic Howard",
       designation: "We Love Plants",
       src: "https://designedbypelago.com/wp-content/uploads/2025/09/wlp.png",
+      orientation: "portrait",
+      mediaType: "image" as const,
     },
     {
       quote:
@@ -32,8 +37,10 @@ function HomePage() {
       name: "Pollyanna Wilkinson",
       designation: "Studio Pollyanna",
       src: "https://designedbypelago.com/wp-content/uploads/2025/09/poly.png",
+      orientation: "portrait",
+      mediaType: "image" as const,
     },
-  ];
+  ] as const;
 
   return (
     <div className='overflow-hidden'>

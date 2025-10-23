@@ -3,14 +3,19 @@
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "motion/react";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 type Testimonial = {
   quote: string;
   name: string;
   designation: string;
-  src: string;
+  src?: string;
+  mediaType?: "image" | "video";
+  videoSrc?: string;
+  poster?: string;
+  orientation?: "portrait" | "landscape";
 };
+
 
 function hashToRange(str: string, min = -10, max = 10) {
   let h = 0;
@@ -23,7 +28,7 @@ export const AnimatedTestimonials = ({
   testimonials,
   autoplay = false,
 }: {
-  testimonials: Testimonial[];
+  testimonials: ReadonlyArray<Testimonial>; // 👈 terima readonly
   autoplay?: boolean;
 }) => {
   const [active, setActive] = useState(0);
@@ -39,7 +44,10 @@ export const AnimatedTestimonials = ({
   const isActive = (index: number) => index === active;
 
   const rotations = useMemo(
-    () => testimonials.map((t) => hashToRange(t.src, -10, 10)),
+    () =>
+      testimonials.map((t) =>
+        hashToRange(t.src ?? t.videoSrc ?? t.name)
+      ),
     [testimonials]
   );
 
@@ -49,12 +57,27 @@ export const AnimatedTestimonials = ({
     return () => clearInterval(id);
   }, [autoplay, handleNext]);
 
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+  useEffect(() => {
+  videoRefs.current.forEach((video, i) => {
+    if (!video) return;
+    if (i === active) {
+      // mainkan video aktif
+      video.currentTime = 0; // opsional: mulai ulang tiap kali slide aktif
+      video.play().catch(() => {}); // catch silent jika autoplay diblokir
+    } else {
+      // pause semua lainnya
+      video.pause();
+    }
+  });
+}, [active]);
+
   return (
     <div className="mx-auto px-4 md:py-8 py-4 lg:pb-13 font-sans antialiased md:px-8 lg:px-70 bg-[#f5f4ea]" data-aos="fade-up">
       <h1 className='text-center mb-8 lg:text-4xl md:text-2xl text-lg font-semibold'>What Our Clients Say</h1>
       <div className="relative grid grid-cols-1 md:gap-20 gap-5 md:grid-cols-2">
         <div>
-          <div className="relative md:h-80 md:w-full h-50 w-50 mx-auto">
+          <div className="relative md:h-[500px] h-[260px] w-full mx-auto overflow-hidden rounded-3xl">
             <AnimatePresence>
               {testimonials.map((testimonial, index) => {
                 const rot = rotations[index]; // nilai stabil
@@ -75,7 +98,7 @@ export const AnimatedTestimonials = ({
                       zIndex: isActive(index)
                         ? 40
                         : testimonials.length + 2 - index,
-                      y: isActive(index) ? [0, -80, 0] : 0,
+                      y: isActive(index) ? [0, -40, 0] : 0,
                     }}
                     exit={{
                       opacity: 0,
@@ -84,16 +107,39 @@ export const AnimatedTestimonials = ({
                       rotate: rot, // ❗ tetap stabil
                     }}
                     transition={{ duration: 0.4, ease: "easeInOut" }}
-                    className="absolute inset-0 origin-bottom"
+                    className="absolute inset-0 origin-bottom flex items-center justify-center"
                   >
-                    <img
-                      src={testimonial.src}
-                      alt={testimonial.name}
-                      width={500}
-                      height={500}
-                      draggable={false}
-                      className="h-full w-full rounded-3xl object-cover object-center"
-                    />
+                    {testimonial.mediaType === "video" ? (
+                  <video
+                  ref={(el) => { videoRefs.current[index] = el }}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    poster={testimonial.poster}
+                    preload="metadata"
+                    className={`rounded-3xl object-center
+                      ${testimonial.orientation === "portrait"
+                        ? "max-h-full max-w-full object-cover bg-neutral-100"
+                        : "h-[450px] w-[300px] object-cover"}
+                    `}
+                  >
+                    <source src={testimonial.videoSrc!} type="video/mp4" />
+                  </video>
+                ) : (
+                  <img
+                    src={testimonial.src!}
+                    alt={testimonial.name}
+                    width={500}
+                    height={500}
+                    draggable={false}
+                    className={`rounded-3xl object-center
+                      ${testimonial.orientation === "portrait"
+                        ? "max-h-full max-w-full object-contain bg-neutral-100"
+                        : "h-full w-full object-cover"}
+                    `}
+                  />
+                )}
                   </motion.div>
                 );
               })}

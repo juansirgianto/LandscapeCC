@@ -353,7 +353,7 @@ export default function Navbar() {
                         animate={{ height: 'auto', opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="gap-2 pl-2 pr-1 pb-3 overflow-hidden flex flex-col"
+                        className="gap-2 pl-2 pr-1 pb-3 overflow-hidden grid grid-cols-2"
                       >
                         {caseStudiesItems.map((item, idx) => (
                           <DropdownItem key={idx} {...item} onClick={closeMobileMenu} />
