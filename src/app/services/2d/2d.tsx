@@ -5,7 +5,7 @@ import Navbar from '@/app/layouts/navbar'
 import Runninglogo from '@/app/layouts/runninglogo'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
-import { ChartLine, Clock3, FileCheck2, MoveRight, SquarePen, Trees } from 'lucide-react'
+import { ChartLine, Clock3, FileCheck2, MoveRight, SquarePen } from 'lucide-react'
 import React from 'react'
 
 function Landscape() {

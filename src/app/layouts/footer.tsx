@@ -1,5 +1,4 @@
 import { MapPin } from 'lucide-react'
-import { div } from 'motion/react-client'
 import React from 'react'
 
 function Footer() {
@@ -29,7 +28,7 @@ function Footer() {
                 <a href="/LandscapeCC/services">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Services</h1>
                 </a>
-                <a href="">
+                <a href="/LandscapeCC/portofolio">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Portofolio</h1>
                 </a>
                 <a href="">
