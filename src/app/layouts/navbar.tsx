@@ -125,7 +125,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="/LandscapeCC/" className="flex-shrink-0 hover:opacity-80 transition-opacity">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/09/logo-e1758792173542.png" 
+              src="./logo.png" 
               alt="Landscape CC Logo" 
               className="w-32 md:w-40" 
             />

@@ -94,7 +94,7 @@ If it supports your outdoor design - we can visualise it</h1>
       <div className='lg:pt-15 md:pt-10 pt-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2'>
         <a href="/LandscapeCC/services/3d" data-aos="fade-right">
           <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-4 transition-all duration-300 ease-in-out'>
-            <img src="https://designedbypelago.com/wp-content/uploads/2025/10/3D-visualisation-web-thumnail.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
+            <img src="./3dvis.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>3D Visualisation</p>
             <div className=''>
             </div>
@@ -134,7 +134,7 @@ If it supports your outdoor design - we can visualise it</h1>
         </a>
         <a href="/LandscapeCC/services/2d" data-aos="fade-left">
           <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
-            <img src="https://designedbypelago.com/wp-content/uploads/2025/10/2D-drafting-web-thumbnail.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
+            <img src="./2d.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>2D Drafting & Planning</p>
             <div className=''>
             </div>
@@ -226,7 +226,7 @@ If it supports your outdoor design - we can visualise it</h1>
     </Accordion>
     </div>
     <AnimatedTestimonials testimonials={testimonials}/>
-    <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/10/1577CC_PWGD_POOL_REV-01-Photo.jpg')" }} className='relative md:h-[80vh] h-[50vh] bg-center bg-cover' data-aos="fade-up">
+    <div style={{ backgroundImage: "url('./last.jpg')" }} className='relative md:h-[80vh] h-[50vh] bg-center bg-cover' data-aos="fade-up">
       <div className="absolute inset-0 bg-black/70 z-0" />
       <div className='relative text-center text-white lg:text-4xl md:text-2xl font-semibold top-1/2 -translate-y-1/2 '>
         <h1 className='font-bold'>Not sure where to start?</h1>

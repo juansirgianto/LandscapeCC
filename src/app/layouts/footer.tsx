@@ -7,7 +7,7 @@ function Footer() {
     <div className='lg:flex justify-between lg:px-30 lg:py-10 md:px-10 md:py-5 gap-5 py-5 px-3'>
         <div className='text-white flex flex-col gap-5 lg:w-[30%] md:w-[50%]'>
             <div className='flex flex-col gap-2'>
-                <img src="https://designedbypelago.com/wp-content/uploads/2025/09/logo_white.png" alt="" className='md:w-1/2 w-1/3 md:mx-0 mx-auto' />
+                <img src="./logo_white.png" alt="" className='md:w-1/2 w-1/3 md:mx-0 mx-auto' />
                 <p className='lg:text-base md:text-sm text-xs md:text-start text-center'>We help landscape architects, garden designers, design-build firms, and outdoor contractors bring unbuilt spaces to life with premium CGI, immersive presentation tools, and planning-ready drafting — all under the CC Studio brand.</p>
             </div>
             <div className='flex flex-col gap-1 lg:text-base md:text-sm text-xs md:text-start text-center'>
