@@ -12,7 +12,7 @@ function PortofolioPage() {
         <Navbar/>
         <div className='flex lg:flex-row flex-col gap-5 justify-between lg:items-center mt-[73px] lg:px-30 md:px-10 px-4 lg:py-20 py-10'>
             <div className='lg:w-[50%]' data-aos="fade-right">
-                <h1 className='md:text-5xl text-3xl font-semibold'>Portofolio</h1>
+                <h1 className='md:text-5xl text-3xl font-semibold'>Portfolio</h1>
                 <h1 className='md:text-2xl text-lg'>Landscape CGI, Animations & Immersive Design Previews</h1>
             </div>
             <h1 className='lg:w-[40%] lg:text-lg md:text-base text-sm' data-aos="fade-left">

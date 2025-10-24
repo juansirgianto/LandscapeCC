@@ -79,19 +79,19 @@ function Vr() {
         <div className='lg:px-30 md:px-10 px-5'>
         <h1 className='lg:text-3xl md:text-xl text-base lg:mb-4 mb-2' data-aos="fade-up">Augmented Reality Masterplans</h1>
             <div className='grid md:grid-cols-4 grid-cols-2 lg:gap-5 md:gap-3 gap-2 lg:pb-15 md:pb-10 pb-4'>
-                <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-4 transition-all duration-300 ease-in-out' data-aos="fade-right">
+                <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 ' data-aos="fade-right">
                     <img src="https://designedbypelago.com/wp-content/uploads/2025/10/3D-visualisation-web-thumnail.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
                     <p className='text-center text-white lg:text-xl md:text-base text-sm'>Touch-based overlays of your site plan</p>
                 </div>
-                <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-4 transition-all duration-300 ease-in-out' data-aos="fade-up">
+                <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 ' data-aos="fade-up">
                     <img src="https://designedbypelago.com/wp-content/uploads/2025/10/3D-visualisation-web-thumnail.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
                     <p className='text-center text-white lg:text-xl md:text-base text-sm'>Clickable zones with embedded images, text, and toggles</p>
                 </div>
-                <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-4 transition-all duration-300 ease-in-out' data-aos="fade-down">
+                <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 ' data-aos="fade-down">
                     <img src="https://designedbypelago.com/wp-content/uploads/2025/10/3D-visualisation-web-thumnail.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
                     <p className='text-center text-white lg:text-xl md:text-base text-sm'>Launch via QR or URL - no app install required</p>
                 </div>
-                <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-4 transition-all duration-300 ease-in-out' data-aos="fade-left">
+                <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 ' data-aos="fade-left">
                     <img src="https://designedbypelago.com/wp-content/uploads/2025/10/3D-visualisation-web-thumnail.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
                     <p className='text-center text-white lg:text-xl md:text-base text-sm'>Perfect for council engagement, on-site exploration, or client previews</p>
                 </div>

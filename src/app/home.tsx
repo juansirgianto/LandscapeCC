@@ -92,7 +92,7 @@ function HomePage() {
 If it supports your outdoor design - we can visualise it</h1>
       </div>
       <div className='lg:pt-15 md:pt-10 pt-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2'>
-        <a href="/services/3d" data-aos="fade-right">
+        <a href="/LandscapeCC/services/3d" data-aos="fade-right">
           <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-4 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/10/3D-visualisation-web-thumnail.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>3D Visualisation</p>
@@ -100,7 +100,7 @@ If it supports your outdoor design - we can visualise it</h1>
             </div>
           </div>
         </a>
-        <a href="/services/modelling" data-aos="fade-up">
+        <a href="/LandscapeCC/services/modelling" data-aos="fade-up">
           <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/09/service.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>3D Design & Terrain Modelling</p>
@@ -108,7 +108,7 @@ If it supports your outdoor design - we can visualise it</h1>
             </div>
           </div>
         </a>
-        <a href="" data-aos="fade-left">
+        <a href="/LandscapeCC/services/vr" data-aos="fade-left">
           <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/09/aerial.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>VR & AR Services</p>
@@ -116,7 +116,7 @@ If it supports your outdoor design - we can visualise it</h1>
             </div>
           </div>
         </a>
-        <a href="/services/interactive" data-aos="fade-right">
+        <a href="/LandscapeCC/services/interactive" data-aos="fade-right">
           <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/09/master1.jpeg" alt="" className='lg:h-[25vh] h-[15vh] object-cover object-top rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>Interactive Masterplans</p>
@@ -124,7 +124,7 @@ If it supports your outdoor design - we can visualise it</h1>
             </div>
           </div>
         </a>
-        <a href="" data-aos="fade-up">
+        <a href="/LandscapeCC/services/sitehub" data-aos="fade-up">
           <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/09/garden.jpg" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>Site Hub</p>
@@ -132,7 +132,7 @@ If it supports your outdoor design - we can visualise it</h1>
             </div>
           </div>
         </a>
-        <a href="" data-aos="fade-left">
+        <a href="/LandscapeCC/services/2d" data-aos="fade-left">
           <div className='bg-gradient-to-t from-[#757741] to-[#d3d2a5] flex flex-col p-2 rounded-[15px] gap-2 hover:mx-2 transition-all duration-300 ease-in-out'>
             <img src="https://designedbypelago.com/wp-content/uploads/2025/10/2D-drafting-web-thumbnail.png" alt="" className='lg:h-[25vh] h-[15vh] object-cover rounded-[15px]' />
             <p className='text-center text-white font-semibold lg:text-2xl md:text-lg'>2D Drafting & Planning</p>

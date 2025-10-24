@@ -19,15 +19,16 @@ function Cgi() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
-        <div className='mt-[73px] grid grid-cols-2 lg:p-30 md:p-10 p-4 items-center bg-[#757741] text-white'>
-            <div className='lg:pr-20'>
+        <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/09/compressed_1235CC_CSC_REV3_5-Photo.jpg')" }} className='relative mt-[73px] grid md:grid-cols-2 lg:p-30 md:p-10 p-4 bg-cover bg-[center_60%] items-center text-white'>
+            <div className="absolute inset-0 bg-black/70 z-0" />
+            <div className='relative lg:pr-20'>
             <h1 className='lg:text-5xl md:text-3xl text-lg font-semibold mb-4'>Bring your landscape vision to life with photorealistic CGI and cinematic animation.</h1>
-            <Button className="lg:text-xl md:text-base rounded-full relative items-center bg-gradient-to-t from-[#f5f4ea] to-[#d3d2a5] hover:bg-gradient-to-b text-[#757741] font-bold lg:!p-7 md:!p-5 cursor-pointer">
+            <Button className="hidden md:flex lg:text-xl md:text-base rounded-full relative items-center bg-gradient-to-t from-[#757741] to-[#d3d2a5] hover:bg-gradient-to-b text-white font-bold lg:!p-7 md:!p-5 cursor-pointer">
                 Start a Project
             <MoveRight strokeWidth={3}/>
             </Button>
             </div>
-            <h1 className='lg:pl-50 md:pl-20 lg:text-xl md:text-base text-xs'>Our 3D visualisation and animation services help landscape professionals present unbuilt spaces with cinematic clarity. Whether you're designing a private estate, urban plaza, or commercial outdoor space, we create high-end visuals that support client presentations, planning approvals, marketing campaigns, and tender submissions.</h1>
+            <h1 className='relative lg:pl-50 md:pl-20 lg:text-xl md:text-base text-xs'>Our 3D visualisation and animation services help landscape professionals present unbuilt spaces with cinematic clarity. Whether you're designing a private estate, urban plaza, or commercial outdoor space, we create high-end visuals that support client presentations, planning approvals, marketing campaigns, and tender submissions.</h1>
         </div>
         </motion.div>
         <Runninglogo/>
@@ -153,7 +154,7 @@ function Cgi() {
             <div className='lg:pr-30 md:mb-0 mb-4'>
                 <h1 className='lg:text-3xl md:text-xl text-lg font-semibold mb-4 text-center md:text-start'>Process Overview</h1>
                 <h1 className='lg:text-lg md:text-sm text-sm text-black md:mb-4'>Photorealistic CGI helps your clients, councils, and collaborators fully understand your design before it's built. From luxury garden projects to civic plazas and commercial streetscapes, our visuals communicate spatial intent, planting, and materiality with clarity - accelerating buy-in and streamlining decision-making across residential, commercial, and public sectors.</h1>
-                <Button className="hidden md:flex lg:text-xl md:text-base rounded-full relative items-center bg-[#757741] font-semibold lg:!p-7 md:!p-5 cursor-pointer hover:bg-[#d3d2a5] hover:text-[#757741]">
+                <Button className="hidden md:flex lg:text-xl md:text-base rounded-full relative items-center bg-[#757741] font-semibold lg:!p-7 md:!p-5 cursor-pointer hover:bg-white hover:text-[#757741]">
                 Contact Us
                 </Button>
             </div>

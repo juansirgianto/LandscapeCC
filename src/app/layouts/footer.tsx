@@ -28,37 +28,37 @@ function Footer() {
                 <a href="/LandscapeCC/services">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Services</h1>
                 </a>
-                <a href="/LandscapeCC/portofolio">
-                <h1 className='text-[#d3d2a5] hover:text-white'>Portofolio</h1>
+                <a href="/LandscapeCC/portfolio">
+                <h1 className='text-[#d3d2a5] hover:text-white'>Portfolio</h1>
                 </a>
-                <a href="">
+                <a href="/LandscapeCC/casestudies/foxterra">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Case Studies</h1>
                 </a>
-                <a href="">
+                {/* <a href="">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Resources</h1>
-                </a>
+                </a> */}
                 <a href="">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Contact</h1>
                 </a>
             </div>
             <div className='lg:text-lg md:text-base text-sm md:text-start text-center w-1/3'>
                 <h1 className='mb-5 text-white font-semibold '>Services</h1>
-                <a href="/Landscape/services/3d">
+                <a href="/LandscapeCC/services/3d">
                 <h1 className='text-[#d3d2a5] hover:text-white'>3D Visualisation</h1>
                 </a>
-                <a href="/Landscape/services/animation">
+                <a href="/LandscapeCC/services/animation">
                 <h1 className='text-[#d3d2a5] hover:text-white'>3D Design & Terrain Modelling</h1>
                 </a>
-                <a href="/Landscape/services/vr">
+                <a href="/LandscapeCC/services/vr">
                 <h1 className='text-[#d3d2a5] hover:text-white'>VR & AR Services</h1>
                 </a>
-                <a href="/Landscape/services/interactive">
+                <a href="/LandscapeCC/services/interactive">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Interactive Masterplans</h1>
                 </a>
-                <a href="/Landscape/services/sitehub">
+                <a href="/LandscapeCC/services/sitehub">
                 <h1 className='text-[#d3d2a5] hover:text-white'>Site Hub</h1>
                 </a>
-                <a href="/Landscape/services/2d">
+                <a href="/LandscapeCC/services/2d">
                 <h1 className='text-[#d3d2a5] hover:text-white'>2D Drafting & Planning</h1>
                 </a>
             </div>

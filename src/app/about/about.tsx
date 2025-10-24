@@ -19,7 +19,7 @@ function AboutPage() {
         >
         <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/09/compressed_1235CC_CSC_REV3_5-Photo.jpg')" }} className='relative bg-cover bg-[center_60%] h-[50vh] lg:px-50 md:px-10 px-4 mt-[73px]'>
             <div className="absolute inset-0 bg-black/70 z-0" />
-            <div className='relative text-center text-white lg:text-5xl md:text-3xl text-xl font-semibold top-1/2 -translate-y-1/2 md:px-0 px-2'>
+            <div className='relative grid lg:grid-cols-2 md:text-start text-center items-center text-white lg:text-5xl md:text-3xl text-xl font-semibold top-1/2 -translate-y-1/2 md:px-0 px-2'>
             <h1 className='mb-5'>
             We visualise what landscape professionals imagine.
             </h1>
@@ -39,7 +39,7 @@ function AboutPage() {
             </a>
         </div>
         <div className='flex lg:mt-15 md:mt-10 mt-4'>
-        <img src="https://designedbypelago.com/wp-content/uploads/2025/10/Service-Page-img.jpg" alt="" className='w-[50%] object-cover hidden md:flex' />
+        <img src="https://designedbypelago.com/wp-content/uploads/2025/10/Service-Page-img.jpg" alt="" className='w-[50%] object-cover hidden md:flex' data-aos="fade-right"/>
         <div className='lg:px-30 lg:py-15 md:p-10 p-4 lg:gap-8 md:gap-4 items-center bg-[#d3d2a5] flex flex-col' data-aos="fade-up">
             <h1 className='lg:text-3xl md:text-xl my-auto text-lg font-semibold text-center md:text-start' data-aos="fade-down">What Sets Us Apart :</h1>
             <div className='grid justify-between m-auto gap-2'>

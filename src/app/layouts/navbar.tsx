@@ -177,7 +177,7 @@ export default function Navbar() {
               </AnimatePresence>
             </div>
 
-            <a href="/LandscapeCC/portofolio" className="hover:text-[#757741] transition-colors relative group">
+            <a href="/LandscapeCC/portfolio" className="hover:text-[#757741] transition-colors relative group">
               Portfolio
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#757741] transition-all group-hover:w-full"></span>
             </a>
@@ -218,10 +218,10 @@ export default function Navbar() {
               </AnimatePresence>
             </div>
 
-            <a href="/LandscapeCC/resources" className="hover:text-[#757741] transition-colors relative group">
+            {/* <a href="/LandscapeCC/resources" className="hover:text-[#757741] transition-colors relative group">
               Resources
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#757741] transition-all group-hover:w-full"></span>
-            </a>
+            </a> */}
 
             <a href="/LandscapeCC/contact" className="hover:text-[#757741] transition-colors relative group">
               Contact
@@ -326,7 +326,7 @@ export default function Navbar() {
                 </div>
 
                 <a 
-                  href="/LandscapeCC/portofolio" 
+                  href="/LandscapeCC/portfolio" 
                   onClick={closeMobileMenu}
                   className="block py-3 border-t border-black/5 hover:text-[#757741] transition-colors"
                 >
@@ -363,13 +363,13 @@ export default function Navbar() {
                   </AnimatePresence>
                 </div>
 
-                <a 
+                {/* <a 
                   href="/LandscapeCC/resources" 
                   onClick={closeMobileMenu}
                   className="block py-3 border-t border-black/5 hover:text-[#757741] transition-colors"
                 >
                   Resources
-                </a>
+                </a> */}
 
                 <a 
                   href="/LandscapeCC/contact" 
