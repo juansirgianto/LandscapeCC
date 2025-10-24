@@ -33,18 +33,18 @@ const servicesItems = [
 ]
 
 const caseStudiesItems = [
-  { href: "/LandscapeCC/case-studies/foxterra", title: "Foxterra", desc: "California, US" },
-  { href: "/LandscapeCC/case-studies/arne-maynard", title: "Arne Maynard Studio", desc: "United Kingdom" },
-  { href: "/LandscapeCC/case-studies/wilden", title: "Wilden", desc: "Dubai, UAE" },
-  { href: "/LandscapeCC/case-studies/stylarc", title: "Stylarc", desc: "California, US" },
-  { href: "/LandscapeCC/case-studies/adam-vetere", title: "Adam Vetere", desc: "United Kingdom" },
-  { href: "/LandscapeCC/case-studies/garden-club", title: "Garden Club London", desc: "United Kingdom" },
-  { href: "/LandscapeCC/case-studies/ebd-studios", title: "EBD Studios", desc: "Colorado, US" },
-  { href: "/LandscapeCC/case-studies/we-love-plants", title: "We Love Plants", desc: "United Kingdom" },
-  { href: "/LandscapeCC/case-studies/rachael-white", title: "Rachael White Designs", desc: "United Kingdom" },
-  { href: "/LandscapeCC/case-studies/randle-siddeley", title: "Randle Siddeley", desc: "United Kingdom" },
-  { href: "/LandscapeCC/case-studies/kit-peel", title: "Kit Peel Gardens", desc: "United Kingdom" },
-  { href: "/LandscapeCC/case-studies/harold-leidner", title: "Harold Leidner Landscape Architects", desc: "Texas, US" }
+  { href: "/LandscapeCC/casestudies/foxterra", title: "Foxterra", desc: "California, US" },
+  { href: "/LandscapeCC/casestudies/arne-maynard", title: "Arne Maynard Studio", desc: "United Kingdom" },
+  { href: "/LandscapeCC/casestudies/wilden", title: "Wilden", desc: "Dubai, UAE" },
+  { href: "/LandscapeCC/casestudies/stylarc", title: "Stylarc", desc: "California, US" },
+  { href: "/LandscapeCC/casestudies/adam-vetere", title: "Adam Vetere", desc: "United Kingdom" },
+  { href: "/LandscapeCC/casestudies/garden-club", title: "Garden Club London", desc: "United Kingdom" },
+  { href: "/LandscapeCC/casestudies/ebd-studios", title: "EBD Studios", desc: "Colorado, US" },
+  { href: "/LandscapeCC/casestudies/we-love-plants", title: "We Love Plants", desc: "United Kingdom" },
+  { href: "/LandscapeCC/casestudies/rachael-white", title: "Rachael White Designs", desc: "United Kingdom" },
+  { href: "/LandscapeCC/casestudies/randle-siddeley", title: "Randle Siddeley", desc: "United Kingdom" },
+  { href: "/LandscapeCC/casestudies/kit-peel", title: "Kit Peel Gardens", desc: "United Kingdom" },
+  { href: "/LandscapeCC/casestudies/harold-leidner", title: "Harold Leidner Landscape Architects", desc: "Texas, US" }
 ]
 
 export default function Navbar() {
