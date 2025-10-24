@@ -8,7 +8,10 @@ function ArnePage() {
   return (
     <div className='overflow-hidden'>
         <Navbar/>
-        <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/10/compressed_755CC_AM_REV3_6-Photo.jpg')" }} className='relative bg-cover bg-center md:h-[100vh] h-[50vh] mt-[73px] md:mt-0 lg:px-50 md:px-10 px-4' data-aos="fade-right">
+        <div
+          // style={{ backgroundImage: "url('./photos/1.jpg')" }}
+          style={{ backgroundImage: "url('./arne-maynard/photos/1.jpg')" }}
+          className='relative bg-cover bg-center md:h-[100vh] h-[50vh] mt-[73px] md:mt-0 lg:px-50 md:px-10 px-4' data-aos="fade-right">
           <div className="absolute inset-0 bg-black/70 z-0" />
           <div className='relative text-center text-white md:text-5xl text-3xl font-semibold top-1/2 -translate-y-1/2 md:px-0 px-2'>
             <h1 className='mb-5'>
@@ -37,7 +40,8 @@ function ArnePage() {
           {/* Image 1 */}
           <div className="col-span-1 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-right">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_755CC_AM_REV3_6-Photo.jpg" 
+              src="./arne-maynard/photos/1.jpg"
+              // src="./photos/1.jpg"
               alt="Landscape design visualization 1" 
               className="w-full h-full object-cover"
             />
@@ -45,7 +49,8 @@ function ArnePage() {
           {/* Image 2 */}
           <div className="col-span-2 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-left">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_755CC_AM_REV3_5-Photo.jpg" 
+              src="./arne-maynard/photos/2.jpg"
+              // src="./photos/2.jpg"
               alt="Landscape design visualization 2" 
               className="w-full h-full object-cover "
             />
@@ -54,7 +59,8 @@ function ArnePage() {
           {/* Image 3 */}
           <div className="col-span-3 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-up">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_1125CC_REV3_10.jpg" 
+              src="./arne-maynard/photos/3.jpg"
+              // src="./photos/3.jpg"
               alt="Landscape design visualization 3" 
               className="w-full h-full object-cover "
             />
@@ -63,7 +69,8 @@ function ArnePage() {
          {/* Image 4 */}
           <div className="col-span-2 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-right">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_1125CC_REV3_6.jpg" 
+              src="./arne-maynard/photos/4.jpg"
+              // src="./photos/4.jpg"
               alt="Landscape design visualization 3" 
               className="w-full h-full object-cover "
             />
@@ -72,7 +79,8 @@ function ArnePage() {
          {/* Image 5 */}
           <div className="col-span-1 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-left">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_1125CC_REV3_1.jpg" 
+              src="./arne-maynard/photos/5.jpg"
+              // src="./photos/5.jpg"
               alt="Landscape design visualization 3" 
               className="w-full h-full object-cover "
             />
@@ -81,7 +89,8 @@ function ArnePage() {
          {/* Image 6 */}
           <div className="col-span-1 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-right">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_AMGD7522.jpg" 
+              src="./arne-maynard/photos/6.jpg"
+              // src="./photos/6.jpg"
               alt="Landscape design visualization 3" 
               className="w-full h-full object-cover "
             />
@@ -89,7 +98,8 @@ function ArnePage() {
          {/* Image 7 */}
           <div className="col-span-2 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-left">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_AMGD752.jpg" 
+              src="./arne-maynard/photos/7.jpg"
+              // src="./photos/7.jpg"
               alt="Landscape design visualization 3" 
               className="w-full h-full object-cover object-bottom"
             />
