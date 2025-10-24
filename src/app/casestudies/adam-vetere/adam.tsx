@@ -8,7 +8,10 @@ function AdamPage() {
   return (
     <div className='overflow-hidden'>
         <Navbar/>
-        <div style={{ backgroundImage: "url('./adam-vetere/photos/1.jpg')" }} className='relative bg-cover bg-center md:h-[100vh] h-[50vh] mt-[73px] md:mt-0 lg:px-50 md:px-10 px-4' data-aos="fade-right">
+        <div 
+        // style={{ backgroundImage: "url('./photos/1.jpg')" }}
+        style={{ backgroundImage: "url('./adam-vetere/photos/1.jpg')" }}
+         className='relative bg-cover bg-center md:h-[100vh] h-[50vh] mt-[73px] md:mt-0 lg:px-50 md:px-10 px-4' data-aos="fade-right">
           <div className="absolute inset-0 bg-black/70 z-0" />
           <div className='relative text-center text-white md:text-5xl text-3xl font-semibold top-1/2 -translate-y-1/2 md:px-0 px-2'>
             <h1 className='mb-5'>
@@ -37,7 +40,8 @@ function AdamPage() {
           {/* Image 1 */}
           <div className="col-span-1 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-right">
             <img 
-              src="./photos/1.jpg" 
+            //   src="./photos/1.jpg" 
+              src="./adam-vetere/photos/1.jpg" 
               alt="Landscape design visualization 1" 
               className="w-full h-full object-cover"
             />
@@ -45,7 +49,8 @@ function AdamPage() {
           {/* Image 2 */}
           <div className="col-span-2 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-left">
             <img 
-              src="./photos/2.jpg" 
+            //   src="./photos/2.jpg" 
+              src="./adam-vetere/photos/2.jpg" 
               alt="Landscape design visualization 2" 
               className="w-full h-full object-cover "
             />
@@ -54,7 +59,8 @@ function AdamPage() {
           {/* Image 3 */}
           <div className="col-span-3 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-up">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_CAM2-2.jpg" 
+            //   src="./photos/3.jpg" 
+              src="./adam-vetere/photos/3.jpg" 
               alt="Landscape design visualization 3" 
               className="w-full h-full object-cover "
             />
@@ -63,7 +69,8 @@ function AdamPage() {
          {/* Image 4 */}
           <div className="col-span-2 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-right">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_2096CC-FOX-CAM-04-DUSK-FINAL-Photos.jpg" 
+            //   src="./photos/4.jpg" 
+              src="./adam-vetere/photos/4.jpg" 
               alt="Landscape design visualization 3" 
               className="w-full h-full object-cover "
             />
@@ -72,7 +79,8 @@ function AdamPage() {
          {/* Image 5 */}
           <div className="col-span-1 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-left">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_2372CC-FOX-CAM-04-REV-2-Photos.jpg" 
+            //   src="./photos/5.jpg" 
+              src="./adam-vetere/photos/5.jpg" 
               alt="Landscape design visualization 3" 
               className="w-full h-full object-cover "
             />
@@ -81,9 +89,10 @@ function AdamPage() {
          {/* Image 6 */}
           <div className="col-span-3 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-up">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_CAM2.jpg" 
+            //   src="./photos/6.jpg"
+              src="./adam-vetere/photos/6.jpg"
               alt="Landscape design visualization 3" 
-              className="w-full h-full object-cover "
+              className="w-full h-full object-cover object-bottom"
             />
           </div>
         </div>
