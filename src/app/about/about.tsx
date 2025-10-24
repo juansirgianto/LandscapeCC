@@ -39,7 +39,7 @@ function AboutPage() {
             </a>
         </div>
         <div className='flex lg:mt-15 md:mt-10 mt-4'>
-        <img src="https://designedbypelago.com/wp-content/uploads/2025/10/Service-Page-img.jpg" alt="" className='w-[50%] object-cover hidden md:flex' data-aos="fade-right"/>
+        <img src="./service.png" alt="" className='w-[50%] object-cover hidden md:flex' data-aos="fade-right"/>
         <div className='lg:px-30 lg:py-15 md:p-10 p-4 lg:gap-8 md:gap-4 items-center bg-[#d3d2a5] flex flex-col' data-aos="fade-up">
             <h1 className='lg:text-3xl md:text-xl my-auto text-lg font-semibold text-center md:text-start' data-aos="fade-down">What Sets Us Apart :</h1>
             <div className='grid justify-between m-auto gap-2'>
@@ -62,7 +62,7 @@ function AboutPage() {
             </div>
         </div>
         </div>
-        <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/10/Service-Page-img.jpg')" }} className='relative bg-cover bg-center lg:px-30 lg:py-15 md:p-10 p-4 lg:gap-8 md:gap-4 items-center bg-[#d3d2a5]' data-aos="fade-up">
+        <div style={{ backgroundImage: "url('./services.jpg')" }} className='relative bg-cover bg-center lg:px-30 lg:py-15 md:p-10 p-4 lg:gap-8 md:gap-4 items-center bg-[#d3d2a5]' data-aos="fade-up">
         <div className="absolute inset-0 bg-black/70 z-0" />
         <div className='relative text-white'>
             <h1 className='lg:text-3xl md:text-xl text-lg font-semibold mb-4 text-center md:text-start'  data-aos="fade-down">We Serve Landscape Professionals In :</h1>
@@ -133,7 +133,7 @@ function AboutPage() {
             <h1 className='lg:text-5xl md:text-3xl text-xl font-semibold mb-2 text-center lg:pb-15 md:pb-10 pb-4' data-aos="fade-up">Meet The Studio</h1>
             <div className='grid md:grid-cols-2 gap-5 mb-5'>
                 <div className='flex flex-col gap-2' data-aos="fade-right">
-                    <img src="https://designedbypelago.com/wp-content/uploads/2025/09/I7A6601.jpg" alt="" className='object-cover object-[center_40%] rounded-[15px] lg:h-[60vh] md:h-[40vh] h-[30vh]' />
+                    <img src="./christy.jpg" alt="" className='object-cover object-[center_40%] rounded-[15px] lg:h-[60vh] md:h-[40vh] h-[30vh]' />
                     <div className='flex flex-col'>
                         <h1 className='lg:text-3xl md:text-xl text-base font-bold'>Christy Russel</h1>
                         <h1 className='lg:text-xl md:text-base text-xs'>Co-Founder</h1>
@@ -141,7 +141,7 @@ function AboutPage() {
                     <h1 className='lg:text-xl md:text-base text-xs'>has led over 300 landscape design projects globally - from luxury estates and resort gardens to civic parks and public realm upgrades. With a background in Geography and Landscape Architecture, Christy brings deep expertise in spatial storytelling, planting intent, and landscape-led presentation.</h1>
                 </div>
                 <div className='flex flex-col gap-2' data-aos="fade-left">
-                    <img src="https://designedbypelago.com/wp-content/uploads/2025/09/I7A7942.jpg" alt="" className='object-cover object-[center_30%] rounded-[15px] lg:h-[60vh] md:h-[40vh] h-[30vh]' />
+                    <img src="./eshan.jpg" alt="" className='object-cover object-[center_30%] rounded-[15px] lg:h-[60vh] md:h-[40vh] h-[30vh]' />
                     <div className='flex flex-col'>
                         <h1 className='lg:text-3xl md:text-xl text-base font-bold'>Eshan Soumaroo</h1>
                         <h1 className='lg:text-xl md:text-base text-xs'>Co-Founder and Technical Director</h1>
@@ -149,9 +149,9 @@ function AboutPage() {
                     <h1 className='lg:text-xl md:text-base text-xs'>has a foundation in Product Design Engineering and oversees the studio's immersive and technical output - from cinematic CGI to advanced AR/VR development and interactive platform builds.</h1>
                 </div>
             </div>
-            <img src="https://designedbypelago.com/wp-content/uploads/2025/09/compressed__I7A8187-final-copy.jpg" alt="" className='object-cover object-center rounded-[15px] md:w-[80vw] lg:h-[60vh] md:h-[40vh] h-[30vh] mx-auto' data-aos="fade-up"/>
+            <img src="./team.jpg" alt="" className='object-cover object-center rounded-[15px] md:w-[80vw] lg:h-[60vh] md:h-[40vh] h-[30vh] mx-auto' data-aos="fade-up"/>
         </div>
-        <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/10/1577CC_PWGD_POOL_REV-01-Photo.jpg')" }} className='relative md:h-[80vh] h-[50vh] bg-center bg-cover' data-aos="fade-up">
+        <div style={{ backgroundImage: "url('./last.jpg')" }} className='relative md:h-[80vh] h-[50vh] bg-center bg-cover' data-aos="fade-up">
             <div className="absolute inset-0 bg-black/70 z-0" />
             <div className='relative text-center text-white lg:text-4xl md:text-2xl font-semibold top-1/2 -translate-y-1/2 lg:px-50 md:px-10 px-4'>
             <h1 className='mb-4'>Together, they lead a team of 45+ creatives across disciplines including 3D rendering, 2D drafting, Unreal Engine development, and interactive web deployment - all dedicated to bringing unbuilt landscapes to life.</h1>
