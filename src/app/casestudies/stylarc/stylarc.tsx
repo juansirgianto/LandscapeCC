@@ -8,7 +8,10 @@ function StylarcPage() {
   return (
     <div className='overflow-hidden'>
         <Navbar/>
-        <div style={{ backgroundImage: "url('https://designedbypelago.com/wp-content/uploads/2025/10/compressed_745CC_CSC_REV5_R-Photo.jpg')" }} className='relative bg-cover bg-center md:h-[100vh] h-[50vh] mt-[73px] md:mt-0 lg:px-50 md:px-10 px-4' data-aos="fade-right">
+        <div 
+          style={{ backgroundImage: "url('./stylarc/photos/1.jpg')" }}
+        //   style={{ backgroundImage: "url('./photos/1.jpg')" }}
+          className='relative bg-cover bg-center md:h-[100vh] h-[50vh] mt-[73px] md:mt-0 lg:px-50 md:px-10 px-4' data-aos="fade-right">
           <div className="absolute inset-0 bg-black/70 z-0" />
           <div className='relative text-center text-white md:text-5xl text-3xl font-semibold top-1/2 -translate-y-1/2 md:px-0 px-2'>
             <h1 className='mb-5'>
@@ -39,7 +42,8 @@ function StylarcPage() {
           {/* Image 1 */}
           <div className="col-span-1 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-right">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_745CC_CSC_REV5_R-Photo.jpg" 
+              src="./stylarc/photos/1.jpg"
+            //   src="./photos/1.jpg"
               alt="Landscape design visualization 1" 
               className="w-full h-full object-cover"
             />
@@ -47,7 +51,8 @@ function StylarcPage() {
           {/* Image 2 */}
           <div className="col-span-2 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-left">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_909CC_CSC_Rev1_CAM-2-Photo.jpg" 
+              src="./stylarc/photos/2.jpg"
+            //   src="./photos/2.jpg"
               alt="Landscape design visualization 2" 
               className="w-full h-full object-cover "
             />
@@ -56,7 +61,8 @@ function StylarcPage() {
           {/* Image 3 */}
           <div className="col-span-3 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-up">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_565CCCSC-Rev3A_14-Photo.jpg" 
+              src="./stylarc/photos/3.jpg"
+            //   src="./photos/3.jpg"
               alt="Landscape design visualization 3" 
               className="w-full h-full object-cover object-top"
             />
@@ -65,7 +71,8 @@ function StylarcPage() {
          {/* Image 4 */}
           <div className="col-span-2 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-right">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_1421CC_CSC_REV4_14-Photo.jpg" 
+              src="./stylarc/photos/4.jpg"
+            //   src="./photos/4.jpg"
               alt="Landscape design visualization 3" 
               className="w-full h-full object-cover object-top"
             />
@@ -74,7 +81,8 @@ function StylarcPage() {
          {/* Image 5 */}
           <div className="col-span-1 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-left">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_1322CC_CSC_NIGHT-C_REV3-Photo.jpg" 
+              src="./stylarc/photos/5.jpg"
+            //   src="./photos/5.jpg"
               alt="Landscape design visualization 3" 
               className="w-full h-full object-cover "
             />
@@ -83,7 +91,8 @@ function StylarcPage() {
          {/* Image 6 */}
           <div className="col-span-3 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-up">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_The-Lookout.jpg" 
+              src="./stylarc/photos/6.jpg"
+            //   src="./photos/6.jpg"
               alt="Landscape design visualization 3" 
               className="w-full h-full object-cover object-[center_80%]"
             />
@@ -92,7 +101,8 @@ function StylarcPage() {
          {/* Image 7 */}
           <div className="col-span-1 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-up">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_1196CC_CSC_REV2_13-Photo.jpg" 
+              src="./stylarc/photos/7.jpg"
+            //   src="./photos/7.jpg"
               alt="Landscape design visualization 3" 
               className="w-full h-full object-cover "
             />
@@ -101,7 +111,8 @@ function StylarcPage() {
          {/* Image 8 */}
           <div className="col-span-2 md:max-h-[60vh] overflow-hidden rounded-lg" data-aos="fade-up">
             <img 
-              src="https://designedbypelago.com/wp-content/uploads/2025/10/compressed_1506CC_CSC_REV2_ALT1_16-Photo.jpg" 
+              src="./stylarc/photos/8.jpg"
+            //   src="./photos/8.jpg"
               alt="Landscape design visualization 3" 
               className="w-full h-full object-cover "
             />
