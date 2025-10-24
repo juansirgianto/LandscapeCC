@@ -8,7 +8,7 @@ function AdamPage() {
   return (
     <div className='overflow-hidden'>
         <Navbar/>
-        <div style={{ backgroundImage: "url('./photos/1.jpg')" }} className='relative bg-cover bg-center md:h-[100vh] h-[50vh] mt-[73px] md:mt-0 lg:px-50 md:px-10 px-4' data-aos="fade-right">
+        <div style={{ backgroundImage: "url('./adam-vetere/photos/1.jpg')" }} className='relative bg-cover bg-center md:h-[100vh] h-[50vh] mt-[73px] md:mt-0 lg:px-50 md:px-10 px-4' data-aos="fade-right">
           <div className="absolute inset-0 bg-black/70 z-0" />
           <div className='relative text-center text-white md:text-5xl text-3xl font-semibold top-1/2 -translate-y-1/2 md:px-0 px-2'>
             <h1 className='mb-5'>
